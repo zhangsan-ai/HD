@@ -1,0 +1,645 @@
+# 🛰️ 后台截图模块(CS)
+## 📌 函数: HCCS_SetType
+### 描述
+```
+打开截图
+```
+### 原型
+```
+__int64 __stdcall HCCS_SetType(__int32 type);
+```
+### 参数
+```
+__int32 type - 0或者-1:普通识别模式(默认)  1:高频后台截图识别模式(并非高频识别就一定要开启,可以先尝试普通识别模式正常的话就无需开启高频) 
+```
+### 返回值
+```
+查看返回值表
+返回当前是否开启了高频识别模式
+```
+### 注意事项
+```
+无
+```
+### HCCS_SetType - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_SetType - 进阶用法
+```
+// 示例2：HCCS_SetType 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_SetType - 高级应用
+```
+// 示例3：HCCS_SetType 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCCS_OpenCS
+### 描述
+```
+打开截图
+```
+### 原型
+```
+__int64 __stdcall HCCS_OpenCS(__int32 窗口序号);
+```
+### 参数
+```
+__int32 窗口序号 - 窗口序号(从1开始)
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+无
+```
+### HCCS_OpenCS - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_OpenCS - 进阶用法
+```
+// 示例2：HCCS_OpenCS 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_OpenCS - 高级应用
+```
+// 示例3：HCCS_OpenCS 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCCS_OpenCSEx
+### 描述
+```
+打开截图(和HCCS_CloseCSEx是一组接口)
+```
+### 原型
+```
+__int64 __stdcall HCCS_OpenCSEx(__int32 窗口序号,BOOL bNormal,__int32 capType=0,__int64 hwnd=0);
+```
+### 参数
+```
+__int32 窗口序号 - 窗口序号(从1开始)窗口序号为0表示全屏前台截图(此时后面3个参数无效)后续识别相关接口如果要用到全屏截图数据需要指定窗口序号0前台键鼠窗口序号使用-1就行
+bool bNormal - 是否是通常模式一般为真(TRUE)就行
+__int32 capType - 截图模式
+__int64 hwnd - 窗口句柄
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+1.前台和后台模式,可以随意切换不用调用关闭HCCS_CloseCSEx再开启！！！！！内置处理了
+截图模式:
+typedefenumCAPTURETYPE{\n无CAPTURETYPE_NONE=0,\n这个不操作\nGDICAPTURETYPE_GDI=1,\n这个直接客户端操作对于浏览器(谷歌等)记得把图像加速关掉\n32CAPTURETYPE_D3D9_1_x86=2,\nUECAPTURETYPE_D3D9_2_x86=3,\nU3DCAPTURETYPE_D3D9_3_x86=4,\nRGBX\nD3D11CAPTURETYPE_D3D11_1_x86=5,\nUECAPTURETYPE_D3D11_2_x86=6,\nU3DCAPTURETYPE_D3D11_3_x86=7,\nRGBXD3D11游戏通用\nD3D12CAPTURETYPE_D3D12_1_x86=70,\nUECAPTURETYPE_D3D12_2_x86=71,\nU3DCAPTURETYPE_D3D12_3_x86=72,\nRGBXD3D12游戏通用\n64\nD3D9CAPTURETYPE_D3D9_1_x64=8,\nUECAPTURETYPE_D3D9_2_x64=9,\nU3DCAPTURETYPE_D3D9_3_x64=10,\nRGBXD3D9游戏通用\nD3D11CAPTURETYPE_D3D11_1_x64=11,\nUECAPTURETYPE_D3D11_2_x64=12,\nU3DCAPTURETYPE_D3D11_3_x64=13,\nRGBXD3D11游戏通用\nD3D12CAPTURETYPE_D3D12_1_x64=14,\nUED3D12CAPTURETYPE_D3D12_2_x64=15,\nU3DD3D12CAPTURETYPE_D3D12_3_x64=16,\nRGBXD3D12D3D12游戏通用\n32CAPTURETYPE_OPENGL_1_x86=20,\n占位CAPTURETYPE_OPENGL_2_x86=21,\nGL_BGRA模拟器CAPTURETYPE_OPENGL_3_x86=22,\nGL_BGRA模拟器\n64CAPTURETYPE_OPENGL_1_x64=30,\n占位CAPTURETYPE_OPENGL_2_x64=31,\nGL_BGRA模拟器CAPTURETYPE_OPENGL_3_x64=32,\nGL_BGRA模拟器\n定制CAPTURETYPE_D3D9_Steam_x86=40,\nsteam游戏专用steam游戏专用后台截图x64模式D3D9也可以是其他游戏不一定只有steam才能用CAPTURETYPE_D3D11_Steam_x86=41,\nsteam游戏专用steam游戏专用后台截图x64模式D3D9也可以是其他游戏不一定只有steam才能用CAPTURETYPE_D3D9_Steam_x64=42,\nsteam游戏专用steam游戏专用后台截图x64模式D3D9也可以是其他游戏不一定只有steam才能用CAPTURETYPE_D3D11_Steam_x64=43,\nsteam游戏专用steam游戏专用后台截图x64模式D3D9也可以是其他游戏不一定只有steam才能用\nNC模式CAPTURETYPE_D3D9_NC_x86=44,\nNC游戏CAPTURETYPE_D3D11_NC_x86=45,\nNC游戏CAPTURETYPE_D3D9_NC_x64=46,\nNC游戏CAPTURETYPE_D3D11_NC_x64=47,\nNC游戏\nCAPTURETYPE_NORMAL=50,\n这个前台模式\nCAPTURETYPE_D3D12_Steam_x86=60,\nsteam游戏专用steam游戏专用后台截图x64模式D3D9也可以是其他游戏不一定只有steam才能用CAPTURETYPE_D3D12_Steam_x64=61,\nsteam游戏专用steam游戏专用后台截图x64模式D3D9也可以是其他游戏不一定只有steam才能用\nCAPTURETYPE_D3D12_NC_x86=62,\nNC游戏D3D12CAPTURETYPE_D3D12_NC_x64=63,\nNC游戏D3D12
+}CAPTURETYPE;额外说明:
+```
+### HCCS_OpenCSEx - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_OpenCSEx - 进阶用法
+```
+// 示例2：HCCS_OpenCSEx 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_OpenCSEx - 高级应用
+```
+// 示例3：HCCS_OpenCSEx 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCCS_CloseCS
+### 描述
+```
+关闭截图
+```
+### 原型
+```
+__int64 __stdcall HCCS_CloseCS(__int32 窗口序号);
+```
+### 参数
+```
+__int32 窗口序号 - 窗口序号(从1开始)
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+无
+```
+### HCCS_CloseCS - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_CloseCS - 进阶用法
+```
+// 示例2：HCCS_CloseCS 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_CloseCS - 高级应用
+```
+// 示例3：HCCS_CloseCS 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCCS_CloseCSEx
+### 描述
+```
+关闭截图(和HCCS_OpenCSEx是一组接口)
+```
+### 原型
+```
+__int64 __stdcall HCCS_CloseCSEx(__int32 窗口序号);
+```
+### 参数
+```
+__int32 窗口序号 - 窗口序号(从1开始)窗口序号为0表示全屏截图后续识别相关接口如果要用到全屏截图数据需要指定窗口序号0
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+无
+```
+### HCCS_CloseCSEx - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_CloseCSEx - 进阶用法
+```
+// 示例2：HCCS_CloseCSEx 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_CloseCSEx - 高级应用
+```
+// 示例3：HCCS_CloseCSEx 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCCS_GetCSData
+### 描述
+```
+获取截图数据
+```
+### 原型
+```
+__int64 __stdcall HCCS_GetCSData(__int32 窗口序号);
+```
+### 参数
+```
+__int32 窗口序号 - 窗口序号(从1开始)
+ 像素格式 - 
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+json:{\"error\":0,\"ret\":[{\"bRet\":AAA,\"addr\":XXX,\"eleSize\":YYY,\"len\":ZZZ,\"w\":1222,\"h\":699}]}AAA:调用接口返回值
+XXX:图片二进制数据首地址(不是bmp数据是MYA8R8G8B8结构体缓冲区首地址)可以拿到这个缓冲区自行转换各种图片格式数据
+YYY:MYA8R8G8B8结构体数量
+ZZZ:字节大小(图片数据=MYA8R8G8B8* YYY)
+w:宽度
+h:高度注意:拿到图片地址数据XXX使用后记得释放(HCCS_FreeArray)
+图片数据地址不使用了记得释放掉HCCS_FreeMemPool调用此接口
+```
+### HCCS_GetCSData - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_GetCSData - 进阶用法
+```
+// 示例2：HCCS_GetCSData 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_GetCSData - 高级应用
+```
+// 示例3：HCCS_GetCSData 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCCS_OpenCSFinder
+### 描述
+```
+打开查看器
+```
+### 原型
+```
+__int64 __stdcall HCCS_OpenCSFinder(__int32 窗口序号,__int32 X,__int32 Y,__int32 宽度,__int32 高度);
+```
+### 参数
+```
+__int32 窗口序号 - 窗口序号(从1开始)
+__int32 x,y,宽度,高度 - 内部使用命令行参数打开查看器C
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+无
+```
+### HCCS_OpenCSFinder - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_OpenCSFinder - 进阶用法
+```
+// 示例2：HCCS_OpenCSFinder 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_OpenCSFinder - 高级应用
+```
+// 示例3：HCCS_OpenCSFinder 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCCS_CloseCSFinder
+### 描述
+```
+关闭查看器
+```
+### 原型
+```
+__int64 __stdcall HCCS_CloseCSFinder(__int32 窗口序号,__int32 pid);
+```
+### 参数
+```
+__int32 窗口序号 - 窗口序号(从1开始)
+__int32 pid - 查看器的进程PID
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+无
+```
+### HCCS_CloseCSFinder - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_CloseCSFinder - 进阶用法
+```
+// 示例2：HCCS_CloseCSFinder 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_CloseCSFinder - 高级应用
+```
+// 示例3：HCCS_CloseCSFinder 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCCS_CaptureBmp
+### 描述
+```
+截图数据并保存为BMP图片文件
+```
+### 原型
+```
+__int64 __stdcall HCCS_CaptureBmp(__int32 窗口序号,char* BMP文件路径,BOOL 是否打开=FALSE);
+```
+### 参数
+```
+__int32 窗口序号 - 窗口序号(从1开始)
+char* BMP文件路径 - BMP文件路径+文件名
+bool 是否打开 - 是否打开查看图片
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+json:
+{\"error\":0,\"ret\":[{\"bRet\":AAA,\"w\":1222,\"h\":699}]}
+```
+### HCCS_CaptureBmp - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_CaptureBmp - 进阶用法
+```
+// 示例2：HCCS_CaptureBmp 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_CaptureBmp - 高级应用
+```
+// 示例3：HCCS_CaptureBmp 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCCS_GetCaptureBmpData
+### 描述
+```
+获取当前截图后的BMP数据
+```
+### 原型
+```
+__int64 __stdcall HCCS_GetCaptureBmpData(__int32 窗口序号);
+```
+### 参数
+```
+__int32 窗口序号 - 窗口序号(从1开始)
+```
+### 返回值
+```
+查看返回值表
+像素格式:
+\n1字节对齐\n单个数据#pragmapack(1)typedefstructMYA8R8G8B8{BYTEm_a;\n透明值BYTEm_r;\n红色BYTEm_g;\n绿色BYTEm_b;\n蓝色MYA8R8G8B8(){m_a=0;m_r=0;m_g=0;m_b=0;}}MYA8R8G8B8;#pragmapack()
+```
+### 注意事项
+```
+json:
+{\"error\":0,\"ret\":[{\"bRet\":1,\"addr\":XXX,\"eleSize\":YYY,\"allLen\":ZZZ,\"w\":1222,\"h\":699}]}
+XXX是BMP图片二进制数据首地址
+YYY是MYA8R8G8B8结构体数量
+ZZZ:BMP图片数据大小(真实的BMP图片数据:54+像素数据)
+图片数据地址不使用了记得释放掉HCCS_FreeMemPool调用此接口
+```
+### HCCS_GetCaptureBmpData - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_GetCaptureBmpData - 进阶用法
+```
+// 示例2：HCCS_GetCaptureBmpData 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_GetCaptureBmpData - 高级应用
+```
+// 示例3：HCCS_GetCaptureBmpData 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCCS_GetCaptureBmpRangeData
+### 描述
+```
+获取当前截图后的BMP数据(指定范围)
+```
+### 原型
+```
+__int64 __stdcall HCCS_GetCaptureBmpRangeData(__int32 窗口序号,__int32 X,__int32 Y,__int32 宽度,__int32 高度);
+```
+### 参数
+```
+__int32 窗口序号 - 窗口序号(从1开始)
+__int32 Y - 矩形范围左上角y-1表示0坐标
+__int32 宽度 - 矩形范围宽度-1表示最大宽度
+__int32 高度 - 矩形范围高度-1表示最大高度
+```
+### 返回值
+```
+查看返回值表
+像素格式:
+\n1字节对齐\n单个数据#pragmapack(1)typedefstructMYA8R8G8B8{BYTEm_a;\n透明值BYTEm_r;\n红色BYTEm_g;\n绿色BYTEm_b;\n蓝色MYA8R8G8B8(){m_a=0;m_r=0;m_g=0;m_b=0;}}MYA8R8G8B8;#pragmapack()
+```
+### 注意事项
+```
+如果想获取全图数据:xywh可以分别为-1也可以直接调用HCCS_GetCaptureBmpData
+json:
+{\"error\":0,\"ret\":[{\"bRet\":1,\"addr\":XXX,\"eleSize\":YYY,\"allLen\":ZZZ,\"w\":1222,\"h\":699}]}
+XXX是BMP图片二进制数据首地址
+YYY是MYA8R8G8B8结构体数量
+ZZZ:BMP图片数据大小(真实的BMP图片数据:54+像素数据)
+图片数据地址不使用了记得释放掉HCCS_FreeMemPool调用此接口
+```
+### HCCS_GetCaptureBmpRangeData - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_GetCaptureBmpRangeData - 进阶用法
+```
+// 示例2：HCCS_GetCaptureBmpRangeData 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_GetCaptureBmpRangeData - 高级应用
+```
+// 示例3：HCCS_GetCaptureBmpRangeData 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCCS_FreeArray
+### 描述
+```
+释放内存
+```
+### 原型
+```
+__int64 __stdcall HCCS_FreeArray(void* addr);
+```
+### 参数
+```
+void addr - 需要释放的地址
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+释放内存该内存是使用new[]申请的内存
+```
+### HCCS_FreeArray - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_FreeArray - 进阶用法
+```
+// 示例2：HCCS_FreeArray 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_FreeArray - 高级应用
+```
+// 示例3：HCCS_FreeArray 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCCS_FreeMemPool
+### 描述
+```
+释放内存,内存池操作释放内存
+```
+### 原型
+```
+__int64 __stdcall HCCS_FreeMemPool(__int32 窗口序号,void* addr);
+```
+### 参数
+```
+__int32 窗口序号 - index
+void addr - 需要释放的地址
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+我们获取了截图数据不需要了都需要调用这个接口来释放掉,防止内存泄露
+注意:该接口是释放【使用内存池申请的内存地址】的地址,与HCCS_FreeArray不一样
+那个窗口序号返回申请的地址就用那个窗口序号释放
+```
+### HCCS_FreeMemPool - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_FreeMemPool - 进阶用法
+```
+// 示例2：HCCS_FreeMemPool 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_FreeMemPool - 高级应用
+```
+// 示例3：HCCS_FreeMemPool 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCCS_IsCaptureValid
+### 描述
+```
+后台截图缓存获取失败判断接口
+```
+### 原型
+```
+__int64  __stdcall  HCCS_IsCaptureValid(__int64 ret);
+```
+### 参数
+```
+__int64 ret - 传递的返回值 必须是识别截图相关的接口返回的
+```
+### 返回值
+```
+查看返回值表
+返回1表示:后台截图数据获取失败,进一步表示不是识别找不到,需要开发者再次调用相关识别接口
+返回0表示:识别没有找到
+```
+### 注意事项
+```
+无
+```
+### HCCS_IsCaptureValid - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_IsCaptureValid - 进阶用法
+```
+// 示例2：HCCS_IsCaptureValid 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCCS_IsCaptureValid - 高级应用
+```
+// 示例3：HCCS_IsCaptureValid 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---

@@ -1,0 +1,1379 @@
+# 🛰️ 多线程模块[MT]
+## 📌 函数: HCMT_InitProcess
+### 描述
+```
+初始化多线程设置相关流程回调
+```
+### 原型
+```
+__int64 __stdcall HCMT_InitProcess(__int64 hwnd,void* updateUICallBack,void* loginCallBack,void* firstCallBack,void* secondCallBack,void* endCallBack,void* restartPreCallBack);
+```
+### 参数
+```
+__int64 hwnd - 中控UI的窗口主句柄内部会HOOK窗口过程updateUICallBack
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+1.普通回调1参数windowsIndex:代表的是窗口序号也是主序号
+2.每个回调参数的函数类型不一样,注意对应
+回调触发顺序:
+开启窗口:登录回调--->第一/第二执行回调同时开启--->结束回调
+重启窗口:重启前回调--->登录回调--->第一/第二执行回调同时开启--->结束回调
+参数回调函数类型:
+------------------------------------------------------------------------------------普通回调1
+typedef__int64 (__stdcall* FUNTYPE)(__int32 windowsIndex);
+windowsIndex:窗口序号
+------------------------------------------------------------------------------------普通回调2
+typedef__int64 (__stdcall* FUNTYPE)(__int32 index);
+index:窗口序号/主序号/副序号
+------------------------------------------------------------------------------------UI回调typedef__int64 (__stdcall* UIFUNTYPE)(__int32 windowsIndex,char* stepText,BOOL end1,BOOL pause1,__int32 threadState1,BOOL m_end2,BOOL m_pause2,__int32 threadState2);
+windowsIndex:窗口序号
+stepText:日志信息/操作信息
+end1:主执行线程的结束标志状态
+pause1:主执行线程的暂停标志状态
+threadState1:主执行线程的线程操作状态
+end2:副线程的结束标志状态
+pause2:副线程的暂停标志状态
+threadState2:副线程的线程操作状态
+------------------------------------------------------------------------------------消息回调typedef__int64 (__stdcall* MSGFUNTYPE)(WPARAMwparam,,LPARAMlparam);
+wparam:自定义参数1
+lparam:自定义参数2
+```
+### HCMT_InitProcess - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_InitProcess - 进阶用法
+```
+// 示例2：HCMT_InitProcess 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_InitProcess - 高级应用
+```
+// 示例3：HCMT_InitProcess 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCMT_InitProcessEx
+### 描述
+```
+初始化多线程设置相关流程回调可以绑定一个全局参数
+```
+### 原型
+```
+__int64 __stdcall HCMT_InitProcessEx(__int64 hwnd,void* updateUICallBackEx,void* loginCallBack,void* firstCallBack,void* secondCallBack,void* endCallBack,void* restartPreCallBack,void* lparam);
+```
+### 参数
+```
+__int64 hwnd - 中控UI的窗口主句柄内部会HOOK窗口过程updateUICallBack
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+1.普通回调1参数windowsIndex:代表的是窗口序号也是主序号
+2.每个回调参数的函数类型不一样,注意对应
+回调触发顺序:
+开启窗口:登录回调--->第一/第二执行回调同时开启--->结束回调
+重启窗口:重启前回调--->登录回调--->第一/第二执行回调同时开启--->结束回调
+参数回调函数类型:
+------------------------------------------------------------------------------------普通回调1
+typedef__int64 (__stdcall* FUNTYPE)(__int32 windowsIndex);
+windowsIndex:窗口序号
+------------------------------------------------------------------------------------普通回调2
+typedef__int64 (__stdcall* FUNTYPE)(__int32 index);
+index:窗口序号/主序号/副序号
+------------------------------------------------------------------------------------UI回调EXtypedef__int64 (__stdcall* UIFUNTYPEEX)(__int32 windowsIndex,char* stepText,void* lparam,BOOL m_end1,BOOL m_pause1,__int32 threadState1,BOOL m_end2,BOOL m_pause2,__int32 threadState2);
+windowsIndex:窗口序号
+stepText:日志信息/操作信息
+lparam:HCMT_InitProcessEx绑定一个全局参数,一般我们指定为一个UI对象地址,这个回调可以拿到这个地址
+end1:主执行线程的结束标志状态
+pause1:主执行线程的暂停标志状态
+threadState1:主执行线程的线程操作状态
+end2:副线程的结束标志状态
+pause2:副线程的暂停标志状态
+threadState2:副线程的线程操作状态
+------------------------------------------------------------------------------------消息回调typedef__int64 (__stdcall* MSGFUNTYPE)(WPARAMwparam,,LPARAMlparam);
+wparam:自定义参数1
+lparam:自定义参数2
+```
+### HCMT_InitProcessEx - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_InitProcessEx - 进阶用法
+```
+// 示例2：HCMT_InitProcessEx 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_InitProcessEx - 高级应用
+```
+// 示例3：HCMT_InitProcessEx 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCMT_InitOperate
+### 描述
+```
+初始化多线程结束/暂停/恢复状态的操作回调
+```
+### 原型
+```
+__int64 __stdcall HCMT_InitOperate(void* endBindCallBack,void* pauseBindCallBack,void* recoverBindCallBack);
+```
+### 参数
+```
+void endBindCallBack - FUNTYPE结束绑定回调当调用HCMT_SetStop/HCMT_SetAllStop会触发pauseBindCallBack
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+1.仅仅对于这3个回调而言普通回调2参数index:大于多开限制数量,就是副序号;小于就是主序号(也是窗口序号);计算公式:if(index>=多开限制数)主序号=index-多开限制数;
+\n(index>=多开环境数量)?(index-多开环境数量):(index)2.其他接口的windowsIndex就代表的是窗口序号也是主序号3.多开限制数量最大常量为31,请自行在程序里面定义
+4.多开限制数量用HCEnv_GetMaxWindowNum返回一个常数,可以自己写成一个常量
+回调触发顺序:
+结束窗口操作:endBindCallBack并传递对应的线程序号(线程序号可能是主序号也就是窗口序号,也有可能是副序号)
+暂停窗口操作:pauseBindCallBack并传递对应的线程序号(线程序号可能是主序号也就是窗口序号,也有可能是副序号)
+恢复窗口操作:recoverBindCallBack并传递对应的线程序号(线程序号可能是主序号也就是窗口序号,也有可能是副序号)
+参数回调函数类型:
+------------------------------------------------------------------------------------普通回调1
+typedef__int64 (__stdcall* FUNTYPE)(__int32 windowsIndex);
+windowsIndex:窗口序号
+------------------------------------------------------------------------------------普通回调2
+typedef__int64 (__stdcall* FUNTYPE)(__int32 index);
+index:窗口序号/主序号/副序号
+------------------------------------------------------------------------------------UI回调typedef__int64 (__stdcall* UIFUNTYPE)(__int32 windowsIndex,char* stepText,BOOL end1,BOOL pause1,__int32 threadState1,BOOL m_end2,BOOL m_pause2,__int32 threadState2);
+windowsIndex:窗口序号
+stepText:日志信息/操作信息
+end1:主执行线程的结束标志状态
+pause1:主执行线程的暂停标志状态
+threadState1:主执行线程的线程操作状态
+end2:副线程的结束标志状态
+pause2:副线程的暂停标志状态
+threadState2:副线程的线程操作状态
+------------------------------------------------------------------------------------消息回调typedef__int64 (__stdcall* MSGFUNTYPE)(WPARAMwparam,,LPARAMlparam);
+wparam:自定义参数1
+lparam:自定义参数2
+```
+### HCMT_InitOperate - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_InitOperate - 进阶用法
+```
+// 示例2：HCMT_InitOperate 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_InitOperate - 高级应用
+```
+// 示例3：HCMT_InitOperate 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCMT_RegisterMessage
+### 描述
+```
+注册窗口消息
+```
+### 原型
+```
+__int64 __stdcall HCMT_RegisterMessage(__int32 msg,void* msgCallBack);
+```
+### 参数
+```
+__int32 msg - 自定义消息整数值(规定值大于等于41124)msgCallBack
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+1.通过HCMT_MsgSend/HCMT_MsgPost来触发回调
+参数回调函数类型:
+------------------------------------------------------------------------------------普通回调1
+typedef__int64 (__stdcall* FUNTYPE)(__int32 windowsIndex);
+windowsIndex:窗口序号
+------------------------------------------------------------------------------------普通回调2
+typedef__int64 (__stdcall* FUNTYPE)(__int32 index);
+index:窗口序号/主序号/副序号
+------------------------------------------------------------------------------------UI回调typedef__int64 (__stdcall* UIFUNTYPE)(__int32 windowsIndex,char* stepText,BOOL end1,BOOL pause1,__int32 threadState1,BOOL m_end2,BOOL m_pause2,__int32 threadState2);
+windowsIndex:窗口序号
+stepText:日志信息/操作信息
+end1:主执行线程的结束标志状态
+pause1:主执行线程的暂停标志状态
+threadState1:主执行线程的线程操作状态
+end2:副线程的结束标志状态
+pause2:副线程的暂停标志状态
+threadState2:副线程的线程操作状态
+------------------------------------------------------------------------------------消息回调typedef__int64 (__stdcall* MSGFUNTYPE)(WPARAMwparam,LPARAMlparam);
+wparam:自定义参数1
+lparam:自定义参数2
+```
+### HCMT_RegisterMessage - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_RegisterMessage - 进阶用法
+```
+// 示例2：HCMT_RegisterMessage 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_RegisterMessage - 高级应用
+```
+// 示例3：HCMT_RegisterMessage 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCMT_MsgSend
+### 描述
+```
+发送消息(同步)
+```
+### 原型
+```
+__int64 __stdcall HCMT_MsgSend(__int32 msg,void* wparam,void* lparam);
+```
+### 参数
+```
+__int32 msg - 消息整数值wparam
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+1.HDMT_InitProcess/HCMT_InitOperate后才能调用
+参数回调函数类型:
+------------------------------------------------------------------------------------普通回调1
+typedef__int64 (__stdcall* FUNTYPE)(__int32 windowsIndex);
+windowsIndex:窗口序号
+------------------------------------------------------------------------------------普通回调2
+typedef__int64 (__stdcall* FUNTYPE)(__int32 index);
+index:窗口序号/主序号/副序号
+------------------------------------------------------------------------------------UI回调typedef__int64 (__stdcall* UIFUNTYPE)(__int32 windowsIndex,char* stepText,BOOL end1,BOOL pause1,__int32 threadState1,BOOL m_end2,BOOL m_pause2,__int32 threadState2);
+windowsIndex:窗口序号
+stepText:日志信息/操作信息
+end1:主执行线程的结束标志状态
+pause1:主执行线程的暂停标志状态
+threadState1:主执行线程的线程操作状态
+end2:副线程的结束标志状态
+pause2:副线程的暂停标志状态
+threadState2:副线程的线程操作状态
+------------------------------------------------------------------------------------消息回调typedef__int64 (__stdcall* MSGFUNTYPE)(WPARAMwparam,,LPARAMlparam);
+wparam:自定义参数1
+lparam:自定义参数2
+```
+### HCMT_MsgSend - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_MsgSend - 进阶用法
+```
+// 示例2：HCMT_MsgSend 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_MsgSend - 高级应用
+```
+// 示例3：HCMT_MsgSend 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCMT_MsgPost
+### 描述
+```
+发送消息(异步)
+```
+### 原型
+```
+__int64 __stdcall HCMT_MsgPost(__int32 msg,void* wparam,void* lparam);
+```
+### 参数
+```
+__int32 msg - 消息整数值wparam
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+1.HDMT_InitProcess/HCMT_InitOperate后才能调用
+参数回调函数类型:
+------------------------------------------------------------------------------------普通回调1
+typedef__int64 (__stdcall* FUNTYPE)(__int32 windowsIndex);
+windowsIndex:窗口序号
+------------------------------------------------------------------------------------普通回调2
+typedef__int64 (__stdcall* FUNTYPE)(__int32 index);
+index:窗口序号/主序号/副序号
+------------------------------------------------------------------------------------UI回调typedef__int64 (__stdcall* UIFUNTYPE)(__int32 windowsIndex,char* stepText,BOOL end1,BOOL pause1,__int32 threadState1,BOOL m_end2,BOOL m_pause2,__int32 threadState2);
+windowsIndex:窗口序号
+stepText:日志信息/操作信息
+end1:主执行线程的结束标志状态
+pause1:主执行线程的暂停标志状态
+threadState1:主执行线程的线程操作状态
+end2:副线程的结束标志状态
+pause2:副线程的暂停标志状态
+threadState2:副线程的线程操作状态
+------------------------------------------------------------------------------------消息回调typedef__int64 (__stdcall* MSGFUNTYPE)(WPARAMwparam,,LPARAMlparam);
+wparam:自定义参数1
+lparam:自定义参数2
+```
+### HCMT_MsgPost - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_MsgPost - 进阶用法
+```
+// 示例2：HCMT_MsgPost 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_MsgPost - 高级应用
+```
+// 示例3：HCMT_MsgPost 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCMT_MsgStart
+### 描述
+```
+通过消息开启窗口操作
+```
+### 原型
+```
+__int64 __stdcall HCMT_MsgStart(__int32 windowsIndex,BOOL bAsyn=FALSE);
+```
+### 参数
+```
+__int32 windowsIndex - 窗口序号bAsyn
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+1.HDMT_InitProcess/HCMT_InitOperate后才能调用
+2.开启成功后会相应触发对应设置的回调函数
+3.顺序:
+开启窗口:登录回调--->第一/第二执行回调同时开启--->{暂停/恢复/结束绑定回调}->结束回调
+重启窗口:重启前回调--->登录回调--->第一/第二执行回调同时开启--->{暂停/恢复/结束绑定回调}->结束回调
+停止窗口:结束绑定回调->结束回调
+```
+### HCMT_MsgStart - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_MsgStart - 进阶用法
+```
+// 示例2：HCMT_MsgStart 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_MsgStart - 高级应用
+```
+// 示例3：HCMT_MsgStart 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCMT_MsgStop
+### 描述
+```
+通过消息停止窗口操作
+```
+### 原型
+```
+__int64 __stdcall HCMT_MsgStop(__int32 windowsIndex,BOOL bAsyn=FALSE);
+```
+### 参数
+```
+__int32 windowsIndex - 窗口序号bAsyn
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+1.HDMT_InitProcess/HCMT_InitOperate后才能调用
+2.开启成功后会相应触发对应设置的回调函数
+3.顺序:
+开启窗口:登录回调--->第一/第二执行回调同时开启--->{暂停/恢复/结束绑定回调}->结束回调
+重启窗口:重启前回调--->登录回调--->第一/第二执行回调同时开启--->{暂停/恢复/结束绑定回调}->结束回调
+停止窗口:结束绑定回调->结束回调
+```
+### HCMT_MsgStop - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_MsgStop - 进阶用法
+```
+// 示例2：HCMT_MsgStop 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_MsgStop - 高级应用
+```
+// 示例3：HCMT_MsgStop 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCMT_MsgReStart
+### 描述
+```
+通过消息重启窗口操作
+```
+### 原型
+```
+__int64 __stdcall HCMT_MsgReStart(__int32 windowsIndex,BOOL bAsyn=FALSE);
+```
+### 参数
+```
+__int32 windowsIndex - 窗口序号bAsyn
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+1.HDMT_InitProcess/HCMT_InitOperate后才能调用
+2.开启成功后会相应触发对应设置的回调函数
+3.顺序:
+开启窗口:登录回调--->第一/第二执行回调同时开启--->{暂停/恢复/结束绑定回调}->结束回调
+重启窗口:重启前回调--->登录回调--->第一/第二执行回调同时开启--->{暂停/恢复/结束绑定回调}->结束回调
+停止窗口:结束绑定回调->结束回调
+```
+### HCMT_MsgReStart - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_MsgReStart - 进阶用法
+```
+// 示例2：HCMT_MsgReStart 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_MsgReStart - 高级应用
+```
+// 示例3：HCMT_MsgReStart 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCMT_MsgReStartEx
+### 描述
+```
+通过消息重启窗口操作(扩展版本)
+```
+### 原型
+```
+__int64 __stdcall HCMT_MsgReStartEx(__int32 windowsIndex,BOOL bUnload=TRUE,BOOL bAsyn=FALSE);
+```
+### 参数
+```
+__int32 windowsIndex - 窗口序号
+bool bUnload - 是否重启前卸载进程环境(HCEnv_UnLoad)一般我们肯定要卸载环境的尤其是在配合心跳HCEnv_AttachHeart的时候
+bool bAsyn - 是否异步发送
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+1.HDMT_InitProcess/HCMT_InitOperate后才能调用
+2.开启成功后会相应触发对应设置的回调函数
+3.顺序:
+开启窗口:登录回调--->第一/第二执行回调同时开启--->{暂停/恢复/结束绑定回调}->结束回调
+重启窗口:重启前回调--->登录回调--->第一/第二执行回调同时开启--->{暂停/恢复/结束绑定回调}->结束回调
+停止窗口:结束绑定回调->结束回调
+```
+### HCMT_MsgReStartEx - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_MsgReStartEx - 进阶用法
+```
+// 示例2：HCMT_MsgReStartEx 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_MsgReStartEx - 高级应用
+```
+// 示例3：HCMT_MsgReStartEx 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCMT_MsgUpdateUI
+### 描述
+```
+通过消息触发UI回调,并传递线程状态信息和日志操作信息给UI回调
+```
+### 原型
+```
+__int64 __stdcall HCMT_MsgUpdateUI(__int32 windowsIndex,BOOL bAsyn=FALSE);
+```
+### 参数
+```
+__int32 windowsIndex - 窗口序号bAsyn
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+1.HDMT_InitProcess/HCMT_InitOperate后才能调用
+```
+### HCMT_MsgUpdateUI - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_MsgUpdateUI - 进阶用法
+```
+// 示例2：HCMT_MsgUpdateUI 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_MsgUpdateUI - 高级应用
+```
+// 示例3：HCMT_MsgUpdateUI 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCMT_MsgStepText
+### 描述
+```
+通过消息触发UI回调,并传递线程状态信息和日志操作信息给UI回调
+```
+### 原型
+```
+__int64 __stdcall HCMT_MsgStepText(__int32 windowsIndex,char* text,BOOL bAsyn=FALSE);
+```
+### 参数
+```
+__int32 windowsIndex - 窗口序号text
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+1.HDMT_InitProcess/HCMT_InitOperate后才能调用
+```
+### HCMT_MsgStepText - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_MsgStepText - 进阶用法
+```
+// 示例2：HCMT_MsgStepText 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_MsgStepText - 高级应用
+```
+// 示例3：HCMT_MsgStepText 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCMT_SetAllPause
+### 描述
+```
+设置所有窗口结束
+```
+### 原型
+```
+__int64 __stdcall HCMT_SetAllPause();
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+1.HDMT_InitProcess/HCMT_InitOperate后才能调用
+2.仅仅设置的是标志位,不会堵塞线程
+3.标志会在HCMT_Sleep接口中检查并触发对应的暂停绑定回调
+```
+### HCMT_SetAllPause - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_SetAllPause - 进阶用法
+```
+// 示例2：HCMT_SetAllPause 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_SetAllPause - 高级应用
+```
+// 示例3：HCMT_SetAllPause 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCMT_GetState
+### 描述
+```
+获取主副序号对应的线程的状态值
+```
+### 原型
+```
+__int64 __stdcall HCMT_GetState(__int32 index);
+```
+### 参数
+```
+__int32 index - 主副序号注意
+```
+### 返回值
+```
+返回1:状态值注意:如果需要转换为字符串,需要调用HCMT_GetStateString
+返回其他值:查看返回值表
+```
+### 注意事项
+```
+1.HDMT_InitProcess/HCMT_InitOperate后才能调用
+2.仅仅设置的是标志位,不会堵塞线程
+3.标志会在HCMT_Sleep接口中检查并触发对应的暂停绑定回调
+typedefenumTHREADSTATE\n线程状态{THREADSTATE_NONE=-1,\n未启动THREADSTATE_STARTING=0,\n开启中THREADSTATE_LOGINING=1,\n正在登录THREADSTATE_RUNNING=2,\n正在运行THREADSTATE_PAUSE=3,\n暂停THREADSTATE_PAUSEING=4,\n正在暂停THREADSTATE_RECOVERING=5,\n正在恢复THREADSTATE_WILLSTOP=6,\n准备停止THREADSTATE_STOPPING=7\n正在停止}THREADSTATE;
+```
+### HCMT_GetState - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_GetState - 进阶用法
+```
+// 示例2：HCMT_GetState 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_GetState - 高级应用
+```
+// 示例3：HCMT_GetState 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCMT_GetStateString
+### 描述
+```
+获取状态整数值对应的字符串
+```
+### 原型
+```
+char* __stdcall HCMT_GetStateString(__int32 threadState);
+```
+### 参数
+```
+__int32 threadState - 状态值
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+无
+```
+### HCMT_GetStateString - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_GetStateString - 进阶用法
+```
+// 示例2：HCMT_GetStateString 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_GetStateString - 高级应用
+```
+// 示例3：HCMT_GetStateString 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCMT_IsCanStart
+### 描述
+```
+判断是否能开启新的(主副线程)传递的只能是主序号
+```
+### 原型
+```
+__int64 __stdcall HCMT_IsCanStart(__int32 windowsIndex);
+```
+### 参数
+```
+__int32 windowsIndex - 主序号
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+无
+```
+### HCMT_IsCanStart - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_IsCanStart - 进阶用法
+```
+// 示例2：HCMT_IsCanStart 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_IsCanStart - 高级应用
+```
+// 示例3：HCMT_IsCanStart 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCMT_Start
+### 描述
+```
+直接开启窗口操作
+```
+### 原型
+```
+__int64 __stdcall HCMT_Start(__int32 windowsIndex);
+```
+### 参数
+```
+__int32 windowsIndex - 窗口序号
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+1.HDMT_InitProcess/HCMT_InitOperate后才能调用
+2.开启成功后会相应触发对应设置的回调函数
+3.顺序:
+开启窗口:登录回调--->第一/第二执行回调同时开启--->{暂停/恢复/结束绑定回调}->结束回调
+重启窗口:重启前回调--->登录回调--->第一/第二执行回调同时开启--->{暂停/恢复/结束绑定回调}->结束回调
+停止窗口:结束绑定回调->结束回调
+```
+### HCMT_Start - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_Start - 进阶用法
+```
+// 示例2：HCMT_Start 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_Start - 高级应用
+```
+// 示例3：HCMT_Start 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCMT_SetAllRecover
+### 描述
+```
+设置所有窗口恢复
+```
+### 原型
+```
+__int64 __stdcall HCMT_SetAllRecover();
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+1.HDMT_InitProcess/HCMT_InitOperate后才能调用
+2.仅仅设置的是标志位,不会堵塞线程
+3.标志会在HCMT_Sleep接口中检查并触发对应的恢复绑定回调
+```
+### HCMT_SetAllRecover - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_SetAllRecover - 进阶用法
+```
+// 示例2：HCMT_SetAllRecover 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_SetAllRecover - 高级应用
+```
+// 示例3：HCMT_SetAllRecover 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCMT_SetAllStop
+### 描述
+```
+设置所有窗口停止
+```
+### 原型
+```
+__int64 __stdcall HCMT_SetAllStop();
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+1.HDMT_InitProcess/HCMT_InitOperate后才能调用
+2.仅仅设置的是标志位,不会堵塞线程
+3.标志会在HCMT_Sleep接口中检查并触发对应的停止绑定回调
+```
+### HCMT_SetAllStop - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_SetAllStop - 进阶用法
+```
+// 示例2：HCMT_SetAllStop 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_SetAllStop - 高级应用
+```
+// 示例3：HCMT_SetAllStop 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCMT_SetPause
+### 描述
+```
+设置窗口暂停
+```
+### 原型
+```
+__int64 __stdcall HCMT_SetPause(__int32 windowsIndex);
+```
+### 参数
+```
+__int32 windowsIndex - 窗口序号
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+1.HDMT_InitProcess/HCMT_InitOperate后才能调用
+2.仅仅设置的是标志位,不会堵塞线程
+3.标志会在HCMT_Sleep接口中检查并触发对应的暂停绑定回调
+```
+### HCMT_SetPause - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_SetPause - 进阶用法
+```
+// 示例2：HCMT_SetPause 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_SetPause - 高级应用
+```
+// 示例3：HCMT_SetPause 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCMT_SetPauseEx
+### 描述
+```
+设置主副序号对应的线程暂停
+```
+### 原型
+```
+__int64 __stdcall HCMT_SetPauseEx(__int32 index);
+```
+### 参数
+```
+__int32 index - 主副序号注意
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+1.HDMT_InitProcess/HCMT_InitOperate后才能调用
+2.仅仅设置的是标志位,不会堵塞线程
+3.标志会在HCMT_Sleep接口中检查并触发对应的暂停绑定回调
+```
+### HCMT_SetPauseEx - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_SetPauseEx - 进阶用法
+```
+// 示例2：HCMT_SetPauseEx 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_SetPauseEx - 高级应用
+```
+// 示例3：HCMT_SetPauseEx 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCMT_SetRecover
+### 描述
+```
+设置窗口恢复
+```
+### 原型
+```
+__int64 __stdcall HCMT_SetRecover(__int32 windowsIndex);
+```
+### 参数
+```
+__int32 windowsIndex - 窗口序号
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+1.HDMT_InitProcess/HCMT_InitOperate后才能调用
+2.仅仅设置的是标志位,不会堵塞线程
+3.标志会在HCMT_Sleep接口中检查并触发对应的恢复绑定回调
+```
+### HCMT_SetRecover - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_SetRecover - 进阶用法
+```
+// 示例2：HCMT_SetRecover 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_SetRecover - 高级应用
+```
+// 示例3：HCMT_SetRecover 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCMT_SetRecoverEx
+### 描述
+```
+设置主副序号对应的线程恢复
+```
+### 原型
+```
+__int64 __stdcall HCMT_SetRecoverEx(__int32 index);
+```
+### 参数
+```
+__int32 index - 主副序号注意
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+1.HDMT_InitProcess/HCMT_InitOperate后才能调用
+2.仅仅设置的是标志位,不会堵塞线程
+3.标志会在HCMT_Sleep接口中检查并触发对应的暂停绑定回调
+```
+### HCMT_SetRecoverEx - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_SetRecoverEx - 进阶用法
+```
+// 示例2：HCMT_SetRecoverEx 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_SetRecoverEx - 高级应用
+```
+// 示例3：HCMT_SetRecoverEx 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCMT_SetStop
+### 描述
+```
+设置窗口停止
+```
+### 原型
+```
+__int64 __stdcall HCMT_SetStop(__int32 windowsIndex);
+```
+### 参数
+```
+__int32 windowsIndex - 窗口序号
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+1.HDMT_InitProcess/HCMT_InitOperate后才能调用
+2.仅仅设置的是标志位,不会堵塞线程
+3.标志会在HCMT_Sleep接口中检查并触发对应的结束绑定回调
+```
+### HCMT_SetStop - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_SetStop - 进阶用法
+```
+// 示例2：HCMT_SetStop 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_SetStop - 高级应用
+```
+// 示例3：HCMT_SetStop 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCMT_IsRunning
+### 描述
+```
+(第一第二)回调里面调用,检查当前线程是否结束
+```
+### 原型
+```
+__int64 __stdcall HCMT_IsRunning();
+```
+### 返回值
+```
+查看返回值表
+```
+### 注意事项
+```
+无
+```
+### HCMT_IsRunning - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_IsRunning - 进阶用法
+```
+// 示例2：HCMT_IsRunning 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_IsRunning - 高级应用
+```
+// 示例3：HCMT_IsRunning 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCMT_IsPause
+### 描述
+```
+判断主副序号对应的线程是否是已被暂停状态
+```
+### 原型
+```
+__int64 __stdcall HCMT_IsPause(__int32 index);
+```
+### 参数
+```
+__int32 index - 主副序号注意
+```
+### 返回值
+```
+返回1:表示已经暂停
+返回0:表示未被暂停
+返回其他值:查看返回值表
+```
+### 注意事项
+```
+1.HDMT_InitProcess/HCMT_InitOperate后才能调用
+2.仅仅设置的是标志位,不会堵塞线程
+3.标志会在HCMT_Sleep接口中检查并触发对应的暂停绑定回调
+```
+### HCMT_IsPause - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_IsPause - 进阶用法
+```
+// 示例2：HCMT_IsPause 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_IsPause - 高级应用
+```
+// 示例3：HCMT_IsPause 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCMT_IsStop
+### 描述
+```
+判断主副序号对应的线程是否是已被结束状态
+```
+### 原型
+```
+__int64 __stdcall HCMT_IsStop(__int32 index);
+```
+### 参数
+```
+__int32 index - 主副序号注意
+```
+### 返回值
+```
+返回1:表示已经结束
+返回其他值:查看返回值表
+```
+### 注意事项
+```
+1.HDMT_InitProcess/HCMT_InitOperate后才能调用
+2.仅仅设置的是标志位,不会堵塞线程
+3.标志会在HCMT_Sleep接口中检查并触发对应的暂停绑定回调
+```
+### HCMT_IsStop - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_IsStop - 进阶用法
+```
+// 示例2：HCMT_IsStop 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_IsStop - 高级应用
+```
+// 示例3：HCMT_IsStop 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
+## 📌 函数: HCMT_Sleep
+### 描述
+```
+设延迟函数,自带暂停/结束/恢复检查
+```
+### 原型
+```
+__int64 __stdcall HCMT_Sleep(int mis);
+```
+### 参数
+```
+int mis - 毫秒
+```
+### 返回值
+```
+1:正常
+2:线程结束
+3.线程被暂停过
+其他值:查看返回值表
+```
+### 注意事项
+```
+1.HDMT_InitProcess/HCMT_InitOperate后才能调用
+2.仅仅设置的是标志位,不会堵塞线程
+3.检查随后触发HCMT_InitOperate设置的3个回调;理论上不能在HCMT_InitOperate设置的3个回调中调用,因为会导致无限调用自己(但是内部做了检测所以不会无限调用,也就是如果当前第一次已经检查到标志位并触发对应的绑定回调了,在回调中又再一次调用HCMT_Sleep,那么这一次的HCMT_Sleep只会正常休眠,并不继续检查了,防止无限调用);
+3.其他回调均可以(无影响)
+4.如果要内部检测状态机状态需要调用HCMT_StatusSleep
+```
+### HCMT_Sleep - 基础示例
+```
+// C++示例代码
+// 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_Sleep - 进阶用法
+```
+// 示例2：HCMT_Sleep 调用
+// [示例2] C++示例代码
+// [示例2] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+### HCMT_Sleep - 高级应用
+```
+// 示例3：HCMT_Sleep 高级用法
+// [高级] C++示例代码
+// [高级] 这里可以放置与说明内容相关的代码示例
+代码内容;
+```
+
+---
