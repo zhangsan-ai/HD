@@ -1,3 +1,7 @@
+---
+sidebar_position: 21
+---
+
 # 🛰️ YOLOV(HDYOLOV)
 ## 📌 函数: HCYOLO_AddModel
 ### 描述
@@ -5,7 +9,7 @@
 添加YOLOV(ncnn.bin和ncnn.param)模型文件(从内存中加载模型)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCYOLO_AddModel(__int32 ver,void* modeData,__int32 modeDataSize,void* modeLparam,__int32 modeLparamSize,__int32 size=640,BOOL bGpu=FALSE,char* password=NULL);
 ```
 ### 参数
@@ -29,20 +33,20 @@ ncnn模型bin“＝XXX.ncnn.bin”param“＝XXX.ncnn.param”从内存中加载
 需要调用HCHD_LoadDrv2传递参数4来安装YOLOV组件模块
 ```
 ### HCYOLO_AddModel - 基础示例
-```
+```csharp
 // C#示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCYOLO_AddModel - 进阶用法
-```
+```csharp
 // C# 示例2
 // C#示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCYOLO_AddModel - 高级应用
-```
+```csharp
 // C# 示例3 高级用法
 // C#示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -56,7 +60,7 @@ ncnn模型bin“＝XXX.ncnn.bin”param“＝XXX.ncnn.param”从内存中加载
 添加YOLOV(ncnn.bin和ncnn.param)模型文件(从文件中加载模型)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCYOLO_AddModelFile(__int32 ver,char* modeFileName,char* modeLparamName,__int32 size=640,BOOL bGpu=FALSE,char* password=NULL);
 ```
 ### 参数
@@ -78,20 +82,20 @@ ncnn模型bin“＝XXX.ncnn.bin”param“＝XXX.ncnn.param”从文件中加载
 需要调用HCHD_LoadDrv2传递参数4来安装YOLOV组件模块
 ```
 ### HCYOLO_AddModelFile - 基础示例
-```
+```csharp
 // C#示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCYOLO_AddModelFile - 进阶用法
-```
+```csharp
 // C# 示例2
 // C#示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCYOLO_AddModelFile - 高级应用
-```
+```csharp
 // C# 示例3 高级用法
 // C#示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -105,7 +109,7 @@ ncnn模型bin“＝XXX.ncnn.bin”param“＝XXX.ncnn.param”从文件中加载
 添加YOLOV(ncnn.bin和ncnn.param)模型文件(从文件中加载模型),从后台截图缓存识别
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCYOLO_Identify(__int32 窗口序号,floatconf=0.7f,floatiou=0.4f,BOOL bDebug=FALSE);
 ```
 ### 参数
@@ -127,20 +131,20 @@ bool bDebug - 是否弹窗调试标注查看默认假
 需要调用HCHD_LoadDrv2传递参数4来安装YOLOV组件模块
 ```
 ### HCYOLO_Identify - 基础示例
-```
+```csharp
 // C#示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCYOLO_Identify - 进阶用法
-```
+```csharp
 // C# 示例2
 // C#示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCYOLO_Identify - 高级应用
-```
+```csharp
 // C# 示例3 高级用法
 // C#示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -154,7 +158,7 @@ bool bDebug - 是否弹窗调试标注查看默认假
 添加YOLOV(ncnn.bin和ncnn.param)模型文件(从文件中加载模型),从指定图片文件识别
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCYOLO_IdentifyByFile(__int32 窗口序号,char* image,floatconf=0.7f,floatiou=0.4f,BOOL bDebug=FALSE);
 ```
 ### 参数
@@ -177,20 +181,20 @@ bool bDebug - 是否弹窗调试标注查看默认假
 需要调用HCHD_LoadDrv2传递参数4来安装YOLOV组件模块
 ```
 ### HCYOLO_IdentifyByFile - 基础示例
-```
+```csharp
 // C#示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCYOLO_IdentifyByFile - 进阶用法
-```
+```csharp
 // C# 示例2
 // C#示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCYOLO_IdentifyByFile - 高级应用
-```
+```csharp
 // C# 示例3 高级用法
 // C#示例代码
 // 这里可以放置与说明内容相关的代码示例

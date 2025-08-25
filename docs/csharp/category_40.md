@@ -1,3 +1,7 @@
+---
+sidebar_position: 41
+---
+
 # 🛰️ 虚拟机[VM]
 ## 📌 函数: HCVM_Run
 ### 描述
@@ -5,7 +9,7 @@
 运行虚拟机(管理员运行)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVM_Run(__int32 windowsIndex,char* vmPath,char* vmxSysPath,BOOL bGui=FALSE,char* lparam=NULL,longvmType=0,longtype=0);
 ```
 ### 参数
@@ -32,20 +36,20 @@ C++案例:
 autoret=HCVM_Run(0,\"D:\\vm16\\\",\"D:\\vmwin10\\Windows10x64.vmx\",TRUE,0,0,0);
 ```
 ### HCVM_Run - 基础示例
-```
+```csharp
 // C#示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCVM_Run - 进阶用法
-```
+```csharp
 // C# 示例2
 // C#示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCVM_Run - 高级应用
-```
+```csharp
 // C# 示例3 高级用法
 // C#示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -59,7 +63,7 @@ autoret=HCVM_Run(0,\"D:\\vm16\\\",\"D:\\vmwin10\\Windows10x64.vmx\",TRUE,0,0,0);
 重启运行虚拟机(管理员运行)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVM_Rerun(__int32 windowsIndex,char* vmPath,char* vmxSysPath,BOOL bForceRoot=TRUE,BOOL bGui=FALSE,char* lparam=NULL,longvmType=0,longtype=0);
 ```
 ### 参数
@@ -87,20 +91,20 @@ C++案例:
 autoret=HCVM_Rerun(0,\"D:\\vm16\\\",\"D:\\vmwin10\\Windows10x64.vmx\",m_强制关闭CheckBox.GetCheck(),TRUE,0,0,0);</FONT>
 ```
 ### HCVM_Rerun - 基础示例
-```
+```csharp
 // C#示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCVM_Rerun - 进阶用法
-```
+```csharp
 // C# 示例2
 // C#示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCVM_Rerun - 高级应用
-```
+```csharp
 // C# 示例3 高级用法
 // C#示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -114,7 +118,7 @@ autoret=HCVM_Rerun(0,\"D:\\vm16\\\",\"D:\\vmwin10\\Windows10x64.vmx\",m_强制�
 关闭运行虚拟机(管理员运行)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVM_Close(__int32 windowsIndex,char* vmPath,char* vmxSysPath,BOOL bForceRoot=TRUE,longvmType=0,longtype=0);
 ```
 ### 参数
@@ -140,20 +144,20 @@ C++案例:
 autoret=HCVM_Close(0,\"D:\\vm16\\\",\"D:\\vmwin10\\Windows10x64.vmx\",m_强制关闭CheckBox.GetCheck(),0,0);
 ```
 ### HCVM_Close - 基础示例
-```
+```csharp
 // C#示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCVM_Close - 进阶用法
-```
+```csharp
 // C# 示例2
 // C#示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCVM_Close - 高级应用
-```
+```csharp
 // C# 示例3 高级用法
 // C#示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -167,7 +171,7 @@ autoret=HCVM_Close(0,\"D:\\vm16\\\",\"D:\\vmwin10\\Windows10x64.vmx\",m_强制�
 获取当前正在运行的虚拟机路径和总数(管理员运行)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVM_List(char* vmPath);
 ```
 ### 参数
@@ -187,20 +191,20 @@ C++案例:
 autoret=HCVM_List(\"D:\\vm16\\\");
 ```
 ### HCVM_List - 基础示例
-```
+```csharp
 // C#示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCVM_List - 进阶用法
-```
+```csharp
 // C# 示例2
 // C#示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCVM_List - 高级应用
-```
+```csharp
 // C# 示例3 高级用法
 // C#示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -214,7 +218,7 @@ autoret=HCVM_List(\"D:\\vm16\\\");
 指定虚拟机是否已经开启(管理员运行)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVM_IsStart(char* vmPath,char* vmxSysPath);
 ```
 ### 参数
@@ -234,20 +238,20 @@ C++案例:
 autoret=HCVM_List(\"D:\\vm16\\\",\"D:/vmwin10/Windows10x64_1.vmx\");
 ```
 ### HCVM_IsStart - 基础示例
-```
+```csharp
 // C#示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCVM_IsStart - 进阶用法
-```
+```csharp
 // C# 示例2
 // C#示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCVM_IsStart - 高级应用
-```
+```csharp
 // C# 示例3 高级用法
 // C#示例代码
 // 这里可以放置与说明内容相关的代码示例

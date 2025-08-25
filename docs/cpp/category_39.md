@@ -1,3 +1,7 @@
+---
+sidebar_position: 40
+---
+
 # 🛰️ 主板机模块[SC]
 ## 📌 函数: HCSC_SetPath
 ### 描述
@@ -5,7 +9,7 @@
 设置HDScrcpy投屏软件根目录,并重启adb相当于重置一下adb环境
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSC_SetPath(char* rootPath);
 ```
 ### 参数
@@ -22,20 +26,20 @@ char* rootPath - 根目录(hdscrcpy.exeadb.exe所在目录)
 软件在群文件或者找管理索取
 ```
 ### HCSC_SetPath - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSC_SetPath - 进阶用法
-```
+```cpp
 // 示例2：HCSC_SetPath 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSC_SetPath - 高级应用
-```
+```cpp
 // 示例3：HCSC_SetPath 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -49,7 +53,7 @@ char* rootPath - 根目录(hdscrcpy.exeadb.exe所在目录)
 重置adb服务
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSC_ResetAdb(char* ipInfo);
 ```
 ### 参数
@@ -66,20 +70,20 @@ char* ipInfo - IP端口信息多个IP信息用\"|\"隔开IP和端口用\"
 无
 ```
 ### HCSC_ResetAdb - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSC_ResetAdb - 进阶用法
-```
+```cpp
 // 示例2：HCSC_ResetAdb 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSC_ResetAdb - 高级应用
-```
+```cpp
 // 示例3：HCSC_ResetAdb 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -93,7 +97,7 @@ char* ipInfo - IP端口信息多个IP信息用\"|\"隔开IP和端口用\"
 查询当前所有可用的设备
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSC_QueryDevices();
 ```
 ### 返回值
@@ -111,20 +115,20 @@ __int64 __stdcall HCSC_QueryDevices();
 3.127.0.0.1:5009tcpipDevice(-e)
 ```
 ### HCSC_QueryDevices - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSC_QueryDevices - 进阶用法
-```
+```cpp
 // 示例2：HCSC_QueryDevices 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSC_QueryDevices - 高级应用
-```
+```cpp
 // 示例3：HCSC_QueryDevices 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -138,7 +142,7 @@ __int64 __stdcall HCSC_QueryDevices();
 连接设备并通讯窗口序号（需要先初始化中控和登录！！HCHD_LoginHCEnv_Init/HCEnv_InitEx）
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSC_ConnectDevices(__int32 winIndex,char* devicesName,char* cmdLparam,__int32 type,__int32 w,__int32 h,__int32 timeOut);
 ```
 ### 参数
@@ -160,20 +164,20 @@ __int32 winIndex - 窗口序号devicesName
 3.127.0.0.1:5009tcpipDevice(-e)
 ```
 ### HCSC_ConnectDevices - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSC_ConnectDevices - 进阶用法
-```
+```cpp
 // 示例2：HCSC_ConnectDevices 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSC_ConnectDevices - 高级应用
-```
+```cpp
 // 示例3：HCSC_ConnectDevices 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例

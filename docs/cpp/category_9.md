@@ -1,3 +1,7 @@
+---
+sidebar_position: 10
+---
+
 # 🛰️ 多线程状态机
 ## 📌 函数: HCMT_StartStatus
 ### 描述
@@ -5,7 +9,7 @@
 开启状态机
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_StartStatus();
 ```
 ### 返回值
@@ -19,20 +23,20 @@ __int64 __stdcall HCMT_StartStatus();
 3.支持多线程,但是不建议,执行回调中调用就行了
 ```
 ### HCMT_StartStatus - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCMT_StartStatus - 进阶用法
-```
+```cpp
 // 示例2：HCMT_StartStatus 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCMT_StartStatus - 高级应用
-```
+```cpp
 // 示例3：HCMT_StartStatus 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -46,7 +50,7 @@ __int64 __stdcall HCMT_StartStatus();
 全局(全部窗口序号)禁用或者开启状态
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_EnableStatus(__int32 statusType,BOOL bEnable);
 ```
 ### 参数
@@ -67,20 +71,20 @@ bool bEnable - 是否有效真
 5.一旦被禁止,就算我们切换到该状态,也无法去执行绑定的状态回调了
 ```
 ### HCMT_EnableStatus - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCMT_EnableStatus - 进阶用法
-```
+```cpp
 // 示例2：HCMT_EnableStatus 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCMT_EnableStatus - 高级应用
-```
+```cpp
 // 示例3：HCMT_EnableStatus 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -94,7 +98,7 @@ bool bEnable - 是否有效真
 改变状态机状态
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_ChangeStatus(__int32 statusType);
 ```
 ### 参数
@@ -121,20 +125,20 @@ __int32 statusType - 自定义的状态值
 4.回调内部如果有循环流程,应加入退出循环条件(一般使用HCMT_IsStatus作为退出循环的条件判断或者其他),不要死循环,否则无法实现状态切换
 ```
 ### HCMT_ChangeStatus - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCMT_ChangeStatus - 进阶用法
-```
+```cpp
 // 示例2：HCMT_ChangeStatus 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCMT_ChangeStatus - 高级应用
-```
+```cpp
 // 示例3：HCMT_ChangeStatus 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -148,7 +152,7 @@ __int32 statusType - 自定义的状态值
 回溯状态
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_RetraceStatus(BOOL bClear=FALSE);
 ```
 ### 参数
@@ -175,20 +179,20 @@ bool bClear - 真表示清除之前的栈缓存同时改变当前状态为-1(空
 4.回调内部如果有循环流程,应加入退出循环条件(一般使用HCMT_IsStatus作为退出循环的条件判断或者其他),不要死循环,否则无法实现状态切换
 ```
 ### HCMT_RetraceStatus - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCMT_RetraceStatus - 进阶用法
-```
+```cpp
 // 示例2：HCMT_RetraceStatus 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCMT_RetraceStatus - 高级应用
-```
+```cpp
 // 示例3：HCMT_RetraceStatus 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -202,7 +206,7 @@ bool bClear - 真表示清除之前的栈缓存同时改变当前状态为-1(空
 当前状态机的状态在回调中是否有效
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_IsStatus();
 ```
 ### 返回值
@@ -219,20 +223,20 @@ __int64 __stdcall HMT::登录状态回调(__int32 windowsIndex,__int64 lparam){w
 ==========
 ```
 ### HCMT_IsStatus - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCMT_IsStatus - 进阶用法
-```
+```cpp
 // 示例2：HCMT_IsStatus 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCMT_IsStatus - 高级应用
-```
+```cpp
 // 示例3：HCMT_IsStatus 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -246,7 +250,7 @@ __int64 __stdcall HMT::登录状态回调(__int32 windowsIndex,__int64 lparam){w
 状态机延迟函数(自带暂停/结束/恢复/状态机)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_StatusSleep(int mis);
 ```
 ### 参数
@@ -271,20 +275,20 @@ __int64 __stdcall HMT::登录状态回调(__int32 windowsIndex,__int64 lparam){w
 ==========
 ```
 ### HCMT_StatusSleep - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCMT_StatusSleep - 进阶用法
-```
+```cpp
 // 示例2：HCMT_StatusSleep 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCMT_StatusSleep - 高级应用
-```
+```cpp
 // 示例3：HCMT_StatusSleep 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -298,7 +302,7 @@ __int64 __stdcall HMT::登录状态回调(__int32 windowsIndex,__int64 lparam){w
 获取状态机状态
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_GetStatus(__int32 windowsIndex);
 ```
 ### 参数
@@ -315,20 +319,20 @@ __int32 windowsIndex - 窗口序号
 2.支持多线程,一般在UI回调中调用,获取状态值并显示到控件上
 ```
 ### HCMT_GetStatus - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCMT_GetStatus - 进阶用法
-```
+```cpp
 // 示例2：HCMT_GetStatus 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCMT_GetStatus - 高级应用
-```
+```cpp
 // 示例3：HCMT_GetStatus 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -342,7 +346,7 @@ __int32 windowsIndex - 窗口序号
 设延迟函数,自带暂停/结束/恢复检查/状态机状态(可选)(扩展版本)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_SleepEx(int mis,BOOL bStatus=FALSE);
 ```
 ### 参数
@@ -367,20 +371,20 @@ bool bStatus - 是否状态机回调,默认为FALSE,如果在状态机回调中�
 4.如果要内部检测状态机状态需要调用HCMT_StatusSleep
 ```
 ### HCMT_SleepEx - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCMT_SleepEx - 进阶用法
-```
+```cpp
 // 示例2：HCMT_SleepEx 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCMT_SleepEx - 高级应用
-```
+```cpp
 // 示例3：HCMT_SleepEx 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例

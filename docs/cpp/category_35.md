@@ -1,3 +1,7 @@
+---
+sidebar_position: 36
+---
+
 # 🛰️ 自定义插件模块(Com)
 ## 📌 函数: HCModule_AddComponent
 ### 描述
@@ -5,10 +9,10 @@
 添加自定义组件
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCModule_AddComponent(__int32 窗口序号,char* 账号,char* 密码,char* 组件绝对路径,__int64 rcx,__int64 rdx,__int64 r8,__int64 r9,__int64 l5,__int64 l6,__int64 addType=-1,BOOL 是否自动初始化=TRUE,BOOL 是否主线程调用=FALSE);
 ```
-```
+```cpp
 __int64 __stdcall HCModule_AddComponent(__int32 窗口序号,char* 账号,char* 密码,char* 组件绝对路径,__int64 l1,__int64 l2,__int64 l3,__int64 l4,__int64 l5,__int64 l6,__int64 addType=-1,BOOL 是否自动初始化=TRUE,BOOL 是否主线程调用=FALSE);
 ```
 ### 参数
@@ -36,20 +40,20 @@ bool 是否主线程调用 - 是否主线程调用这个CALL,需要挂接主线�
 自定义模块需要导入包并来实现接口绑定
 ```
 ### HCModule_AddComponent - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCModule_AddComponent - 进阶用法
-```
+```cpp
 // 示例2：HCModule_AddComponent 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCModule_AddComponent - 高级应用
-```
+```cpp
 // 示例3：HCModule_AddComponent 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -63,7 +67,7 @@ bool 是否主线程调用 - 是否主线程调用这个CALL,需要挂接主线�
 卸载指定插件
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCModule_DeleteComponent(__int32 窗口序号,char* 组件名,BOOL 是否主线程调用=FALSE);
 ```
 ### 参数
@@ -81,20 +85,20 @@ bool 是否主线程调用 - 是否主线程调用这个CALL,需要挂接主线�
 自定义模块需要导入包并来实现接口绑定
 ```
 ### HCModule_DeleteComponent - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCModule_DeleteComponent - 进阶用法
-```
+```cpp
 // 示例2：HCModule_DeleteComponent 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCModule_DeleteComponent - 高级应用
-```
+```cpp
 // 示例3：HCModule_DeleteComponent 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -108,10 +112,10 @@ bool 是否主线程调用 - 是否主线程调用这个CALL,需要挂接主线�
 调用自定义组件中的接口
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCModule_CALL(__int32 窗口序号,char* 组件名,char* 函数名字,__int64 rcx,__int64 rdx,__int64 r8,__int64 r9,__int64 l5,__int64 l6,BOOL 是否主线程调用=FALSE);
 ```
-```
+```cpp
 __int64 __stdcall HCModule_CALL(__int32 窗口序号,char* 组件名,char* 函数名字,__int64 l1,__int64 l2,__int64 l3,__int64 l4,__int64 l5,__int64 l6,BOOL 是否主线程调用=FALSE);
 ```
 ### 参数
@@ -138,20 +142,20 @@ bool 是否主线程调用 - 是否主线程调用这个CALL,需要挂接主线�
 参考:X86X64自定义插件接口说明
 ```
 ### HCModule_CALL - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCModule_CALL - 进阶用法
-```
+```cpp
 // 示例2：HCModule_CALL 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCModule_CALL - 高级应用
-```
+```cpp
 // 示例3：HCModule_CALL 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -165,10 +169,10 @@ bool 是否主线程调用 - 是否主线程调用这个CALL,需要挂接主线�
 调用自定义组件中的接口(可传递任意参数类型)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCModule_CALLEx(__int32 窗口序号,char* 组件名,char* 函数名字,__int64 rcx,__int64 rdx,__int64 r8,__int64 r9,__int64 l5,__int64 l6,char* buffer,int bufferSize,BOOL 是否主线程调用=FALSE);
 ```
-```
+```cpp
 __int64 __stdcall HCModule_CALLEx(__int32 窗口序号,char* 组件名,char* 函数名字,__int64 l1,__int64 l2,__int64 l3,__int64 l4,__int64 l5,__int64 l6,char* buffer,int bufferSize,BOOL 是否主线程调用=FALSE);
 ```
 ### 参数
@@ -202,20 +206,20 @@ char* info=(char* )retStrAddr;
 参考:X86X64自定义插件接口说明
 ```
 ### HCModule_CALLEx - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCModule_CALLEx - 进阶用法
-```
+```cpp
 // 示例2：HCModule_CALLEx 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCModule_CALLEx - 高级应用
-```
+```cpp
 // 示例3：HCModule_CALLEx 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例

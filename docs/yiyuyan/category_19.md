@@ -1,3 +1,7 @@
+---
+sidebar_position: 20
+---
+
 # 🛰️ HDVT
 ## 📌 函数: HDVT_申请内存
 ### 描述
@@ -5,7 +9,7 @@
 VT驱动申请内存
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCHDVT_AllocateMemory(__int32 pid,__int32 size);
 ```
 ### 参数
@@ -22,7 +26,7 @@ __int32 size - 申请内存大小(字节)
 需要调用HCHD_LoadDrv2传递参数2来安装HDVT驱动
 ```
 ### HDVT_申请内存 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _申请内存
@@ -32,13 +36,13 @@ __int32 size - 申请内存大小(字节)
     调试输出 ("内存申请成功，地址: " + 到文本 (内存地址))
 ```
 ### HDVT_申请内存 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HDVT_申请内存 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -51,7 +55,7 @@ __int32 size - 申请内存大小(字节)
 VT驱动释放内存
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCHDVT_FreeMemory(__int32 pid,__int64 addr,__int32 size);
 ```
 ### 参数
@@ -69,7 +73,7 @@ __int32 size - 申请内存大小(字节)
 需要调用HCHD_LoadDrv2传递参数2来安装HDVT驱动
 ```
 ### HDVT_释放内存 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _释放内存
@@ -79,13 +83,13 @@ __int32 size - 申请内存大小(字节)
     调试输出 ("内存释放成功")
 ```
 ### HDVT_释放内存 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HDVT_释放内存 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -98,7 +102,7 @@ __int32 size - 申请内存大小(字节)
 VT驱动读内存
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCHDVT_Read(__int32 pid,__int64 addr,void* data,__int32 size);
 ```
 ### 参数
@@ -117,7 +121,7 @@ __int32 size - 读的大小(字节),缓冲区的大小要大于等于读的大�
 需要调用HCHD_LoadDrv2传递参数2来安装HDVT驱动
 ```
 ### HDVT_读内存 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _HDDMA读长整数示例
@@ -137,13 +141,13 @@ __int32 size - 读的大小(字节),缓冲区的大小要大于等于读的大�
     调试输出 ("详细信息: " ＋ HD通用_获取最近返回json (窗口序号))
 ```
 ### HDVT_读内存 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HDVT_读内存 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -156,7 +160,7 @@ __int32 size - 读的大小(字节),缓冲区的大小要大于等于读的大�
 VT驱动写内存
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCHDVT_Write(__int32 pid,__int64 addr,void* data,__int32 size);
 ```
 ### 参数
@@ -175,7 +179,7 @@ __int32 size - 写的大小(字节),缓冲区的大小要大于等于写的大�
 需要调用HCHD_LoadDrv2传递参数2来安装HDVT驱动
 ```
 ### HDVT_写内存 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _写入字节流示例
@@ -209,13 +213,13 @@ __int32 size - 写的大小(字节),缓冲区的大小要大于等于写的大�
     .如果结束
 ```
 ### HDVT_写内存 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HDVT_写内存 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -228,7 +232,7 @@ __int32 size - 写的大小(字节),缓冲区的大小要大于等于写的大�
 VT驱动获取模块地址
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCHDVT_GetModule(__int32 pid,char* moduleName);
 ```
 ### 参数
@@ -245,13 +249,13 @@ char* moduleName - 模块名字(ascii编码)
 需要调用HCHD_LoadDrv2传递参数2来安装HDVT驱动
 ```
 ### HDVT_获取模块地址 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HDVT_获取模块地址 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -264,7 +268,7 @@ char* moduleName - 模块名字(ascii编码)
 VT驱动获取模块函数地址
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCHDVT_GetModuleFun(__int32 pid,__int64 moduleAddr,char* funName);
 ```
 ### 参数
@@ -282,13 +286,13 @@ __int64 moduleAddr - 模块地址
 需要调用HCHD_LoadDrv2传递参数2来安装HDVT驱动
 ```
 ### HDVT_获取模块函数地址 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HDVT_获取模块函数地址 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -301,7 +305,7 @@ __int64 moduleAddr - 模块地址
 VT驱动无痕HOOK,过CRC
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCHDVT_Hook(__int32 pid,__int64 addr,void* data,__int32 size,__int32 type);
 ```
 ### 参数
@@ -325,7 +329,7 @@ __int32 type -
 需要调用HCHD_LoadDrv2传递参数2来安装HDVT驱动
 ```
 ### HDVT_无痕HOOK - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 测试修改Send参数, 长整数型, 公开
@@ -350,13 +354,13 @@ __int32 type -
     返回 (结果)
 ```
 ### HDVT_无痕HOOK - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HDVT_无痕HOOK - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -369,7 +373,7 @@ __int32 type -
 VT驱动远程插入执行
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCHDVT_RemoteCall(__int32 pid,void* data,__int32 size);
 ```
 ### 参数
@@ -387,7 +391,7 @@ __int32 size - shellcode字节大小
 需要调用HCHD_LoadDrv2传递参数2来安装HDVT驱动
 ```
 ### HDVT_远程执行 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 测试Lua函数调用, 逻辑型, 公开
@@ -422,13 +426,13 @@ __int32 size - shellcode字节大小
     返回 (结果)
 ```
 ### HDVT_远程执行 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HDVT_远程执行 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -441,7 +445,7 @@ __int32 size - shellcode字节大小
 VT驱动无痕无模块注入X64DLL
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCHDVT_InjectX64(__int32 pid,void* data,__int32 size);
 ```
 ### 参数
@@ -459,13 +463,13 @@ __int32 size - DLL二进制数据大小
 需要调用HCHD_LoadDrv2传递参数2来安装HDVT驱动
 ```
 ### HCHDVT_InjectX64 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HCHDVT_InjectX64 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -478,7 +482,7 @@ __int32 size - DLL二进制数据大小
 VT驱动无痕无模块注入X86DLL
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCHDVT_InjectX86(__int32 pid,void* data,__int32 size);
 ```
 ### 参数
@@ -496,7 +500,7 @@ __int32 size - DLL二进制数据大小
 需要调用HCHD_LoadDrv2传递参数2来安装HDVT驱动
 ```
 ### HCHDVT_InjectX86 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 测试注入JS文件, 逻辑型, 公开
@@ -529,13 +533,13 @@ __int32 size - DLL二进制数据大小
     返回 (结果)
 ```
 ### HCHDVT_InjectX86 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HCHDVT_InjectX86 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -548,7 +552,7 @@ __int32 size - DLL二进制数据大小
 VT驱动无痕无模块安装X64插件到目标进程中
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCHDVT_InstallPlugX64(__int32 pid);
 ```
 ### 参数
@@ -564,13 +568,13 @@ __int32 pid - 进程PID
 需要调用HCHD_LoadDrv2传递参数2来安装HDVT驱动
 ```
 ### HDVT_安装插件X64 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HDVT_安装插件X64 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -583,7 +587,7 @@ __int32 pid - 进程PID
 VT驱动无痕无模块安装X86插件到目标进程中
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCHDVT_InstallPlugX86(__int32 pid);
 ```
 ### 参数
@@ -599,13 +603,13 @@ __int32 pid - 进程PID
 需要调用HCHD_LoadDrv2传递参数2来安装HDVT驱动
 ```
 ### HDVT_安装插件X86 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HDVT_安装插件X86 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")

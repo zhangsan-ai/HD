@@ -1,3 +1,7 @@
+---
+sidebar_position: 28
+---
+
 # 🛰️ 找字模块(FS)
 ## 📌 函数: HD识字_设置字库
 ### 描述
@@ -8,7 +12,7 @@
 调用一次会给所有窗口序号添加当前设置的字库文件
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFS_SetDictFile(__int32 窗口序号,__int32 字库序号,char* file);
 ```
 ### 参数
@@ -32,20 +36,20 @@ char* file - 字库文件名字(可以加路径)最后寻找路径
 总结:1.所有字库文件只需要和窗口序号关联一次就行\n2.在多线程中需要使用到那个字库序号就切换就行多线程有自己的字库序号副本互不影响各自切换
 ```
 ### HD识字_设置字库 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_设置字库 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_设置字库 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -62,7 +66,7 @@ char* file - 字库文件名字(可以加路径)最后寻找路径
 调用一次会给所有窗口序号添加当前设置的字库文件
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFS_SetDictFileEx(__int32 字库序号,char* file);
 ```
 ### 参数
@@ -84,20 +88,20 @@ char* file - 字库文件名字(可以加路径)最后寻找路径
 类型提前添加字库,需要在当前线程使用字库必须调用HCFS_SwitchCurDictFile切换字库
 ```
 ### HD识字_设置字库Ex - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_设置字库Ex - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_设置字库Ex - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -114,7 +118,7 @@ char* file - 字库文件名字(可以加路径)最后寻找路径
 调用一次会给所有窗口序号添加当前设置的字库文件
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFS_SetDictFileExx(__int32 窗口序号,__int32 字库序号,char* file,char* password=NULL);
 ```
 ### 参数
@@ -139,20 +143,20 @@ char* password - 密码使用综合工具进行加密
 总结:1.所有字库文件只需要和窗口序号关联一次就行\n2.在多线程中需要使用到那个字库序号就切换就行多线程有自己的字库序号副本互不影响各自切换
 ```
 ### HD识字_设置字库Exx - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_设置字库Exx - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_设置字库Exx - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -166,7 +170,7 @@ char* password - 密码使用综合工具进行加密
 切换当前像素识字的字库文件(支持多线程)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFS_SwitchCurDictFile(__int32 窗口序号,__int32 字库序号);
 ```
 ### 参数
@@ -188,20 +192,20 @@ __int32 字库序号 - 字库序号自定义整数类型枚举类型宏定义
 对于多线程操作同一个窗口序号的时候,切换字库支持多线程操作,操作前请先在主执行线程中设置字库就行其他副线程(包含主线程)就只需要切换就行
 ```
 ### HD识字_切换字库序号 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_切换字库序号 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_切换字库序号 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -215,7 +219,7 @@ __int32 字库序号 - 字库序号自定义整数类型枚举类型宏定义
 获取当前线程的加载后的字库文件信息(支持多线程)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFS_GetCurDictInfo(__int32 窗口序号);
 ```
 ### 参数
@@ -234,20 +238,20 @@ info:窗口索引,当前字库索引,加载了字库文件数量,(加载的字�
 注意返回的是当前线程的字库信息
 ```
 ### HD识字_获取当前字库 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_获取当前字库 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_获取当前字库 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -261,7 +265,7 @@ info:窗口索引,当前字库索引,加载了字库文件数量,(加载的字�
 获取当前线程绑定的字库索引(支持多线程)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFS_GetCurDictIndex(__int32 窗口序号);
 ```
 ### 参数
@@ -277,20 +281,20 @@ __int32 窗口序号 - 窗口序号
 返回大于等于0的值是当前线程绑定的字库索引
 ```
 ### HD识字_获取当前字库序号 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_获取当前字库序号 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_获取当前字库序号 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -304,7 +308,7 @@ __int32 窗口序号 - 窗口序号
 在客户区范围内找字(只支持单字符串并且是单字符字库)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFS_FindStr(__int32 窗口序号,longfindX,longfindY,longfindW,longfindH,LPCSTRstr,LPCSTRdeltaColor,doublesim,longbfx,__int32 dirType=0,int spaceH=11,int spaceV=11,doublegroundRate=0.1,BOOL bOne11=TRUE);
 ```
 ### 参数
@@ -342,20 +346,20 @@ info格式->0,x1,y1,w1,h1,sim
 009813FE7FC008$1$0.0.23$9----》单字符字库
 ```
 ### HD识字_单字符找字 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_单字符找字 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_单字符找字 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -369,7 +373,7 @@ info格式->0,x1,y1,w1,h1,sim
 在客户区范围内找字(支持多字符串并且是单字符字库)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFS_FindStrEx(__int32 窗口序号,longfindX,longfindY,longfindW,longfindH,LPCSTRstr,LPCSTRdeltaColor,doublesim,longbfx,__int32 dirType=0,int spaceH=11,int spaceV=11,doublegroundRate=0.1,BOOL bOne11=TRUE);
 ```
 ### 参数
@@ -407,20 +411,20 @@ info格式->字符串序号,x1,y1,w1,h1,sim|字符串序号,x2,y2,w2,h2,sim
 009813FE7FC008$1$0.0.23$9----》单字符字库
 ```
 ### HD识字_单字符找字Ex - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_单字符找字Ex - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_单字符找字Ex - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -434,7 +438,7 @@ info格式->字符串序号,x1,y1,w1,h1,sim|字符串序号,x2,y2,w2,h2,sim
 在客户区范围内找字(支持多字符串并且是单字符字库)找到一个就返回
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFS_FindStrExx(__int32 窗口序号,longfindX,longfindY,longfindW,longfindH,LPCSTRstr,LPCSTRdeltaColor,doublesim,longbfx,__int32 dirType=0,int spaceH=11,int spaceV=11,doublegroundRate=0.1,BOOL bOne11=TRUE);
 ```
 ### 参数
@@ -473,20 +477,20 @@ info格式->字符串序号,x1,y1,w1,h1,sim|字符串序号,x2,y2,w2,h2,sim
 009813FE7FC008$1$0.0.23$9----》单字符字库
 ```
 ### HD识字_单字符找字Exx - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_单字符找字Exx - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_单字符找字Exx - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -502,7 +506,7 @@ info格式->字符串序号,x1,y1,w1,h1,sim|字符串序号,x2,y2,w2,h2,sim
 例如:洛阳多行返回多个坐标一行只找一列(一次)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFS_FindStrMutilVPointsByFile(__int32 窗口序号,longfindX,longfindY,longfindW,longfindH,LPCSTRstr,LPCSTRcolor_format,doublesim,LPCSTRiamgeName,__int32 bfx,__int32 dirType=0,int spaceH=11,int spaceV=11,doublegroundRate=0.1,BOOL bOne11=TRUE);
 ```
 ### 参数
@@ -541,20 +545,20 @@ info格式->0,x1,y1,w,h,sim|0,x2,y2,w,h,sim|0,x3,y2,w,h,sim|...
 009813FE7FC008$1$0.0.23$9----》单字符字库
 ```
 ### HD识字_列表单列找字从文件 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_列表单列找字从文件 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_列表单列找字从文件 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -570,7 +574,7 @@ info格式->0,x1,y1,w,h,sim|0,x2,y2,w,h,sim|0,x3,y2,w,h,sim|...
 例如:洛阳多行返回多个坐标一行只找一列(一次)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFS_FindStrMutilVPointsByMem(__int32 窗口序号,longfindX,longfindY,longfindW,longfindH,LPCSTRstr,LPCSTRcolor_format,doublesim,BYTE* data,__int32 dataSize,__int32 bfx,__int32 dirType=0,int spaceH=11,int spaceV=11,doublegroundRate=0.1,BOOL bOne11=TRUE);
 ```
 ### 参数
@@ -610,20 +614,20 @@ info格式->0,x1,y1,w,h,sim|0,x2,y2,w,h,sim|0,x3,y2,w,h,sim|...
 009813FE7FC008$1$0.0.23$9----》单字符字库
 ```
 ### HD识字_列表单列找字从内存 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_列表单列找字从内存 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_列表单列找字从内存 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -658,20 +662,20 @@ info格式->0,x1,y1,w,h,sim|0,x2,y2,w,h,sim|0,x3,y2,w,h,sim|...
 009813FE7FC008$1$0.0.23$9----》单字符字库
 ```
 ### HD识字_列表多列找字从文件 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_列表多列找字从文件 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_列表多列找字从文件 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -706,20 +710,20 @@ info格式->0,x1,y1,w,h,sim|0,x2,y2,w,h,sim|0,x3,y2,w,h,sim|...
 009813FE7FC008$1$0.0.23$9----》单字符字库
 ```
 ### HD识字_列表多列找字从内存 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_列表多列找字从内存 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_列表多列找字从内存 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -735,7 +739,7 @@ info格式->0,x1,y1,w,h,sim|0,x2,y2,w,h,sim|0,x3,y2,w,h,sim|...
 找到一个就返回
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFS_FindStrMutilsAuto(__int32 窗口序号,longfindX,longfindY,longfindW,longfindH,LPCSTRstrs,LPCSTRcolor_format,doublesim,longbfx,__int32 dirType=0,int spaceH=11,int spaceV=11,doublegroundRate=0.1,BOOL bOne11=TRUE);
 ```
 ### 参数
@@ -775,20 +779,20 @@ info格式->字符串序号(0开始),x1,y1,w,h,sim
 009813FE7FC008$1$0.0.23$9----》单字符字库
 ```
 ### HD识字_自动识字 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_自动识字 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_自动识字 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -805,7 +809,7 @@ info格式->字符串序号(0开始),x1,y1,w,h,sim
 可以通过指定图片来获取截图数据其他功能和HCFS_FindStrMutilsAuto一致
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFS_FindStrMutilsAutoByFile(__int32 窗口序号,longfindX,longfindY,longfindW,longfindH,LPCSTRstrs,LPCSTRcolor_format,doublesim,LPCSTRiamgeName,longbfx,__int32 dirType=0,int spaceH=11,int spaceV=11,doublegroundRate=0.1,BOOL bOne11=TRUE);
 ```
 ### 参数
@@ -846,20 +850,20 @@ info格式->字符串序号,x1,y1,w,h,sim
 009813FE7FC008$1$0.0.23$9----》单字符字库
 ```
 ### HD识字_自动识字从文件 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_自动识字从文件 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_自动识字从文件 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -876,7 +880,7 @@ info格式->字符串序号,x1,y1,w,h,sim
 可以通过指定图片来获取截图数据其他功能和HCFS_FindStrMutilsAuto一致
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFS_FindStrMutilsAutoByMem(__int32 窗口序号,longfindX,longfindY,longfindW,longfindH,LPCSTRstrs,LPCSTRcolor_format,doublesim,BYTE* data,__int32 dataSize,__int32 bfx,__int32 dirType=0,int spaceH=11,int spaceV=11,doublegroundRate=0.1,BOOL bOne11=TRUE);
 ```
 ### 参数
@@ -918,20 +922,20 @@ info格式->字符串序号,x1,y1,w,h,sim
 009813FE7FC008$1$0.0.23$9----》单字符字库
 ```
 ### HD识字_自动识字从内存 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_自动识字从内存 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_自动识字从内存 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -947,7 +951,7 @@ info格式->字符串序号,x1,y1,w,h,sim
 找到全部或仅仅找一个
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFS_FindStrMutilsAutoEx(__int32 窗口序号,longfindX,longfindY,longfindW,longfindH,LPCSTRstrs,LPCSTRcolor_format,doublesim,longbfx,__int32 dirType=0,__int32 bFindOne=0,int spaceH=11,int spaceV=11,doublegroundRate=0.1,BOOL bOne11=TRUE);
 ```
 ### 参数
@@ -988,20 +992,20 @@ info格式->字符串序号(0开始),x1,y1,w,h,sim
 009813FE7FC008$1$0.0.23$9----》单字符字库
 ```
 ### HD识字_自动识字Ex - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_自动识字Ex - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_自动识字Ex - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1018,7 +1022,7 @@ info格式->字符串序号(0开始),x1,y1,w,h,sim
 可以通过指定图片来获取截图数据其他功能和HCFS_FindStrMutilsAuto一致
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFS_FindStrMutilsAutoByFileEx(__int32 窗口序号,longfindX,longfindY,longfindW,longfindH,LPCSTRstrs,LPCSTRcolor_format,doublesim,LPCSTRiamgeName,longbfx,__int32 dirType=0,__int32 bFindOne=0,int spaceH=11,int spaceV=11,doublegroundRate=0.1,BOOL bOne11=TRUE);
 ```
 ### 参数
@@ -1060,20 +1064,20 @@ info格式->字符串序号,x1,y1,w,h,sim
 009813FE7FC008$1$0.0.23$9----》单字符字库
 ```
 ### HD识字_自动识字从文件Ex - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_自动识字从文件Ex - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_自动识字从文件Ex - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1090,7 +1094,7 @@ info格式->字符串序号,x1,y1,w,h,sim
 可以通过指定图片来获取截图数据其他功能和HCFS_FindStrMutilsAuto一致
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFS_FindStrMutilsAutoByMemEx(__int32 窗口序号,longfindX,longfindY,longfindW,longfindH,LPCSTRstrs,LPCSTRcolor_format,doublesim,BYTE* data,__int32 dataSize,__int32 bfx,__int32 dirType=0,__int32 bFindOne=0,int spaceH=11,int spaceV=11,doublegroundRate=0.1,BOOL bOne11=TRUE);
 ```
 ### 参数
@@ -1133,20 +1137,20 @@ info格式->字符串序号,x1,y1,w,h,sim
 009813FE7FC008$1$0.0.23$9----》单字符字库
 ```
 ### HD识字_自动识字从内存Ex - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_自动识字从内存Ex - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_自动识字从内存Ex - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1160,7 +1164,7 @@ info格式->字符串序号,x1,y1,w,h,sim
 单字符串找字库是字符串例如:洛阳
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFS_FindStrMutil(__int32 窗口序号,longfindX,longfindY,longfindW,longfindH,LPCSTRstr,LPCSTRcolor_format,doublesim,longbfx,__int32 dirType=0,int spaceH=11,int spaceV=11,doublegroundRate=0.1,BOOL bOne11=TRUE);
 ```
 ### 参数
@@ -1199,20 +1203,20 @@ info格式->字符串序号,x1,y1,w1,h1,sim|字符串序号,x2,y2,w2,h2,sim
 009813FE7FC008$1$0.0.23$9----》单字符字库
 ```
 ### HD识字_多字符识字 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_多字符识字 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_多字符识字 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1226,7 +1230,7 @@ info格式->字符串序号,x1,y1,w1,h1,sim|字符串序号,x2,y2,w2,h2,sim
 多字符串找字库是字符串例如:洛阳|北京|广州
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFS_FindStrMutilsEx(__int32 窗口序号,longfindX,longfindY,longfindW,longfindH,LPCSTRstr,LPCSTRcolor_format,doublesim,longbfx,__int32 dirType=0,int spaceH=11,int spaceV=11,doublegroundRate=0.1,BOOL bOne11=TRUE);
 ```
 ### 参数
@@ -1263,20 +1267,20 @@ info格式->字符串序号,x1,y1,w1,h1,sim|字符串序号,x2,y2,w2,h2,sim
 009813FE7FC008$1$0.0.23$9----》单字符字库
 ```
 ### HD识字_多字符识字Ex - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_多字符识字Ex - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_多字符识字Ex - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1290,7 +1294,7 @@ info格式->字符串序号,x1,y1,w1,h1,sim|字符串序号,x2,y2,w2,h2,sim
 多字符串找字库是字符串例如:洛阳|北京|广州找到一个就返回
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFS_FindStrMutilsExx(__int32 窗口序号,longfindX,longfindY,longfindW,longfindH,LPCSTRstr,LPCSTRcolor_format,doublesim,longbfx,__int32 dirType=0,int spaceH=11,int spaceV=11,doublegroundRate=0.1,BOOL bOne11=TRUE);
 ```
 ### 参数
@@ -1327,20 +1331,20 @@ info格式->字符串序号,x1,y1,w1,h1,sim|字符串序号,x2,y2,w2,h2,sim
 009813FE7FC008$1$0.0.23$9----》单字符字库
 ```
 ### HCFS_FindStrMutilsExx - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HCFS_FindStrMutilsExx - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HCFS_FindStrMutilsExx - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1356,7 +1360,7 @@ info格式->字符串序号,x1,y1,w1,h1,sim|字符串序号,x2,y2,w2,h2,sim
 拼接+字符串都支持
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFS_Ocr(__int32 窗口序号,longfindX,longfindY,longfindW,longfindH,LPCSTRdeltaColor,doublesim,longbfx,__int32 dirType=0,int spaceH=11,int spaceV=11,doublegroundRate=0.1,BOOL bOne11=TRUE);
 ```
 ### 参数
@@ -1397,20 +1401,20 @@ BBB:json数组如:[{\"x\":0,\"y\":0,\"text\":“NULL”}]表示未找到类似�
 009813FE7FC008$1$0.0.23$9----》单字符字库
 ```
 ### HD识字_Ocr - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_Ocr - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_Ocr - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1426,7 +1430,7 @@ BBB:json数组如:[{\"x\":0,\"y\":0,\"text\":“NULL”}]表示未找到类似�
 拼接+字符串都支持
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFS_OcrByFile(__int32 窗口序号,longfindX,longfindY,longfindW,longfindH,LPCSTRcolor_format,doublesim,LPCSTRiamgeName,__int32 bfx,__int32 dirType=0,int spaceH=11,int spaceV=11,doublegroundRate=0.1,BOOL bOne11=TRUE);
 ```
 ### 参数
@@ -1468,20 +1472,20 @@ BBB:json数组如:[{\"x\":0,\"y\":0,\"text\":“NULL”}]表示未找到类似�
 009813FE7FC008$1$0.0.23$9----》单字符字库
 ```
 ### HD识字_Ocr从文件 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_Ocr从文件 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_Ocr从文件 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1497,7 +1501,7 @@ BBB:json数组如:[{\"x\":0,\"y\":0,\"text\":“NULL”}]表示未找到类似�
 拼接+字符串都支持
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFS_OcrByMem(__int32 窗口序号,longfindX,longfindY,longfindW,longfindH,LPCSTRcolor_format,doublesim,BYTE* data,__int32 dataSize,__int32 bfx,__int32 dirType=0,int spaceH=11,int spaceV=11,doublegroundRate=0.1,BOOL bOne11=TRUE);
 ```
 ### 参数
@@ -1540,20 +1544,20 @@ BBB:json数组如:[{\"x\":0,\"y\":0,\"text\":“NULL”}]表示未找到类似�
 009813FE7FC008$1$0.0.23$9----》单字符字库
 ```
 ### HD识字_Ocr从内存 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_Ocr从内存 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_Ocr从内存 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1567,7 +1571,7 @@ BBB:json数组如:[{\"x\":0,\"y\":0,\"text\":“NULL”}]表示未找到类似�
 设置间距(在识别拼接字和OCR中尤其重要)-丢弃改为每个接口单独设置
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFS_SetCharSpaceHV(int lenH=11,int lenV=11);
 ```
 ### 参数
@@ -1586,20 +1590,20 @@ int lenV - 垂直方向的间距默认11像素
 3.这种对于数字和符号,尤其重要
 ```
 ### HD识字_设置水平垂直间距 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_设置水平垂直间距 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_设置水平垂直间距 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1613,7 +1617,7 @@ int lenV - 垂直方向的间距默认11像素
 设置11行中(同宽)矩形内,是否只有一个字-丢弃改为每个接口单独设置
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFS_IsOne11(BOOL b=TRUE);
 ```
 ### 参数
@@ -1633,20 +1637,20 @@ bool b - 是否打开默认打开
 4.如果关闭表示i可以拆分成2个字符分别识别
 ```
 ### HD识字_设置11 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_设置11 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_设置11 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1660,7 +1664,7 @@ bool b - 是否打开默认打开
 设置字周围一个像素上下左右的像素占比-丢弃改为每个接口单独设置
 ```
 ### 原型
-```
+```cpp
 double__stdcall HCFS_GroundRate(doublerate=0.1);
 ```
 ### 参数
@@ -1677,20 +1681,20 @@ double__stdcall HCFS_GroundRate(doublerate=0.1);
 5.这种对于数字和符号,尤其重要,可以准确的提高识别率,越小的字效果越好
 ```
 ### HD识字_设置周围占比 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_设置周围占比 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD识字_设置周围占比 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例

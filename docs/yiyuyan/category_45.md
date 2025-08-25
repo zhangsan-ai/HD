@@ -1,3 +1,7 @@
+---
+sidebar_position: 46
+---
+
 # 🛰️ 全局资源设置模块(RES)
 ## 📌 函数: HCRES_SetResPath
 ### 描述
@@ -5,7 +9,7 @@
 设置资源路径
 ```
 ### 原型
-```
+```cpp
 void__stdcall HCRES_SetResPathA(char* path); void__stdcall HCRES_SetResPathW(wchar_t* path);
 ```
 ### 参数
@@ -21,7 +25,7 @@ char* path - 路径
 图片字库文件都在这个里面找
 ```
 ### HCRES_SetResPath - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 测试设置绘制配置, 逻辑型, 公开
@@ -58,13 +62,13 @@ char* path - 路径
     返回 (结果)
 ```
 ### HCRES_SetResPath - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HCRES_SetResPath - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -77,7 +81,7 @@ char* path - 路径
 设置资源路径
 ```
 ### 原型
-```
+```cpp
 void __stdcall  HCRES_SetResPathEx(char *path, __int32 windIndex = -1); 
 ```
 ### 参数
@@ -94,7 +98,7 @@ char* path - 路径
 图片字库文件都在这个里面找
 ```
 ### HD资源_设置路径Ex - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 测试拦截Recv, 长整数型, 公开
@@ -146,13 +150,13 @@ char* path - 路径
     返回 (0)  ' 0表示不修改并且走原有流程
 ```
 ### HD资源_设置路径Ex - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD资源_设置路径Ex - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -165,7 +169,7 @@ char* path - 路径
 设置语言或者字体文件资源路径
 ```
 ### 原型
-```
+```cpp
 void__stdcall HCRES_SetLanguageResPathA(char* path);void__stdcall HCRES_SetLanguageResPathW(wchar_t* path);
 ```
 ### 参数
@@ -181,7 +185,7 @@ char* path - 路径
 语言文件都在这个里面找
 ```
 ### HCRES_SetLanguageResPath - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 测试设置有米路径, 逻辑型, 公开
@@ -211,13 +215,13 @@ char* path - 路径
     返回 (结果)
 ```
 ### HCRES_SetLanguageResPath - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HCRES_SetLanguageResPath - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")

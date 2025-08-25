@@ -1,3 +1,7 @@
+---
+sidebar_position: 42
+---
+
 # 🛰️ 虚拟机DMA模块[VMDMA]
 ## 📌 函数: HDDMA_获取版本号
 ### 描述
@@ -5,7 +9,7 @@
 获取DMA服务器版本号
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVMDMA_GetVersion(__int32 windowsIndex);
 ```
 ### 参数
@@ -21,20 +25,20 @@ __int32 windowsIndex - 窗口序号
 返回长整数:如:240401格式:24年-04版本号-01小版本号
 ```
 ### HDDMA_获取版本号 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_获取版本号 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_获取版本号 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -48,7 +52,7 @@ __int32 windowsIndex - 窗口序号
 判断HD插件的DMA接口和DMA服务器接口版本是否一致
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVMDMA_IsVersion(__int32 windowsIndex);
 ```
 ### 参数
@@ -61,20 +65,20 @@ __int32 windowsIndex - 窗口序号
 真假版本是否一致
 ```
 ### HDDMA_版本是否一致 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_版本是否一致 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_版本是否一致 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -88,7 +92,7 @@ __int32 windowsIndex - 窗口序号
 开启DMA服务器
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVMDMA_StartServer(char* ip=\"0.0.0.0\",int port=6532,char* serverRootPath=\"\");
 ```
 ### 参数
@@ -107,20 +111,20 @@ char* serverRootPath - 服务器exe根目录默认
 兼容指定自定义进程名(全路径\\XXXX.exe)XXXX.exe为自定义进程名不指定进程名表示使用内置进程名(全路径\\HDVMDma.exe)不指定路径(当前中控exe根目录\\HDVMDma.exe)
 ```
 ### HDDMA_开启服务器 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_开启服务器 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_开启服务器 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -134,7 +138,7 @@ char* serverRootPath - 服务器exe根目录默认
 关闭服务器,同时结束进程
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVMDMA_CloseServer();
 ```
 ### 返回值
@@ -146,20 +150,20 @@ __int64 __stdcall HCVMDMA_CloseServer();
 无
 ```
 ### HDDMA_关闭服务器 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_关闭服务器 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_关闭服务器 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -173,7 +177,7 @@ __int64 __stdcall HCVMDMA_CloseServer();
 服务器是否已经开启
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVMDMA_ServerIsStart(char* ip=\"127.0.0.1\",int port=6532);
 ```
 ### 参数
@@ -191,20 +195,20 @@ int port - 指定服务器端口,指定后可以用来判断服务器是否开�
 如果使用HCVMDMA_StartServer开启服务器,不指定IP和端口,则使用的是HCVMDMA_ServerIsStart指定的IP和端口
 ```
 ### HDDMA_服务器是否开启 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_服务器是否开启 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_服务器是否开启 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -218,7 +222,7 @@ int port - 指定服务器端口,指定后可以用来判断服务器是否开�
 初始化并关联虚拟机
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVMDMA_Init(__int32 windowsIndex,__int32 vmPid,__int32 timeOut=10000);
 ```
 ### 参数
@@ -238,20 +242,20 @@ __int32 timeOut - 超时等待时间
 后续就可以使用该窗口虚拟机去操作对应的虚拟机中的进程
 ```
 ### HDDMA_关联虚拟机 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_关联虚拟机 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_关联虚拟机 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -274,20 +278,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_获取PID - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_获取PID - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_获取PID - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -310,20 +314,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_读地址 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_读地址 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_读地址 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -347,20 +351,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_读单浮点 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_读单浮点 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_读单浮点 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -384,20 +388,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_读双浮点 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_读双浮点 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_读双浮点 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -420,20 +424,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_读字节集 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_读字节集 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_读字节集 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -456,20 +460,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_写地址 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_写地址 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_写地址 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -492,20 +496,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_写单浮点 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_写单浮点 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_写单浮点 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -528,20 +532,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_写双浮点 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_写双浮点 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_写双浮点 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -564,20 +568,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_写字节集 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_写字节集 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_写字节集 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -600,20 +604,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_获取函数 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_获取函数 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_获取函数 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -636,20 +640,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_获取主模块 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_获取主模块 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_获取主模块 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -672,20 +676,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_获取模块 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_获取模块 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_获取模块 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -715,20 +719,20 @@ __int32 timeOut - 超时等待时间
 4.此接口不适合多线程获取,请在初始化最开始把所需要的执行环境句柄的数量初始化好,方便物理机中控多线程中单独分别使用
 ```
 ### HDDMA_获取执行环境X64 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_获取执行环境X64 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_获取执行环境X64 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -754,20 +758,20 @@ __int32 timeOut - 超时等待时间
 2.如果需要参数传递,请自行往excuteEnvAddr+0x8写参数(参数最大缓冲区为0x200字节),同时自己的汇编机器码要引入自己参数的地址
 ```
 ### HDDMA_CALLX64 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_CALLX64 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_CALLX64 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -797,20 +801,20 @@ __int32 timeOut - 超时等待时间
 4.此接口不适合多线程获取,请在初始化最开始把所需要的执行环境句柄的数量初始化好,方便物理机中控多线程中单独分别使用
 ```
 ### HCVMDMA_ShellCodeInitX86 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HCVMDMA_ShellCodeInitX86 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HCVMDMA_ShellCodeInitX86 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -836,20 +840,20 @@ __int32 timeOut - 超时等待时间
 2.如果需要参数传递,请自行往excuteEnvAddr+0x8写参数(参数最大缓冲区为0x200字节),同时自己的汇编机器码要引入自己参数的地址
 ```
 ### HCVMDMA_RunShellCodeX86 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HCVMDMA_RunShellCodeX86 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HCVMDMA_RunShellCodeX86 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -872,20 +876,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_搜索特征码x86 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_搜索特征码x86 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_搜索特征码x86 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -908,20 +912,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_搜索特征码x86Ex - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_搜索特征码x86Ex - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_搜索特征码x86Ex - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -944,20 +948,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_搜索特征码x64 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_搜索特征码x64 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_搜索特征码x64 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -980,20 +984,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_搜索特征码x64Ex - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_搜索特征码x64Ex - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_搜索特征码x64Ex - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1018,20 +1022,20 @@ __int32 timeOut - 超时等待时间
 一旦调用,则虚拟机需要被关闭后开启而不是重启PID不能一样
 ```
 ### HDDMA_断开虚拟机 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_断开虚拟机 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_断开虚拟机 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1061,20 +1065,20 @@ __int32 timeOut - 超时等待时间
 如果有的虚拟机初始化句柄超时建议:
 ```
 ### HDDMA_获取截图环境 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_获取截图环境 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_获取截图环境 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1097,20 +1101,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_截图一次 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_截图一次 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_截图一次 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1133,20 +1137,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_开启截图 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_开启截图 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_开启截图 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1169,20 +1173,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_关闭截图 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_关闭截图 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_关闭截图 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1212,20 +1216,20 @@ __int32 timeOut - 超时等待时间
 如果有的虚拟机初始化句柄超时建议:
 ```
 ### HDDMA_获取键鼠环境 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_获取键鼠环境 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_获取键鼠环境 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1248,20 +1252,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_鼠标移动 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_鼠标移动 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_鼠标移动 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1284,20 +1288,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_左键按下 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_左键按下 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_左键按下 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1320,20 +1324,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_左键弹起 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_左键弹起 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_左键弹起 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1356,20 +1360,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_左键点击 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_左键点击 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_左键点击 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1392,20 +1396,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_左键双击 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_左键双击 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_左键双击 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1428,20 +1432,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_中键按下 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_中键按下 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_中键按下 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1464,20 +1468,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_中键弹起 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_中键弹起 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_中键弹起 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1500,20 +1504,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_中键点击 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_中键点击 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_中键点击 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1536,20 +1540,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_中键双击 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_中键双击 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_中键双击 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1572,20 +1576,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_右键按下 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_右键按下 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_右键按下 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1608,20 +1612,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_右键弹起 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_右键弹起 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_右键弹起 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1644,20 +1648,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_右键点击 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_右键点击 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_右键点击 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1680,20 +1684,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_右键双击 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_右键双击 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_右键双击 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1716,20 +1720,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_滚轮滚上 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_滚轮滚上 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_滚轮滚上 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1752,20 +1756,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_滚轮滚下 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_滚轮滚下 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_滚轮滚下 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1788,20 +1792,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_键盘按下 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_键盘按下 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_键盘按下 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1824,20 +1828,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_键盘按上 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_键盘按上 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_键盘按上 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1860,20 +1864,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_键盘敲击 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_键盘敲击 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_键盘敲击 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1896,20 +1900,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_发送文本Unicode - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_发送文本Unicode - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_发送文本Unicode - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1932,20 +1936,20 @@ __int32 timeOut - 超时等待时间
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HDDMA_发送文本Ascii - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_发送文本Ascii - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDDMA_发送文本Ascii - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -1971,20 +1975,20 @@ C++解析获取案例:
 \n最大51个数量存储量autojsonStr=HCEnv_GetRetJson(windowsIndex);if(jsonStr==NULL)returnERROR_获取数据失败;\npid1,name1|pid2,name2|pid3,name3|vector<string>pidNameArray;Tool::HSplitStringA(jsonStr,pidNameArray,\"|\");if(pidNameArray.size()<=0)returnRET_失败;for(int index=0;index<pidSize;index++){\npid1,name1，vector<string>proArray;Tool::HSplitStringA(pidNameArray[index]+\",\",proArray,\",\");if(proArray.size()<2)continue;if(atoi(proArray[0].c_str())==pid)returnRET_成功;\n元素1就是PID元素2是进程名}returnRET_失败;\n没找到
 ```
 ### HCVMDMA_GetPidList - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HCVMDMA_GetPidList - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HCVMDMA_GetPidList - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -2008,20 +2012,20 @@ C++解析获取案例:
 需要先初始化关联虚拟机HCVMDMA_Init
 ```
 ### HCVMDMA_IsExistPid - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HCVMDMA_IsExistPid - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HCVMDMA_IsExistPid - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例

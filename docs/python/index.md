@@ -1,4 +1,8 @@
-# Python 文档索引
+---
+sidebar_position: 1
+---
+
+# Python开发文档
 本文件夹包含按类别划分的所有API文档。
 
 - [基础说明](category_1.md)

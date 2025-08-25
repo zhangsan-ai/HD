@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # 🛰️ IP模块[IP]
 ## 📌 函数: HDIP.有米设置路径
 ### 描述
@@ -5,7 +9,7 @@
 设置有米软件路径(EXE路径)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCIP_YMSetRootPath(char* path);
 ```
 ### 参数
@@ -21,20 +25,20 @@ char* path - 路径
 软件找HD作者拿(魔改版)
 ```
 ### HDIP.有米设置路径 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HDIP.有米设置路径 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HDIP.有米设置路径 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -48,7 +52,7 @@ char* path - 路径
 添加IP
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCIP_YMAddIP(char* ip,int port,char* account,char* password,int type,int kfp=1,char* proName=NULL);
 ```
 ### 参数
@@ -70,20 +74,20 @@ char* proName - 进程名(一般就为空默认NULL就行)
 软件找HD作者拿(魔改版)
 ```
 ### HDIP.有米添加IP - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HDIP.有米添加IP - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HDIP.有米添加IP - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -97,7 +101,7 @@ char* proName - 进程名(一般就为空默认NULL就行)
 添加代理的进程名
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCIP_YMAddProcess(char* proName);
 ```
 ### 参数
@@ -113,20 +117,20 @@ char* proName - 进程名如
 软件找HD作者拿(魔改版)
 ```
 ### HDIP.有米添加进程 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HDIP.有米添加进程 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HDIP.有米添加进程 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -140,7 +144,7 @@ char* proName - 进程名如
 打开有米软件
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCIP_YMOpen(int type);
 ```
 ### 参数
@@ -160,20 +164,20 @@ int type - 0国内IP1国外IP
 3.打开有米
 ```
 ### HDIP.有米打开 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HDIP.有米打开 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HDIP.有米打开 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -187,7 +191,7 @@ int type - 0国内IP1国外IP
 有米软件是否已经打开
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCIP_YMIsOpen(int type);
 ```
 ### 参数
@@ -207,20 +211,20 @@ int type - 0国内IP1国外IP
 3.打开有米
 ```
 ### HDIP.有米是否打开 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HDIP.有米是否打开 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HDIP.有米是否打开 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -234,7 +238,7 @@ int type - 0国内IP1国外IP
 关闭有米软件
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCIP_YMClose(int type);
 ```
 ### 参数
@@ -254,20 +258,20 @@ int type - 0国内IP1国外IP
 3.打开有米
 ```
 ### HDIP.有米关闭 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HDIP.有米关闭 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HDIP.有米关闭 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例

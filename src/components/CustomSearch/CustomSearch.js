@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useHistory, useLocation } from '@docusaurus/router'; // 新增 useLocation 用于识别当前路径
-import { useHotkeys } from 'react-hotkeys-hook';
 import './CustomSearch.css';
 
 // 搜索逻辑：匹配标题和内容 + 可选的当前顶级菜单过滤
@@ -53,7 +52,7 @@ const CustomSearch = () => {
     const inputRef = useRef(null); // 修复：ref 绑定到输入框本身
     const resultsRef = useRef(null);
 
-    // 1. 从 URL 识别当前顶级菜单（如 /docs/cpp/xxx → "cpp"）
+    // 1. 从 URL 识别当前顶级菜单和是否为API文档页面
     useEffect(() => {
         const pathSegments = location.pathname.split('/').filter(Boolean); // 分割 URL 路径
         // 文档路径格式：/docs/[category]/... → 提取第 1 个片段（索引 1）作为顶级菜单
@@ -80,19 +79,19 @@ const CustomSearch = () => {
                 if (!response.ok) {
                     const errorText = await response.text();
                     console.error(`❌ 服务器返回错误: ${errorText.substring(0, 200)}`);
-                    throw new Error(`请求失败 (${response.status}) - 请确认 search-index.json 已放在 static 目录`);
+                    // throw new Error(`请求失败 (${response.status}) - 请确认 search-index.json 已放在 static 目录`);
                 }
 
                 const contentType = response.headers.get('content-type');
                 if (!contentType?.includes('application/json')) {
                     const invalidContent = await response.text();
                     console.error(`❌ 非JSON响应: ${invalidContent.substring(0, 200)}`);
-                    throw new Error(`返回内容不是JSON - 检查索引生成逻辑`);
+                    // throw new Error(`返回内容不是JSON - 检查索引生成逻辑`);
                 }
 
                 const indexData = await response.json();
                 if (!Array.isArray(indexData)) {
-                    throw new Error('索引格式错误 - 应为数组类型');
+                    // throw new Error('索引格式错误 - 应为数组类型');
                 }
 
                 // 验证索引中是否包含必要的 url 字段（用于跳转和过滤）
@@ -206,6 +205,26 @@ const CustomSearch = () => {
     //   }, { enabled: true });
     //   return cleanup;
     // }, [query]);
+
+    // 检查当前是否为API文档页面（URL以以下路径开头）
+    const apiDocumentationPaths = [
+        '/docs/cpp',
+        '/docs/python',
+        '/docs/csharp',
+        '/docs/huoshan',
+        '/docs/yiyuyan',
+        '/docs/xuan'
+    ];
+
+    // 检查URL是否以任一API文档路径开头
+    const isApiDocumentationPage = apiDocumentationPaths.some(path => 
+        location.pathname.startsWith(path)
+    );
+
+    // 只在API文档页面显示搜索框
+    if (!isApiDocumentationPage) {
+        return null;
+    }
 
     return (
         <div className="custom-search-container">

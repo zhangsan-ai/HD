@@ -1,3 +1,7 @@
+---
+sidebar_position: 35
+---
+
 # 🛰️ 系统模块(SYS)
 ## 📌 函数: HCSYS_CheckFontSmooth
 ### 描述
@@ -5,7 +9,7 @@
 检查字体是否开启字体平滑
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_CheckFontSmooth();
 ```
 ### 返回值
@@ -17,20 +21,20 @@ __int64 __stdcall HCSYS_CheckFontSmooth();
 无
 ```
 ### HCSYS_CheckFontSmooth - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_CheckFontSmooth - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_CheckFontSmooth 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_CheckFontSmooth - 高级应用
-```
+```cpp
 // 示例3：HCSYS_CheckFontSmooth 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -44,7 +48,7 @@ __int64 __stdcall HCSYS_CheckFontSmooth();
 关闭字体平滑
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_CloseFontSmooth();
 ```
 ### 返回值
@@ -56,20 +60,20 @@ __int64 __stdcall HCSYS_CloseFontSmooth();
 无
 ```
 ### HCSYS_CloseFontSmooth - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_CloseFontSmooth - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_CloseFontSmooth 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_CloseFontSmooth - 高级应用
-```
+```cpp
 // 示例3：HCSYS_CloseFontSmooth 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -83,7 +87,7 @@ __int64 __stdcall HCSYS_CloseFontSmooth();
 打开字体平滑
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_OpenFontSmooth();
 ```
 ### 返回值
@@ -95,20 +99,20 @@ __int64 __stdcall HCSYS_OpenFontSmooth();
 无
 ```
 ### HCSYS_OpenFontSmooth - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_OpenFontSmooth - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_OpenFontSmooth 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_OpenFontSmooth - 高级应用
-```
+```cpp
 // 示例3：HCSYS_OpenFontSmooth 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -122,7 +126,7 @@ __int64 __stdcall HCSYS_OpenFontSmooth();
 检查当前系统是否开启了UAC(用户控制)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_CheckUAC();
 ```
 ### 返回值
@@ -134,20 +138,20 @@ __int64 __stdcall HCSYS_CheckUAC();
 无
 ```
 ### HCSYS_CheckUAC - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_CheckUAC - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_CheckUAC 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_CheckUAC - 高级应用
-```
+```cpp
 // 示例3：HCSYS_CheckUAC 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -161,7 +165,7 @@ __int64 __stdcall HCSYS_CheckUAC();
 设置当前系统的UAC(用户控制)开关
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_SetUAC(__int32 bEnable);
 ```
 ### 参数
@@ -177,20 +181,20 @@ __int32 bEnable - 开启1或者关闭0
 无
 ```
 ### HCSYS_SetUAC - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_SetUAC - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_SetUAC 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_SetUAC - 高级应用
-```
+```cpp
 // 示例3：HCSYS_SetUAC 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -204,7 +208,7 @@ __int32 bEnable - 开启1或者关闭0
 延迟
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_Delay(__int32 毫秒);
 ```
 ### 参数
@@ -220,20 +224,20 @@ __int32 毫秒 - 毫秒
 不会堵塞主线程
 ```
 ### HCSYS_Delay - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_Delay - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_Delay 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_Delay - 高级应用
-```
+```cpp
 // 示例3：HCSYS_Delay 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -247,7 +251,7 @@ __int32 毫秒 - 毫秒
 在随机范围内延迟
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_DelayEx(__int32 最小毫秒,__int32 最大毫秒);
 ```
 ### 参数
@@ -264,20 +268,20 @@ __int32 最大毫秒 - 毫秒
 不会堵塞主线程
 ```
 ### HCSYS_DelayEx - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_DelayEx - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_DelayEx 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_DelayEx - 高级应用
-```
+```cpp
 // 示例3：HCSYS_DelayEx 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -291,7 +295,7 @@ __int32 最大毫秒 - 毫秒
 关闭系统
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_ExitSys(__int32 type);
 ```
 ### 参数
@@ -307,20 +311,20 @@ __int32 type - 注销(0)关机(1)重启(2)
 无
 ```
 ### HCSYS_ExitSys - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_ExitSys - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_ExitSys 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_ExitSys - 高级应用
-```
+```cpp
 // 示例3：HCSYS_ExitSys 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -334,7 +338,7 @@ __int32 type - 注销(0)关机(1)重启(2)
 关闭屏保
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_CloseScreenProtect();
 ```
 ### 返回值
@@ -346,20 +350,20 @@ __int64 __stdcall HCSYS_CloseScreenProtect();
 无
 ```
 ### HCSYS_CloseScreenProtect - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_CloseScreenProtect - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_CloseScreenProtect 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_CloseScreenProtect - 高级应用
-```
+```cpp
 // 示例3：HCSYS_CloseScreenProtect 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -373,7 +377,7 @@ __int64 __stdcall HCSYS_CloseScreenProtect();
 关闭电源管理,不进入睡眠
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_ClosePowerManager();
 ```
 ### 返回值
@@ -385,20 +389,20 @@ __int64 __stdcall HCSYS_ClosePowerManager();
 无
 ```
 ### HCSYS_ClosePowerManager - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_ClosePowerManager - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_ClosePowerManager 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_ClosePowerManager - 高级应用
-```
+```cpp
 // 示例3：HCSYS_ClosePowerManager 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -412,7 +416,7 @@ __int64 __stdcall HCSYS_ClosePowerManager();
 恢复系统上次的修改
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_ResumeSystemModify();
 ```
 ### 返回值
@@ -425,20 +429,20 @@ __int64 __stdcall HCSYS_ResumeSystemModify();
 那么这个最好在中控程序退出的时候调用
 ```
 ### HCSYS_ResumeSystemModify - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_ResumeSystemModify - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_ResumeSystemModify 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_ResumeSystemModify - 高级应用
-```
+```cpp
 // 示例3：HCSYS_ResumeSystemModify 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -452,7 +456,7 @@ __int64 __stdcall HCSYS_ResumeSystemModify();
 设置当前的电源设置(禁止关闭显示器,禁止关闭硬盘,禁止睡眠和待机)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_DisableCloseDisplayAndSleep();
 ```
 ### 返回值
@@ -464,20 +468,20 @@ __int64 __stdcall HCSYS_DisableCloseDisplayAndSleep();
 无
 ```
 ### HCSYS_DisableCloseDisplayAndSleep - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_DisableCloseDisplayAndSleep - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_DisableCloseDisplayAndSleep 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_DisableCloseDisplayAndSleep - 高级应用
-```
+```cpp
 // 示例3：HCSYS_DisableCloseDisplayAndSleep 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -491,7 +495,7 @@ __int64 __stdcall HCSYS_DisableCloseDisplayAndSleep();
 获取路径
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetDir(__int32 type);
 ```
 ### 参数
@@ -507,20 +511,20 @@ __int32 type - 当前路径(0)system32路径(1)windows所在路径(2)临时目�
 无
 ```
 ### HCSYS_GetDir - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetDir - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_GetDir 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetDir - 高级应用
-```
+```cpp
 // 示例3：HCSYS_GetDir 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -534,7 +538,7 @@ __int32 type - 当前路径(0)system32路径(1)windows所在路径(2)临时目�
 获取CPU类型
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetCpuType();
 ```
 ### 返回值
@@ -548,20 +552,20 @@ __int64 __stdcall HCSYS_GetCpuType();
 无
 ```
 ### HCSYS_GetCpuType - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetCpuType - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_GetCpuType 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetCpuType - 高级应用
-```
+```cpp
 // 示例3：HCSYS_GetCpuType 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -575,7 +579,7 @@ __int64 __stdcall HCSYS_GetCpuType();
 获取CPU使用率
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetCpuUsage();
 ```
 ### 返回值
@@ -588,20 +592,20 @@ __int64 __stdcall HCSYS_GetCpuUsage();
 无
 ```
 ### HCSYS_GetCpuUsage - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetCpuUsage - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_GetCpuUsage 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetCpuUsage - 高级应用
-```
+```cpp
 // 示例3：HCSYS_GetCpuUsage 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -615,7 +619,7 @@ __int64 __stdcall HCSYS_GetCpuUsage();
 获取指定进程的CPU使用率
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetCpuUsageByPid(__int32 pid);
 ```
 ### 参数
@@ -633,20 +637,20 @@ __int32 pid - 进程PID
 返回字符串字符串是(含小数百分比)
 ```
 ### HCSYS_GetCpuUsageByPid - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetCpuUsageByPid - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_GetCpuUsageByPid 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetCpuUsageByPid - 高级应用
-```
+```cpp
 // 示例3：HCSYS_GetCpuUsageByPid 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -660,7 +664,7 @@ __int32 pid - 进程PID
 获取指定进程的内存使用率
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetMemoryUsageByPid(__int32 pid);
 ```
 ### 返回值
@@ -673,20 +677,20 @@ __int64 __stdcall HCSYS_GetMemoryUsageByPid(__int32 pid);
 无
 ```
 ### HCSYS_GetMemoryUsageByPid - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetMemoryUsageByPid - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_GetMemoryUsageByPid 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetMemoryUsageByPid - 高级应用
-```
+```cpp
 // 示例3：HCSYS_GetMemoryUsageByPid 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -700,7 +704,7 @@ __int64 __stdcall HCSYS_GetMemoryUsageByPid(__int32 pid);
 获取磁盘序列号
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetDiskSerial(__int32 index);
 ```
 ### 参数
@@ -716,20 +720,20 @@ __int32 index - 磁盘序号
 进程要有管理员权限才能获取成功
 ```
 ### HCSYS_GetDiskSerial - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetDiskSerial - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_GetDiskSerial 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetDiskSerial - 高级应用
-```
+```cpp
 // 示例3：HCSYS_GetDiskSerial 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -743,7 +747,7 @@ __int32 index - 磁盘序号
 获取显卡信息
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetDisplayInfo();
 ```
 ### 返回值
@@ -755,20 +759,20 @@ __int64 __stdcall HCSYS_GetDisplayInfo();
 无
 ```
 ### HCSYS_GetDisplayInfo - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetDisplayInfo - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_GetDisplayInfo 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetDisplayInfo - 高级应用
-```
+```cpp
 // 示例3：HCSYS_GetDisplayInfo 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -782,7 +786,7 @@ __int64 __stdcall HCSYS_GetDisplayInfo();
 获取DPI
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetDPI();
 ```
 ### 返回值
@@ -795,20 +799,20 @@ __int64 __stdcall HCSYS_GetDPI();
 无
 ```
 ### HCSYS_GetDPI - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetDPI - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_GetDPI 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetDPI - 高级应用
-```
+```cpp
 // 示例3：HCSYS_GetDPI 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -822,7 +826,7 @@ __int64 __stdcall HCSYS_GetDPI();
 运行指定路径下的exe
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_RunApp(char* path,longtype);
 ```
 ### 参数
@@ -839,20 +843,20 @@ char* path - exe路径
 这个不支持启动参数
 ```
 ### HCSYS_RunApp - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_RunApp - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_RunApp 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_RunApp - 高级应用
-```
+```cpp
 // 示例3：HCSYS_RunApp 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -866,7 +870,7 @@ char* path - exe路径
 获取CMD命令形式的打开进程并获取返回输出
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_RunAppGetRet(char* cmdApp,BOOL bShowCrol,BOOL bWait);
 ```
 ### 参数
@@ -881,20 +885,20 @@ bool Bwait - 是否等待进程结束返回1.真会堵塞直到进程关闭(为�
 失败返回:查看返回值表
 ```
 ### HCSYS_RunAppGetRet - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_RunAppGetRet - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_RunAppGetRet 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_RunAppGetRet - 高级应用
-```
+```cpp
 // 示例3：HCSYS_RunAppGetRet 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -908,7 +912,7 @@ bool Bwait - 是否等待进程结束返回1.真会堵塞直到进程关闭(为�
 获取CMD命令形式的打开进程(支持管理员打开)(扩展版本)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_RunAppGetRetEx(char* cmdApp,char* lparam,BOOL bAs=TRUE);
 ```
 ### 参数
@@ -927,20 +931,20 @@ bool bAs - 是否管理员
 内部是调用ShellExecuteExA
 ```
 ### HCSYS_RunAppGetRetEx - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_RunAppGetRetEx - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_RunAppGetRetEx 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_RunAppGetRetEx - 高级应用
-```
+```cpp
 // 示例3：HCSYS_RunAppGetRetEx 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -954,7 +958,7 @@ bool bAs - 是否管理员
 运行指定路径下的exe这个支持启动参数
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_RunAppEx(char* path,char* appName,char* lparam,__int32 flag,longtype);
 ```
 ### 参数
@@ -974,20 +978,20 @@ __int32 flag - 挂起状态打开(4),直接打开运行(0)
 这个支持启动参数
 ```
 ### HCSYS_RunAppEx - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_RunAppEx - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_RunAppEx 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_RunAppEx - 高级应用
-```
+```cpp
 // 示例3：HCSYS_RunAppEx 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -1001,7 +1005,7 @@ __int32 flag - 挂起状态打开(4),直接打开运行(0)
 运行指定路径下的exe(HCSYS_RunAppEx的扩展版本)这个支持启动参数同时指定了当前进程的路径
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_RunAppExxxx(char* path,char* appName,char* lparam,__int32 flag,longtype);
 ```
 ### 参数
@@ -1021,20 +1025,20 @@ __int32 flag - 挂起状态打开(4),直接打开运行(0)
 这个支持启动参数
 ```
 ### HCSYS_RunAppExxxx - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_RunAppExxxx - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_RunAppExxxx 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_RunAppExxxx - 高级应用
-```
+```cpp
 // 示例3：HCSYS_RunAppExxxx 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -1048,7 +1052,7 @@ __int32 flag - 挂起状态打开(4),直接打开运行(0)
 获取磁盘特征码
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetHDiskCode();
 ```
 ### 返回值
@@ -1060,20 +1064,20 @@ __int64 __stdcall HCSYS_GetHDiskCode();
 无
 ```
 ### HCSYS_GetHDiskCode - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetHDiskCode - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_GetHDiskCode 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetHDiskCode - 高级应用
-```
+```cpp
 // 示例3：HCSYS_GetHDiskCode 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -1087,7 +1091,7 @@ __int64 __stdcall HCSYS_GetHDiskCode();
 获取CPU特征码
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetCpuCode();
 ```
 ### 返回值
@@ -1099,20 +1103,20 @@ __int64 __stdcall HCSYS_GetCpuCode();
 无
 ```
 ### HCSYS_GetCpuCode - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetCpuCode - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_GetCpuCode 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetCpuCode - 高级应用
-```
+```cpp
 // 示例3：HCSYS_GetCpuCode 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -1126,7 +1130,7 @@ __int64 __stdcall HCSYS_GetCpuCode();
 获取BOIS制造日期
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetBIOSInfo();
 ```
 ### 返回值
@@ -1138,20 +1142,20 @@ __int64 __stdcall HCSYS_GetBIOSInfo();
 无
 ```
 ### HCSYS_GetBIOSInfo - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetBIOSInfo - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_GetBIOSInfo 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetBIOSInfo - 高级应用
-```
+```cpp
 // 示例3：HCSYS_GetBIOSInfo 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -1165,7 +1169,7 @@ __int64 __stdcall HCSYS_GetBIOSInfo();
 获取机器码(包含网卡)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetMachineCode();
 ```
 ### 返回值
@@ -1178,20 +1182,20 @@ __int64 __stdcall HCSYS_GetMachineCode();
 无
 ```
 ### HCSYS_GetMachineCode - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetMachineCode - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_GetMachineCode 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetMachineCode - 高级应用
-```
+```cpp
 // 示例3：HCSYS_GetMachineCode 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -1205,7 +1209,7 @@ __int64 __stdcall HCSYS_GetMachineCode();
 获取机器码(不包含网卡)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetMachineCodeNoMac();
 ```
 ### 返回值
@@ -1217,20 +1221,20 @@ __int64 __stdcall HCSYS_GetMachineCodeNoMac();
 无
 ```
 ### HCSYS_GetMachineCodeNoMac - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetMachineCodeNoMac - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_GetMachineCodeNoMac 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetMachineCodeNoMac - 高级应用
-```
+```cpp
 // 示例3：HCSYS_GetMachineCodeNoMac 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -1244,7 +1248,7 @@ __int64 __stdcall HCSYS_GetMachineCodeNoMac();
 获取网络时间
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetNetTime();
 ```
 ### 返回值
@@ -1257,20 +1261,20 @@ __int64 __stdcall HCSYS_GetNetTime();
 固定内置服务器IP
 ```
 ### HCSYS_GetNetTime - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetNetTime - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_GetNetTime 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetNetTime - 高级应用
-```
+```cpp
 // 示例3：HCSYS_GetNetTime 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -1284,7 +1288,7 @@ __int64 __stdcall HCSYS_GetNetTime();
 获取网络时间(指定服务器IP获取)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetNetTimeByIp(char* ip);
 ```
 ### 参数
@@ -1300,20 +1304,20 @@ char* ip - ip字符串(如
 北京时间
 ```
 ### HCSYS_GetNetTimeByIp - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetNetTimeByIp - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_GetNetTimeByIp 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetNetTimeByIp - 高级应用
-```
+```cpp
 // 示例3：HCSYS_GetNetTimeByIp 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -1327,7 +1331,7 @@ char* ip - ip字符串(如
 获取系统版本
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetSystemBuildNumber();
 ```
 ### 返回值
@@ -1340,20 +1344,20 @@ __int64 __stdcall HCSYS_GetSystemBuildNumber();
 无
 ```
 ### HCSYS_GetSystemBuildNumber - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetSystemBuildNumber - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_GetSystemBuildNumber 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetSystemBuildNumber - 高级应用
-```
+```cpp
 // 示例3：HCSYS_GetSystemBuildNumber 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -1367,7 +1371,7 @@ __int64 __stdcall HCSYS_GetSystemBuildNumber();
 获取系统类型
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetSystemType();
 ```
 ### 返回值
@@ -1389,20 +1393,20 @@ win11(9)
 无
 ```
 ### HCSYS_GetSystemType - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetSystemType - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_GetSystemType 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetSystemType - 高级应用
-```
+```cpp
 // 示例3：HCSYS_GetSystemType 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -1416,7 +1420,7 @@ win11(9)
 获取开机到现在过经过的时间(毫秒)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetTime();
 ```
 ### 返回值
@@ -1428,20 +1432,20 @@ __int64 __stdcall HCSYS_GetTime();
 无
 ```
 ### HCSYS_GetTime - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetTime - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_GetTime 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetTime - 高级应用
-```
+```cpp
 // 示例3：HCSYS_GetTime 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -1455,7 +1459,7 @@ __int64 __stdcall HCSYS_GetTime();
 当前进程是否是64位
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_Is64Bit();
 ```
 ### 返回值
@@ -1467,20 +1471,20 @@ __int64 __stdcall HCSYS_Is64Bit();
 无
 ```
 ### HCSYS_Is64Bit - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_Is64Bit - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_Is64Bit 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_Is64Bit - 高级应用
-```
+```cpp
 // 示例3：HCSYS_Is64Bit 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -1494,7 +1498,7 @@ __int64 __stdcall HCSYS_Is64Bit();
 是否支持vt
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_IsSurrpotVt();
 ```
 ### 返回值
@@ -1506,20 +1510,20 @@ __int64 __stdcall HCSYS_IsSurrpotVt();
 可以在Bios中开启vt,如果不支持就没办法了
 ```
 ### HCSYS_IsSurrpotVt - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_IsSurrpotVt - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_IsSurrpotVt 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_IsSurrpotVt - 高级应用
-```
+```cpp
 // 示例3：HCSYS_IsSurrpotVt 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -1533,7 +1537,7 @@ __int64 __stdcall HCSYS_IsSurrpotVt();
 获取屏幕的色深(24/32之类的)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetScreenPixelDepth();
 ```
 ### 返回值
@@ -1545,20 +1549,20 @@ __int64 __stdcall HCSYS_GetScreenPixelDepth();
 无
 ```
 ### HCSYS_GetScreenPixelDepth - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetScreenPixelDepth - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_GetScreenPixelDepth 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetScreenPixelDepth - 高级应用
-```
+```cpp
 // 示例3：HCSYS_GetScreenPixelDepth 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -1572,7 +1576,7 @@ __int64 __stdcall HCSYS_GetScreenPixelDepth();
 设置屏幕的色深
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_SetScreenPixelDepth(__int32 dmBitsPerPel);
 ```
 ### 参数
@@ -1588,20 +1592,20 @@ __int32 dmBitsPerPel - 像素深度值(24/32之类的)
 无
 ```
 ### HCSYS_SetScreenPixelDepth - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_SetScreenPixelDepth - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_SetScreenPixelDepth 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_SetScreenPixelDepth - 高级应用
-```
+```cpp
 // 示例3：HCSYS_SetScreenPixelDepth 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -1615,7 +1619,7 @@ __int32 dmBitsPerPel - 像素深度值(24/32之类的)
 获取屏幕高度
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetScreenHeight();
 ```
 ### 返回值
@@ -1627,20 +1631,20 @@ __int64 __stdcall HCSYS_GetScreenHeight();
 无
 ```
 ### HCSYS_GetScreenHeight - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetScreenHeight - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_GetScreenHeight 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetScreenHeight - 高级应用
-```
+```cpp
 // 示例3：HCSYS_GetScreenHeight 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -1654,7 +1658,7 @@ __int64 __stdcall HCSYS_GetScreenHeight();
 获取屏幕宽度
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetScreenWidth();
 ```
 ### 返回值
@@ -1666,20 +1670,20 @@ __int64 __stdcall HCSYS_GetScreenWidth();
 无
 ```
 ### HCSYS_GetScreenWidth - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetScreenWidth - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_GetScreenWidth 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetScreenWidth - 高级应用
-```
+```cpp
 // 示例3：HCSYS_GetScreenWidth 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -1693,7 +1697,7 @@ __int64 __stdcall HCSYS_GetScreenWidth();
 设置屏幕分辨率
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_SetScreen(__int32 width,__int32 height);
 ```
 ### 参数
@@ -1710,20 +1714,20 @@ __int32 width - 宽度
 无
 ```
 ### HCSYS_SetScreen - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_SetScreen - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_SetScreen 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_SetScreen - 高级应用
-```
+```cpp
 // 示例3：HCSYS_SetScreen 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -1737,7 +1741,7 @@ __int32 width - 宽度
 获取CMD命令返回值(字符串)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetCmdRet(char* cmd);
 ```
 ### 参数
@@ -1753,20 +1757,20 @@ char* cmd - cmd命令字符串
 无
 ```
 ### HCSYS_GetCmdRet - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetCmdRet - 进阶用法
-```
+```cpp
 // 示例2：HCSYS_GetCmdRet 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSYS_GetCmdRet - 高级应用
-```
+```cpp
 // 示例3：HCSYS_GetCmdRet 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例

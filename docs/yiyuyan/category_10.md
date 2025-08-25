@@ -1,3 +1,7 @@
+---
+sidebar_position: 11
+---
+
 # 🛰️ APIHOOK
 ## 📌 函数: HDHOOK_Send发包
 ### 描述
@@ -5,7 +9,7 @@
 调用SendAPI(目标进程中调用)X86X64
 ```
 ### 原型
-```
+```cpp
 __int64 HDHK_SendApi(__int32 窗口序号,__int32 socket,BYTE* buffer,__int32 bufferSize,__int32 flag,BOOL 是否主线程调用=FALSE);
 ```
 ### 参数
@@ -26,7 +30,7 @@ bool 是否主线程调用 - 需要开启才开启,一般默认就行
 无
 ```
 ### HDHOOK_Send发包 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 测试API拦截, 长整数型, 公开
@@ -78,13 +82,13 @@ bool 是否主线程调用 - 需要开启才开启,一般默认就行
     返回 (1)  ' 走原有流程，不拦截
 ```
 ### HDHOOK_Send发包 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HDHOOK_Send发包 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -97,7 +101,7 @@ bool 是否主线程调用 - 需要开启才开启,一般默认就行
 调用SendtoAPI(目标进程中调用)X86X64
 ```
 ### 原型
-```
+```cpp
 __int64 HDHK_SendToApi(__int32 窗口序号,__int32 socket,BYTE* buffer,__int32 bufferSize,__int32 flag,__int32 port,__int32 ip,BOOL 是否主线程调用=FALSE);
 ```
 ### 参数
@@ -120,13 +124,13 @@ bool 是否主线程调用 - 需要开启才开启,一般默认就行
 无
 ```
 ### HDHOOK_SendTo发包 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HDHOOK_SendTo发包 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")

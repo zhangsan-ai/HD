@@ -1,3 +1,7 @@
+---
+sidebar_position: 35
+---
+
 # 🛰️ 系统模块(SYS)
 ## 📌 函数: HD系统_是否开启字体平滑
 ### 描述
@@ -5,7 +9,7 @@
 检查字体是否开启字体平滑
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_CheckFontSmooth();
 ```
 ### 返回值
@@ -17,7 +21,7 @@ __int64 __stdcall HCSYS_CheckFontSmooth();
 无
 ```
 ### HD系统_是否开启字体平滑 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 检查回调, 长整数型, 公开
@@ -54,13 +58,13 @@ __int64 __stdcall HCSYS_CheckFontSmooth();
     .如果结束
 ```
 ### HD系统_是否开启字体平滑 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_是否开启字体平滑 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -73,7 +77,7 @@ __int64 __stdcall HCSYS_CheckFontSmooth();
 关闭字体平滑
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_CloseFontSmooth();
 ```
 ### 返回值
@@ -85,13 +89,13 @@ __int64 __stdcall HCSYS_CloseFontSmooth();
 无
 ```
 ### HD系统_关闭字体平滑 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_关闭字体平滑 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -104,7 +108,7 @@ __int64 __stdcall HCSYS_CloseFontSmooth();
 打开字体平滑
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_OpenFontSmooth();
 ```
 ### 返回值
@@ -116,13 +120,13 @@ __int64 __stdcall HCSYS_OpenFontSmooth();
 无
 ```
 ### HD系统_打开字体平滑 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_打开字体平滑 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -135,7 +139,7 @@ __int64 __stdcall HCSYS_OpenFontSmooth();
 检查当前系统是否开启了UAC(用户控制)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_CheckUAC();
 ```
 ### 返回值
@@ -147,13 +151,13 @@ __int64 __stdcall HCSYS_CheckUAC();
 无
 ```
 ### HD系统_是否开启UAC - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_是否开启UAC - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -166,7 +170,7 @@ __int64 __stdcall HCSYS_CheckUAC();
 设置当前系统的UAC(用户控制)开关
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_SetUAC(__int32 bEnable);
 ```
 ### 参数
@@ -182,13 +186,13 @@ __int32 bEnable - 开启1或者关闭0
 无
 ```
 ### HD系统_设置UAC - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_设置UAC - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -201,7 +205,7 @@ __int32 bEnable - 开启1或者关闭0
 延迟
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_Delay(__int32 毫秒);
 ```
 ### 参数
@@ -217,13 +221,13 @@ __int32 毫秒 - 毫秒
 不会堵塞主线程
 ```
 ### HD系统_延迟 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_延迟 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -236,7 +240,7 @@ __int32 毫秒 - 毫秒
 在随机范围内延迟
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_DelayEx(__int32 最小毫秒,__int32 最大毫秒);
 ```
 ### 参数
@@ -253,7 +257,7 @@ __int32 最大毫秒 - 毫秒
 不会堵塞主线程
 ```
 ### HD系统_随机延迟 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _保存扩展图片示例
@@ -305,13 +309,13 @@ __int32 最大毫秒 - 毫秒
     .如果结束
 ```
 ### HD系统_随机延迟 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_随机延迟 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -324,7 +328,7 @@ __int32 最大毫秒 - 毫秒
 关闭系统
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_ExitSys(__int32 type);
 ```
 ### 参数
@@ -340,13 +344,13 @@ __int32 type - 注销(0)关机(1)重启(2)
 无
 ```
 ### HD系统_关闭系统 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_关闭系统 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -359,7 +363,7 @@ __int32 type - 注销(0)关机(1)重启(2)
 关闭屏保
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_CloseScreenProtect();
 ```
 ### 返回值
@@ -371,7 +375,7 @@ __int64 __stdcall HCSYS_CloseScreenProtect();
 无
 ```
 ### HD系统_关闭屏保 - 基础示例
-```
+```e-lang
 .子程序 _测试OCR服务关闭
     .局部变量 窗口索引, 整数型
     .局部变量 关闭结果, 逻辑型
@@ -406,13 +410,13 @@ __int64 __stdcall HCSYS_CloseScreenProtect();
     .如果结束
 ```
 ### HD系统_关闭屏保 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_关闭屏保 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -425,7 +429,7 @@ __int64 __stdcall HCSYS_CloseScreenProtect();
 关闭电源管理,不进入睡眠
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_ClosePowerManager();
 ```
 ### 返回值
@@ -437,13 +441,13 @@ __int64 __stdcall HCSYS_ClosePowerManager();
 无
 ```
 ### HD系统_关闭电源管理 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_关闭电源管理 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -456,7 +460,7 @@ __int64 __stdcall HCSYS_ClosePowerManager();
 恢复系统上次的修改
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_ResumeSystemModify();
 ```
 ### 返回值
@@ -469,13 +473,13 @@ __int64 __stdcall HCSYS_ResumeSystemModify();
 那么这个最好在中控程序退出的时候调用
 ```
 ### HD系统_恢复最近系统修改 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_恢复最近系统修改 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -488,7 +492,7 @@ __int64 __stdcall HCSYS_ResumeSystemModify();
 设置当前的电源设置(禁止关闭显示器,禁止关闭硬盘,禁止睡眠和待机)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_DisableCloseDisplayAndSleep();
 ```
 ### 返回值
@@ -500,7 +504,7 @@ __int64 __stdcall HCSYS_DisableCloseDisplayAndSleep();
 无
 ```
 ### HD系统_禁止休眠 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 测试关闭代理连接, 逻辑型, 公开
@@ -527,13 +531,13 @@ __int64 __stdcall HCSYS_DisableCloseDisplayAndSleep();
     返回 (结果)
 ```
 ### HD系统_禁止休眠 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_禁止休眠 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -546,7 +550,7 @@ __int64 __stdcall HCSYS_DisableCloseDisplayAndSleep();
 获取路径
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetDir(__int32 type);
 ```
 ### 参数
@@ -562,7 +566,7 @@ __int32 type - 当前路径(0)system32路径(1)windows所在路径(2)临时目�
 无
 ```
 ### HD系统_获取路径 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _获取屏幕色深
@@ -572,13 +576,13 @@ __int32 type - 当前路径(0)system32路径(1)windows所在路径(2)临时目�
     调试输出 ("屏幕色深: " + 到文本 (色深) + " 位")
 ```
 ### HD系统_获取路径 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_获取路径 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -591,7 +595,7 @@ __int32 type - 当前路径(0)system32路径(1)windows所在路径(2)临时目�
 获取CPU类型
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetCpuType();
 ```
 ### 返回值
@@ -605,13 +609,13 @@ __int64 __stdcall HCSYS_GetCpuType();
 无
 ```
 ### HD系统_获取CPU类型 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_获取CPU类型 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -624,7 +628,7 @@ __int64 __stdcall HCSYS_GetCpuType();
 获取CPU使用率
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetCpuUsage();
 ```
 ### 返回值
@@ -637,7 +641,7 @@ __int64 __stdcall HCSYS_GetCpuUsage();
 无
 ```
 ### HD系统_获取当前CPU使用率 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _获取CPU使用率
@@ -651,13 +655,13 @@ __int64 __stdcall HCSYS_GetCpuUsage();
     .如果结束
 ```
 ### HD系统_获取当前CPU使用率 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_获取当前CPU使用率 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -670,7 +674,7 @@ __int64 __stdcall HCSYS_GetCpuUsage();
 获取指定进程的CPU使用率
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetCpuUsageByPid(__int32 pid);
 ```
 ### 参数
@@ -688,7 +692,7 @@ __int32 pid - 进程PID
 返回字符串字符串是(含小数百分比)
 ```
 ### HD系统_获取CPU使用率 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _获取系统类型
@@ -698,13 +702,13 @@ __int32 pid - 进程PID
     调试输出 ("系统类型: " + 到文本 (系统类型))
 ```
 ### HD系统_获取CPU使用率 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_获取CPU使用率 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -717,7 +721,7 @@ __int32 pid - 进程PID
 获取指定进程的内存使用率
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetMemoryUsageByPid(__int32 pid);
 ```
 ### 返回值
@@ -730,7 +734,7 @@ __int64 __stdcall HCSYS_GetMemoryUsageByPid(__int32 pid);
 无
 ```
 ### HD系统_获取内存使用率 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _获取内存使用率
@@ -744,13 +748,13 @@ __int64 __stdcall HCSYS_GetMemoryUsageByPid(__int32 pid);
     .如果结束
 ```
 ### HD系统_获取内存使用率 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_获取内存使用率 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -763,7 +767,7 @@ __int64 __stdcall HCSYS_GetMemoryUsageByPid(__int32 pid);
 获取磁盘序列号
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetDiskSerial(__int32 index);
 ```
 ### 参数
@@ -779,13 +783,13 @@ __int32 index - 磁盘序号
 进程要有管理员权限才能获取成功
 ```
 ### HD系统_获取磁盘序列号 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_获取磁盘序列号 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -798,7 +802,7 @@ __int32 index - 磁盘序号
 获取显卡信息
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetDisplayInfo();
 ```
 ### 返回值
@@ -810,7 +814,7 @@ __int64 __stdcall HCSYS_GetDisplayInfo();
 无
 ```
 ### HD系统_获取显卡信息 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _十六进制转字节集
@@ -820,13 +824,13 @@ __int64 __stdcall HCSYS_GetDisplayInfo();
     调试输出 ("转换字节数: " + 到文本 (取字节集长度 (字节数据)))
 ```
 ### HD系统_获取显卡信息 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_获取显卡信息 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -839,7 +843,7 @@ __int64 __stdcall HCSYS_GetDisplayInfo();
 获取DPI
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetDPI();
 ```
 ### 返回值
@@ -852,7 +856,7 @@ __int64 __stdcall HCSYS_GetDPI();
 无
 ```
 ### HD系统_获取DPI - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _获取系统DPI
@@ -866,13 +870,13 @@ __int64 __stdcall HCSYS_GetDPI();
     调试输出 ("缩放比例: " + 到文本 (缩放比例 × 100) + "%")
 ```
 ### HD系统_获取DPI - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_获取DPI - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -885,7 +889,7 @@ __int64 __stdcall HCSYS_GetDPI();
 运行指定路径下的exe
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_RunApp(char* path,longtype);
 ```
 ### 参数
@@ -902,7 +906,7 @@ char* path - exe路径
 这个不支持启动参数
 ```
 ### HD系统_启动EXE - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _启动程序
@@ -917,13 +921,13 @@ char* path - exe路径
     .如果结束
 ```
 ### HD系统_启动EXE - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_启动EXE - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -936,7 +940,7 @@ char* path - exe路径
 获取CMD命令形式的打开进程并获取返回输出
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_RunAppGetRet(char* cmdApp,BOOL bShowCrol,BOOL bWait);
 ```
 ### 参数
@@ -951,7 +955,7 @@ bool Bwait - 是否等待进程结束返回1.真会堵塞直到进程关闭(为�
 失败返回:查看返回值表
 ```
 ### HD系统_执行DOS指令取返回 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 测试启动虚拟机, 逻辑型, 公开
@@ -976,13 +980,13 @@ bool Bwait - 是否等待进程结束返回1.真会堵塞直到进程关闭(为�
     返回 (结果)
 ```
 ### HD系统_执行DOS指令取返回 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_执行DOS指令取返回 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -995,7 +999,7 @@ bool Bwait - 是否等待进程结束返回1.真会堵塞直到进程关闭(为�
 获取CMD命令形式的打开进程(支持管理员打开)(扩展版本)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_RunAppGetRetEx(char* cmdApp,char* lparam,BOOL bAs=TRUE);
 ```
 ### 参数
@@ -1014,13 +1018,13 @@ bool bAs - 是否管理员
 内部是调用ShellExecuteExA
 ```
 ### HD系统_管理员打开进程 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_管理员打开进程 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1033,7 +1037,7 @@ bool bAs - 是否管理员
 运行指定路径下的exe这个支持启动参数
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_RunAppEx(char* path,char* appName,char* lparam,__int32 flag,longtype);
 ```
 ### 参数
@@ -1053,7 +1057,7 @@ __int32 flag - 挂起状态打开(4),直接打开运行(0)
 这个支持启动参数
 ```
 ### HD系统_启动EXE带参数 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _启动程序带参数
@@ -1068,13 +1072,13 @@ __int32 flag - 挂起状态打开(4),直接打开运行(0)
     .如果结束
 ```
 ### HD系统_启动EXE带参数 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_启动EXE带参数 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1087,7 +1091,7 @@ __int32 flag - 挂起状态打开(4),直接打开运行(0)
 运行指定路径下的exe(HCSYS_RunAppEx的扩展版本)这个支持启动参数同时指定了当前进程的路径
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_RunAppExxxx(char* path,char* appName,char* lparam,__int32 flag,longtype);
 ```
 ### 参数
@@ -1107,7 +1111,7 @@ __int32 flag - 挂起状态打开(4),直接打开运行(0)
 这个支持启动参数
 ```
 ### HD系统_启动EXE带参数Ex - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 测试检查虚拟机状态, 逻辑型, 公开
@@ -1130,13 +1134,13 @@ __int32 flag - 挂起状态打开(4),直接打开运行(0)
     返回 (是否运行)
 ```
 ### HD系统_启动EXE带参数Ex - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_启动EXE带参数Ex - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1149,7 +1153,7 @@ __int32 flag - 挂起状态打开(4),直接打开运行(0)
 获取磁盘特征码
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetHDiskCode();
 ```
 ### 返回值
@@ -1161,13 +1165,13 @@ __int64 __stdcall HCSYS_GetHDiskCode();
 无
 ```
 ### HD系统_获取磁盘特征码 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_获取磁盘特征码 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1180,7 +1184,7 @@ __int64 __stdcall HCSYS_GetHDiskCode();
 获取CPU特征码
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetCpuCode();
 ```
 ### 返回值
@@ -1192,13 +1196,13 @@ __int64 __stdcall HCSYS_GetCpuCode();
 无
 ```
 ### HD系统_获取CPU特征码 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_获取CPU特征码 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1211,7 +1215,7 @@ __int64 __stdcall HCSYS_GetCpuCode();
 获取BOIS制造日期
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetBIOSInfo();
 ```
 ### 返回值
@@ -1223,7 +1227,7 @@ __int64 __stdcall HCSYS_GetBIOSInfo();
 无
 ```
 ### HD系统_获取BOIS制造日期 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _HD截图获取BMP数据示例
@@ -1264,13 +1268,13 @@ __int64 __stdcall HCSYS_GetBIOSInfo();
     .如果结束
 ```
 ### HD系统_获取BOIS制造日期 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_获取BOIS制造日期 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1283,7 +1287,7 @@ __int64 __stdcall HCSYS_GetBIOSInfo();
 获取机器码(包含网卡)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetMachineCode();
 ```
 ### 返回值
@@ -1296,7 +1300,7 @@ __int64 __stdcall HCSYS_GetMachineCode();
 无
 ```
 ### HD系统_获取机器码 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _获取机器码
@@ -1306,13 +1310,13 @@ __int64 __stdcall HCSYS_GetMachineCode();
     调试输出 ("机器码: " + 机器码)
 ```
 ### HD系统_获取机器码 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_获取机器码 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1325,7 +1329,7 @@ __int64 __stdcall HCSYS_GetMachineCode();
 获取机器码(不包含网卡)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetMachineCodeNoMac();
 ```
 ### 返回值
@@ -1337,7 +1341,7 @@ __int64 __stdcall HCSYS_GetMachineCodeNoMac();
 无
 ```
 ### HD系统_获取机器码无网卡 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _获取CPU特征码
@@ -1347,13 +1351,13 @@ __int64 __stdcall HCSYS_GetMachineCodeNoMac();
     调试输出 ("CPU特征码: " + CPU特征码)
 ```
 ### HD系统_获取机器码无网卡 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_获取机器码无网卡 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1366,7 +1370,7 @@ __int64 __stdcall HCSYS_GetMachineCodeNoMac();
 获取网络时间
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetNetTime();
 ```
 ### 返回值
@@ -1379,7 +1383,7 @@ __int64 __stdcall HCSYS_GetNetTime();
 固定内置服务器IP
 ```
 ### HD系统_获取网络时间 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _获取网络时间
@@ -1389,13 +1393,13 @@ __int64 __stdcall HCSYS_GetNetTime();
     调试输出 ("网络时间: " + 网络时间)
 ```
 ### HD系统_获取网络时间 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_获取网络时间 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1408,7 +1412,7 @@ __int64 __stdcall HCSYS_GetNetTime();
 获取网络时间(指定服务器IP获取)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetNetTimeByIp(char* ip);
 ```
 ### 参数
@@ -1424,13 +1428,13 @@ char* ip - ip字符串(如
 北京时间
 ```
 ### HD系统_获取网络时间Ex - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_获取网络时间Ex - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1443,7 +1447,7 @@ char* ip - ip字符串(如
 获取系统版本
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetSystemBuildNumber();
 ```
 ### 返回值
@@ -1456,7 +1460,7 @@ __int64 __stdcall HCSYS_GetSystemBuildNumber();
 无
 ```
 ### HD系统_获取系统版本 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _获取BIOS日期
@@ -1466,13 +1470,13 @@ __int64 __stdcall HCSYS_GetSystemBuildNumber();
     调试输出 ("BIOS制造日期: " + BIOS日期)
 ```
 ### HD系统_获取系统版本 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_获取系统版本 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1485,7 +1489,7 @@ __int64 __stdcall HCSYS_GetSystemBuildNumber();
 获取系统类型
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetSystemType();
 ```
 ### 返回值
@@ -1507,7 +1511,7 @@ win11(9)
 无
 ```
 ### HD系统_获取系统类型 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _获取系统版本
@@ -1517,13 +1521,13 @@ win11(9)
     调试输出 ("系统版本号: " + 到文本 (系统版本))
 ```
 ### HD系统_获取系统类型 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_获取系统类型 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1536,7 +1540,7 @@ win11(9)
 获取开机到现在过经过的时间(毫秒)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetTime();
 ```
 ### 返回值
@@ -1548,13 +1552,13 @@ __int64 __stdcall HCSYS_GetTime();
 无
 ```
 ### HD系统_开机经过时间 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_开机经过时间 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1567,7 +1571,7 @@ __int64 __stdcall HCSYS_GetTime();
 当前进程是否是64位
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_Is64Bit();
 ```
 ### 返回值
@@ -1579,13 +1583,13 @@ __int64 __stdcall HCSYS_Is64Bit();
 无
 ```
 ### HD系统_当前进程是否X64 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_当前进程是否X64 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1598,7 +1602,7 @@ __int64 __stdcall HCSYS_Is64Bit();
 是否支持vt
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_IsSurrpotVt();
 ```
 ### 返回值
@@ -1610,7 +1614,7 @@ __int64 __stdcall HCSYS_IsSurrpotVt();
 可以在Bios中开启vt,如果不支持就没办法了
 ```
 ### HD系统_是否支持vt - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 测试检查代理状态, 逻辑型, 公开
@@ -1638,13 +1642,13 @@ __int64 __stdcall HCSYS_IsSurrpotVt();
     返回 (状态)
 ```
 ### HD系统_是否支持vt - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_是否支持vt - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1657,7 +1661,7 @@ __int64 __stdcall HCSYS_IsSurrpotVt();
 获取屏幕的色深(24/32之类的)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetScreenPixelDepth();
 ```
 ### 返回值
@@ -1669,7 +1673,7 @@ __int64 __stdcall HCSYS_GetScreenPixelDepth();
 无
 ```
 ### HD系统_获取屏幕的色深 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _获取磁盘特征码
@@ -1679,13 +1683,13 @@ __int64 __stdcall HCSYS_GetScreenPixelDepth();
     调试输出 ("磁盘特征码: " + 到文本 (磁盘特征码))
 ```
 ### HD系统_获取屏幕的色深 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_获取屏幕的色深 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1698,7 +1702,7 @@ __int64 __stdcall HCSYS_GetScreenPixelDepth();
 设置屏幕的色深
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_SetScreenPixelDepth(__int32 dmBitsPerPel);
 ```
 ### 参数
@@ -1714,7 +1718,7 @@ __int32 dmBitsPerPel - 像素深度值(24/32之类的)
 无
 ```
 ### HD系统_设置屏幕的色深 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _执行DOS命令
@@ -1724,13 +1728,13 @@ __int32 dmBitsPerPel - 像素深度值(24/32之类的)
     调试输出 ("命令执行结果: " + 执行结果)
 ```
 ### HD系统_设置屏幕的色深 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_设置屏幕的色深 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1743,7 +1747,7 @@ __int32 dmBitsPerPel - 像素深度值(24/32之类的)
 获取屏幕高度
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetScreenHeight();
 ```
 ### 返回值
@@ -1755,7 +1759,7 @@ __int64 __stdcall HCSYS_GetScreenHeight();
 无
 ```
 ### HD系统_获取屏幕高度 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _获取屏幕高度
@@ -1765,13 +1769,13 @@ __int64 __stdcall HCSYS_GetScreenHeight();
     调试输出 ("屏幕高度: " + 到文本 (屏幕高度) + " 像素")
 ```
 ### HD系统_获取屏幕高度 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_获取屏幕高度 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1784,7 +1788,7 @@ __int64 __stdcall HCSYS_GetScreenHeight();
 获取屏幕宽度
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetScreenWidth();
 ```
 ### 返回值
@@ -1796,7 +1800,7 @@ __int64 __stdcall HCSYS_GetScreenWidth();
 无
 ```
 ### HD系统_获取屏幕宽度 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _获取屏幕宽度
@@ -1806,13 +1810,13 @@ __int64 __stdcall HCSYS_GetScreenWidth();
     调试输出 ("屏幕宽度: " + 到文本 (屏幕宽度) + " 像素")
 ```
 ### HD系统_获取屏幕宽度 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_获取屏幕宽度 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1825,7 +1829,7 @@ __int64 __stdcall HCSYS_GetScreenWidth();
 设置屏幕分辨率
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_SetScreen(__int32 width,__int32 height);
 ```
 ### 参数
@@ -1842,7 +1846,7 @@ __int32 width - 宽度
 无
 ```
 ### HD系统_设置屏幕分辨率 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _设置分辨率
@@ -1857,13 +1861,13 @@ __int32 width - 宽度
     .如果结束
 ```
 ### HD系统_设置屏幕分辨率 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_设置屏幕分辨率 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1876,7 +1880,7 @@ __int32 width - 宽度
 获取CMD命令返回值(字符串)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSYS_GetCmdRet(char* cmd);
 ```
 ### 参数
@@ -1892,7 +1896,7 @@ char* cmd - cmd命令字符串
 无
 ```
 ### HD系统_获取CMD命令返回值 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _字节集转十六进制
@@ -1904,13 +1908,13 @@ char* cmd - cmd命令字符串
     调试输出 ("十六进制: " + 十六进制文本)
 ```
 ### HD系统_获取CMD命令返回值 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD系统_获取CMD命令返回值 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")

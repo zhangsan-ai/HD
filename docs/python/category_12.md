@@ -1,3 +1,7 @@
+---
+sidebar_position: 13
+---
+
 # 🛰️ 通用模块
 ## 📌 函数: HD通用_CALLX64
 ### 描述
@@ -5,7 +9,7 @@
 通用CALL(适合X64),支持0-8个参数
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HC_CALL(__int32 窗口序号,__int64 CALL地址,__int64 rcx=0,__int64 rdx=0,__int64 r8=0,__int64 r9=0,__int64 lparam5=0,__int64 lparam6=0,__int64 lparam7=0,__int64 lparam8=0,BOOL 是否主线程调用=FALSE);
 ```
 ### 参数
@@ -31,20 +35,20 @@ bool 是否主线程调用 - 是否主线程调用这个CALL,需要挂接主线�
 如果需要更多参数传递请联系作者
 ```
 ### HD通用_CALLX64 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD通用_CALLX64 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD通用_CALLX64 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -58,7 +62,7 @@ bool 是否主线程调用 - 是否主线程调用这个CALL,需要挂接主线�
 通用CALL(适合X86),支持0到8个参数
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HC_CALLX86(__int32 窗口序号,__int32 CALL地址,__int32 ecx=0,__int32 lparam1=0,__int32 lparam2=0,__int32 lparam3=0,__int32 lparam4=0,__int32 lparam5=0,__int32 lparam6=0,__int32 lparam7=0,__int32 lparam8=0,__int32 lparamNum=0,__int32 addEsp=-1,BOOL 是否主线程调用=FALSE);
 ```
 ### 参数
@@ -91,20 +95,20 @@ HC_HookMaint hread
 无
 ```
 ### HD通用_CALLX86 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD通用_CALLX86 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD通用_CALLX86 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例

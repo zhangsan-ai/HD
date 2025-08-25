@@ -1,3 +1,7 @@
+---
+sidebar_position: 23
+---
+
 # 🛰️ 窗口模块(WIN)
 ## 📌 函数: HD窗口.排序通讯窗口
 ### 描述
@@ -5,7 +9,7 @@
 排序安装过插件的进程
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCWIN_SortWindows(__int32 offsetW,__int32 offsetH,__int32 width,__int32 height);
 ```
 ### 参数
@@ -27,20 +31,20 @@ __int32 height - 窗口高度
 3.HCInject_Init这个接口一旦调用,就会取消所有关联(意味着不能重连了),从而影响当前绑定的窗口PID,意味着新窗口即将打开
 ```
 ### HD窗口.排序通讯窗口 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.排序通讯窗口 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.排序通讯窗口 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -54,7 +58,7 @@ __int32 height - 窗口高度
 伪装进程(防止检查到实际的进程存在)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCWIN_CamouflageProcess(char* runName,char* targetPath,__int32 type);
 ```
 ### 参数
@@ -74,20 +78,20 @@ __int32 type - 需要伪装的进程位数32或64
 把注入器伪装成了hd.exe
 ```
 ### HD窗口.伪装进程 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.伪装进程 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.伪装进程 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -101,7 +105,7 @@ __int32 type - 需要伪装的进程位数32或64
 设置或者操作窗口状态
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCWIN_SetWindowState(__int64 hwnd,__int32 type);
 ```
 ### 参数
@@ -117,20 +121,20 @@ __int64 hwnd - 窗口句柄如果type==18/19表示刷新桌面这个时候hwnd�
 无
 ```
 ### HD窗口.设置窗口状态 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.设置窗口状态 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.设置窗口状态 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -144,7 +148,7 @@ __int64 hwnd - 窗口句柄如果type==18/19表示刷新桌面这个时候hwnd�
 设置窗口大小
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCWIN_SetWindowSize(__int64 hwnd,__int32 width,__int32 hight,BOOL bCenter=FALSE);
 ```
 ### 参数
@@ -163,20 +167,20 @@ bool bCenter - 窗口是否居中
 窗口居中会改变窗口位置
 ```
 ### HD窗口.设置窗口大小 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.设置窗口大小 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.设置窗口大小 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -190,7 +194,7 @@ bool bCenter - 窗口是否居中
 移动窗口
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCWIN_MoveWindow(__int64 hwnd,__int32 x,__int32 y);
 ```
 ### 参数
@@ -208,20 +212,20 @@ __int32 y - 屏幕坐标y
 无
 ```
 ### HD窗口.窗口移动 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.窗口移动 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.窗口移动 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -235,7 +239,7 @@ __int32 y - 屏幕坐标y
 目标窗口句柄/目标进程是否64位
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCWIN_IsWow64Process(__int64 hwnd,__int32 pid=0);
 ```
 ### 参数
@@ -253,20 +257,20 @@ __int32 pid - 进程PID
 如果2个都指定则PID用于检测
 ```
 ### HD窗口.是否64位进程 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.是否64位进程 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.是否64位进程 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -280,7 +284,7 @@ __int32 pid - 进程PID
 获取目标窗口标题
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCWIN_GetWindowTitle(__int64 hwnd);
 ```
 ### 参数
@@ -296,20 +300,20 @@ __int64 hwnd - 窗口句柄
 无
 ```
 ### HD窗口.获取窗口标题 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.获取窗口标题 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.获取窗口标题 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -323,7 +327,7 @@ __int64 hwnd - 窗口句柄
 获取目标窗口句柄的线程ID
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCWIN_GetWindowThreadProcessId(__int64 hwnd);
 ```
 ### 参数
@@ -339,20 +343,20 @@ __int64 hwnd - 窗口句柄
 无
 ```
 ### HD窗口.获取窗口线程ID - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.获取窗口线程ID - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.获取窗口线程ID - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -366,7 +370,7 @@ __int64 hwnd - 窗口句柄
 获取目标窗口句柄的进程ID
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCWIN_GetWindowProcessId(__int64 hwnd);
 ```
 ### 参数
@@ -382,20 +386,20 @@ __int64 hwnd - 窗口句柄
 无
 ```
 ### HD窗口.获取窗口进程ID - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.获取窗口进程ID - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.获取窗口进程ID - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -409,7 +413,7 @@ __int64 hwnd - 窗口句柄
 获取目标窗口句柄的路径
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCWIN_GetWindowProcessPath(__int64 hwnd);
 ```
 ### 参数
@@ -425,20 +429,20 @@ __int64 hwnd - 窗口句柄
 无
 ```
 ### HD窗口.获取窗口进程路径 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.获取窗口进程路径 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.获取窗口进程路径 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -452,7 +456,7 @@ __int64 hwnd - 窗口句柄
 获取窗口在屏幕上的位置
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCWIN_GetWindowRect(__int64 hwnd,void* pRect=NULL);
 ```
 ### 参数
@@ -472,20 +476,20 @@ RECT结构体:
 typedefstructtagRECT{LONGleft;LONGtop;LONGright;LONGbottom;}RECT,* PRECT;
 ```
 ### HD窗口.获取窗口位置 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.获取窗口位置 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.获取窗口位置 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -499,7 +503,7 @@ typedefstructtagRECT{LONGleft;LONGtop;LONGright;LONGbottom;}RECT,* PRECT;
 获取目标窗口句柄的窗口类名
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCWIN_GetWindowClass(__int64 hwnd);
 ```
 ### 参数
@@ -515,20 +519,20 @@ __int64 hwnd - 窗口句柄
 无
 ```
 ### HD窗口.获取窗口类名 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.获取窗口类名 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.获取窗口类名 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -542,7 +546,7 @@ __int64 hwnd - 窗口句柄
 获取目标窗口句柄的窗口状态
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCWIN_GetWindowState(__int64 hwnd,__int32 flag);
 ```
 ### 参数
@@ -559,20 +563,20 @@ __int32 flag - 判断窗口是否存在(0),判断窗口是否处于激活(1),判
 无
 ```
 ### HD窗口.获取窗口状态 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.获取窗口状态 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.获取窗口状态 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -586,7 +590,7 @@ __int32 flag - 判断窗口是否存在(0),判断窗口是否处于激活(1),判
 获取特殊窗口桌面Shell_TrayWnd
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCWIN_GetSpecialWindow(__int32 flag);
 ```
 ### 参数
@@ -602,20 +606,20 @@ __int32 flag - 桌面(0),Shell_TrayWnd(1)
 无
 ```
 ### HD窗口.获取特殊窗口 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.获取特殊窗口 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.获取特殊窗口 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -629,7 +633,7 @@ __int32 flag - 桌面(0),Shell_TrayWnd(1)
 获取目标窗口句柄的关联窗口句柄
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCWIN_GetWindow(__int64 hwnd,__int32 flag)
 ```
 ### 参数
@@ -646,20 +650,20 @@ __int32 flag - 获取父窗口(0),获取第一个子窗口(1),获取第一个窗
 无
 ```
 ### HD窗口.获取窗口关联句柄 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.获取窗口关联句柄 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.获取窗口关联句柄 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -673,7 +677,7 @@ __int32 flag - 获取父窗口(0),获取第一个子窗口(1),获取第一个窗
 获取顶层活动窗口,可以获取到按键自带插件无法获取到的句柄
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCWIN_GetForegroundWindow();
 ```
 ### 返回值
@@ -685,20 +689,20 @@ __int64 __stdcall HCWIN_GetForegroundWindow();
 无
 ```
 ### HD窗口.获取顶层活动窗口句柄 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.获取顶层活动窗口句柄 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.获取顶层活动窗口句柄 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -712,7 +716,7 @@ __int64 __stdcall HCWIN_GetForegroundWindow();
 获取顶层活动窗口中具有输入焦点的窗口句柄
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCWIN_GetForegroundFocus();
 ```
 ### 返回值
@@ -724,20 +728,20 @@ __int64 __stdcall HCWIN_GetForegroundFocus();
 无
 ```
 ### HD窗口.获取顶层焦点窗口句柄 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.获取顶层焦点窗口句柄 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.获取顶层焦点窗口句柄 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -751,7 +755,7 @@ __int64 __stdcall HCWIN_GetForegroundFocus();
 设置输入焦点到窗口
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCWIN_SetForegroundFocus(__int64 hwnd);
 ```
 ### 参数
@@ -767,20 +771,20 @@ __int64 hwnd - 窗口句柄
 无
 ```
 ### HD窗口.设置焦点到窗口 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.设置焦点到窗口 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.设置焦点到窗口 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -794,7 +798,7 @@ __int64 hwnd - 窗口句柄
 获取窗口客户区域的宽度和高度
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCWIN_GetClientSize(__int64 hwnd,void* pW=NULL,void* pH=NULL);
 ```
 ### 参数
@@ -813,20 +817,20 @@ void pH - 指向4字节高度整数int 地址(供C/C++使用),其他语言调用
 w|h|
 ```
 ### HD窗口.获取窗口客户区域 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.获取窗口客户区域 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.获取窗口客户区域 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -840,7 +844,7 @@ w|h|
 获取窗口客户区域在屏幕上的位置
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCWIN_GetClientRectInWindow(__int64 hwnd,void* pRect=NULL);
 ```
 ### 参数
@@ -860,20 +864,20 @@ RECT结构体:
 typedefstructtagRECT{LONGleft;LONGtop;LONGright;LONGbottom;}RECT,* PRECT;
 ```
 ### HD窗口.获取窗口客户区域在屏幕 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.获取窗口客户区域在屏幕 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.获取窗口客户区域在屏幕 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -887,7 +891,7 @@ typedefstructtagRECT{LONGleft;LONGtop;LONGright;LONGbottom;}RECT,* PRECT;
 查找符合类名或者标题名的顶层可见窗口,如果指定了parent,则在parent的第一层子窗口中查找
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCWIN_FindWindowEx(__int64 parentHwnd,char* className,char* title,BOOL bType=FALSE);
 ```
 ### 参数
@@ -906,20 +910,20 @@ bool bType - 真/1为模糊匹配假/0为完全匹配
 无
 ```
 ### HD窗口.查找窗口 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.查找窗口 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.查找窗口 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -933,7 +937,7 @@ bool bType - 真/1为模糊匹配假/0为完全匹配
 查找顶层窗口句柄,父窗口句柄为NULL
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCWIN_FindTopWindow(char* className,char* title,BOOL bType=FALSE);
 ```
 ### 参数
@@ -951,20 +955,20 @@ bool bType - 真/1为模糊匹配假/0为完全匹配
 无
 ```
 ### HD窗口.查找顶层窗口 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.查找顶层窗口 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.查找顶层窗口 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -978,7 +982,7 @@ bool bType - 真/1为模糊匹配假/0为完全匹配
 根据指定进程以及其它条件,枚举系统中符合条件的窗口
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCWIN_EnumWindowByProcess(char* processName,char* className,char* title,__int32 filter,BOOL bType=FALSE);
 ```
 ### 参数
@@ -1002,20 +1006,20 @@ hwnd
 hwnd1|hwnd2|hwnd3|
 ```
 ### HD窗口.枚举查找窗口 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.枚举查找窗口 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.枚举查找窗口 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -1029,7 +1033,7 @@ hwnd1|hwnd2|hwnd3|
 根据指定进程pid以及其它条件,枚举系统中符合条件的窗口,可以枚举到按键自带的无法枚举到的窗口
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCWIN_EnumWindowByProcessId(__int32 pid,char* className,char* title,__int32 filter,BOOL bType=FALSE);
 ```
 ### 参数
@@ -1052,20 +1056,20 @@ bool bType - 真/1为模糊匹配假/0为完全匹配
 hwnd
 ```
 ### HD窗口.枚举查找窗口Ex - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.枚举查找窗口Ex - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.枚举查找窗口Ex - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -1079,7 +1083,7 @@ hwnd
 根据指定进程名,枚举系统中符合条件的进程PID
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCWIN_EnumProcess(char* processName,BOOL bType=FALSE);
 ```
 ### 参数
@@ -1098,20 +1102,20 @@ bool bType - 真/1为模糊匹配假/0为完全匹配
 pid1|pid2|pid3|
 ```
 ### HD窗口.枚举进程 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.枚举进程 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.枚举进程 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -1125,7 +1129,7 @@ pid1|pid2|pid3|
 根据指定条件,枚举系统中符合条件的窗口,可以枚举到按键自带的无法枚举到的窗口
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCWIN_EnumWindow(__int64 parentHwnd,char* className,char* title,__int32 filter,BOOL bType=FALSE,BOOL bChild=FALSE);
 ```
 ### 参数
@@ -1148,20 +1152,20 @@ bool bChild - 根据指定条件,枚举指定父句柄的子窗口
 hwnd1|hwnd2|hwnd3|
 ```
 ### HD窗口.枚举窗口 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.枚举窗口 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HD窗口.枚举窗口 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例

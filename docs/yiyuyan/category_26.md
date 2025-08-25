@@ -1,3 +1,7 @@
+---
+sidebar_position: 27
+---
+
 # 🛰️ 找图模块(FP)
 ## 📌 函数: HD识图_截图
 ### 描述
@@ -5,7 +9,7 @@
 截图并保存到文件(.bmp)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_Capture(__int32 窗口序号,__int32 x,__int32 y,__int32 w,__int32 h,char* fileNamePath,BOOL 是否打开查看器=FALSE);
 ```
 ### 参数
@@ -27,7 +31,7 @@ bool 是否打开查看器 - 是否打开查看
 无
 ```
 ### HD识图_截图 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _识图截图示例
@@ -47,13 +51,13 @@ bool 是否打开查看器 - 是否打开查看
     .如果结束
 ```
 ### HD识图_截图 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_截图 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -66,7 +70,7 @@ bool 是否打开查看器 - 是否打开查看
 单点找色
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_FindColor(__int32 窗口序号,__int32 x,__int32 y,__int32 w,__int32 h,char* deltaColor,doublesim,__int32 dirType=0);
 ```
 ### 参数
@@ -91,7 +95,7 @@ json:\"{\"error\":0,\"ret\":[{\"bRet\":ret,\"info\":\"X1,Y1\"}]}\",
 注意返回值含义和XY值的提取
 ```
 ### HD识图_单点找色 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _单点找色示例
@@ -150,13 +154,13 @@ json:\"{\"error\":0,\"ret\":[{\"bRet\":ret,\"info\":\"X1,Y1\"}]}\",
     返回 (找色结果)
 ```
 ### HD识图_单点找色 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_单点找色 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -169,7 +173,7 @@ json:\"{\"error\":0,\"ret\":[{\"bRet\":ret,\"info\":\"X1,Y1\"}]}\",
 多点找色
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_FindColors(__int32 窗口序号,__int32 x,__int32 y,__int32 w,__int32 h,char* deltaColor,doublesim,__int32 dirType=0);
 ```
 ### 参数
@@ -195,7 +199,7 @@ json:
 info格式->像素序号,x1,y1|像素序号,x2,y2
 ```
 ### HD识图_多点找色 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _多点找色示例
@@ -218,13 +222,13 @@ info格式->像素序号,x1,y1|像素序号,x2,y2
     .如果结束
 ```
 ### HD识图_多点找色 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_多点找色 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -237,7 +241,7 @@ info格式->像素序号,x1,y1|像素序号,x2,y2
 多点偏移找色
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_FindColorsOffset(__int32 窗口序号,__int32 x,__int32 y,__int32 w,__int32 h,char* firstDeltaColor,char* deltaColor,doublesim,__int32 bALL=0,__int32 dirType=0);
 ```
 ### 参数
@@ -264,7 +268,7 @@ json:
 info:x1,y1|x2,y2|
 ```
 ### HD识图_多点偏移找色 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _多点偏移找色示例
@@ -291,13 +295,13 @@ info:x1,y1|x2,y2|
     .如果结束
 ```
 ### HD识图_多点偏移找色 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_多点偏移找色 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -310,7 +314,7 @@ info:x1,y1|x2,y2|
 比较颜色
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_CmpColors(__int32 窗口序号,__int32 x,__int32 y,char* deltaColor);
 ```
 ### 参数
@@ -329,7 +333,7 @@ char* deltaColor - XXXXXX-YYYYYY格式
 无
 ```
 ### HD识图_比较颜色 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _简单颜色比较示例
@@ -349,13 +353,13 @@ char* deltaColor - XXXXXX-YYYYYY格式
     .如果结束
 ```
 ### HD识图_比较颜色 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_比较颜色 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -368,7 +372,7 @@ char* deltaColor - XXXXXX-YYYYYY格式
 多点找色确定某个图像块,指定多个具体点
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_CmpColorExs(__int32 窗口序号,char* deltaXYColor);
 ```
 ### 参数
@@ -389,7 +393,7 @@ json:\"{\"error\":0,\"ret\":[{\"bRet\":ret,\"info\":”X1,Y1“}]}\",
 而这个HCFP_FindColorsOffset是是先搜索首色然后以首色开始拿到偏移的坐标去比较颜色
 ```
 ### HD识图_比较颜色Ex - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _比较颜色Ex示例
@@ -413,13 +417,13 @@ json:\"{\"error\":0,\"ret\":[{\"bRet\":ret,\"info\":”X1,Y1“}]}\",
     .如果结束
 ```
 ### HD识图_比较颜色Ex - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_比较颜色Ex - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -432,7 +436,7 @@ json:\"{\"error\":0,\"ret\":[{\"bRet\":ret,\"info\":”X1,Y1“}]}\",
 获取某个点的颜色值(从后台)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_GetColor(__int32 窗口序号,__int32 x,__int32 y);
 ```
 ### 参数
@@ -455,7 +459,7 @@ json:
 “{\"error\":0,\"ret\":[{\"bRet\":1,\"info\":\"44,29,5B\"}]}”A(0x00)rgbr红色:低8位g绿色:中8位b蓝色:高8位RGBFFFFFF
 ```
 ### HD识图_获取颜色 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _获取颜色示例
@@ -482,13 +486,13 @@ json:
     .如果结束
 ```
 ### HD识图_获取颜色 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_获取颜色 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -501,7 +505,7 @@ json:
 在客户区范围内找图(仅支持一个图片)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_FindPic(__int32 窗口序号,__int32 x,__int32 y,__int32 w,__int32 h,char* 图片名字,char* deltaColor,doublesim,__int32 dirType=0);
 ```
 ### 参数
@@ -531,7 +535,7 @@ NN:返回值
 MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(0开始),左上角X,左上角Y,宽度,高度|
 ```
 ### HD识图_范围找图 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _范围找图示例
@@ -555,13 +559,13 @@ MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(
     .如果结束
 ```
 ### HD识图_范围找图 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_范围找图 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -574,7 +578,7 @@ MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(
 在客户区范围内找图(返回找到其中一张信息)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_FindPicEx(__int32 窗口序号,__int32 x,__int32 y,__int32 w,__int32 h,char* 图片名字集合,char* deltaColor,doublesim,__int32 dirType=0);
 ```
 ### 参数
@@ -605,7 +609,7 @@ NN:返回值
 MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(0开始),左上角X,左上角Y,宽度,高度|
 ```
 ### HD识图_范围找图Ex - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _范围找图EX示例
@@ -633,13 +637,13 @@ MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(
     .如果结束
 ```
 ### HD识图_范围找图Ex - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_范围找图Ex - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -652,7 +656,7 @@ MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(
 在客户区范围内找图(返回全部找到的信息)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_FindPicExx(__int32 窗口序号,__int32 x,__int32 y,__int32 w,__int32 h,char* 图片名字集合,char* deltaColor,doublesim,BOOL bAll=TRUE,__int32 dirType=0);
 ```
 ### 参数
@@ -683,7 +687,7 @@ NN:返回值
 MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(0开始),左上角X,左上角Y,宽度,高度|
 ```
 ### HCFP_FindPicExx - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _范围找图示例
@@ -707,13 +711,13 @@ MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(
     .如果结束
 ```
 ### HCFP_FindPicExx - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HCFP_FindPicExx - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -726,7 +730,7 @@ MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(
 在客户区范围内检测再规定时间内是否卡图
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_IsDisplayDead(__int32 窗口序号,__int32 x,__int32 y,__int32 w,__int32 h,__int32 mstime);
 ```
 ### 参数
@@ -747,7 +751,7 @@ __int32 mstime - 间隔时间(不变就说明卡屏了),不会卡主线程
 无
 ```
 ### HD识图_是否卡屏 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _检测卡屏示例
@@ -768,13 +772,13 @@ __int32 mstime - 间隔时间(不变就说明卡屏了),不会卡主线程
     .如果结束
 ```
 ### HD识图_是否卡屏 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_是否卡屏 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -787,7 +791,7 @@ __int32 mstime - 间隔时间(不变就说明卡屏了),不会卡主线程
 在客户区范围内获取像素CRC值,用于卡屏校验
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_GetRangeCRC(__int32 窗口序号,__int32 x,__int32 y,__int32 w,__int32 h);
 ```
 ### 参数
@@ -809,7 +813,7 @@ json:
 info字段是校验值4字节整数
 ```
 ### HD识图_获取区域图像CRC - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _获取区域CRC示例
@@ -836,13 +840,13 @@ info字段是校验值4字节整数
     .如果结束
 ```
 ### HD识图_获取区域图像CRC - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_获取区域图像CRC - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -855,7 +859,7 @@ info字段是校验值4字节整数
 单点找色(从文件)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_FindColorByFile(__int32 窗口序号,char* orgImageName,__int32 x,__int32 y,__int32 w,__int32 h,char* deltaColor,doublesim,__int32 dirType=0);
 ```
 ### 参数
@@ -881,7 +885,7 @@ json:\"{\"error\":0,\"ret\":[{\"bRet\":ret,\"info\":\"X1,Y1\"}]}\",
 注意返回值含义和XY值的提取
 ```
 ### HD识图_单点找色从文件 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _从文件找色示例
@@ -901,13 +905,13 @@ json:\"{\"error\":0,\"ret\":[{\"bRet\":ret,\"info\":\"X1,Y1\"}]}\",
     .如果结束
 ```
 ### HD识图_单点找色从文件 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_单点找色从文件 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -920,7 +924,7 @@ json:\"{\"error\":0,\"ret\":[{\"bRet\":ret,\"info\":\"X1,Y1\"}]}\",
 单点找色(从内存)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_FindColorByMem(__int32 窗口序号,BYTE* data,__int32 dataSize,__int32 x,__int32 y,__int32 w,__int32 h,char* deltaColor,doublesim,__int32 dirType=0);
 ```
 ### 参数
@@ -948,7 +952,7 @@ json:\"{\"error\":0,\"ret\":[{\"bRet\":ret,\"info\":\"X1,Y1\"}]}\",
 图片内存缓冲区自己维护
 ```
 ### HD识图_单点找色从内存 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _从内存找色示例
@@ -977,13 +981,13 @@ json:\"{\"error\":0,\"ret\":[{\"bRet\":ret,\"info\":\"X1,Y1\"}]}\",
     .如果结束
 ```
 ### HD识图_单点找色从内存 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_单点找色从内存 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -996,7 +1000,7 @@ json:\"{\"error\":0,\"ret\":[{\"bRet\":ret,\"info\":\"X1,Y1\"}]}\",
 多点找色(从文件)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_FindColorsByFile(__int32 窗口序号,char* orgImageName,__int32 x,__int32 y,__int32 w,__int32 h,char* deltaColor,doublesim,__int32 dirType=0);
 ```
 ### 参数
@@ -1022,7 +1026,7 @@ json:
 info格式->像素序号,x1,y1|像素序号,x2,y2
 ```
 ### HD识图_多点找色从文件 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _从文件比较颜色示例
@@ -1040,13 +1044,13 @@ info格式->像素序号,x1,y1|像素序号,x2,y2
     .如果结束
 ```
 ### HD识图_多点找色从文件 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_多点找色从文件 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1059,7 +1063,7 @@ info格式->像素序号,x1,y1|像素序号,x2,y2
 多点找色(从内存)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_FindColorsByMem(__int32 窗口序号,BYTE* data,__int32 dataSize,__int32 x,__int32 y,__int32 w,__int32 h,char* deltaColor,doublesim,__int32 dirType=0);
 ```
 ### 参数
@@ -1087,7 +1091,7 @@ info格式->像素序号,x1,y1|像素序号,x2,y2
 图片内存缓冲区自己维护
 ```
 ### HD识图_多点找色从内存 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _从内存比较颜色示例
@@ -1114,13 +1118,13 @@ info格式->像素序号,x1,y1|像素序号,x2,y2
     .如果结束
 ```
 ### HD识图_多点找色从内存 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_多点找色从内存 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1133,7 +1137,7 @@ info格式->像素序号,x1,y1|像素序号,x2,y2
 多点偏移找色(从文件)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_FindColorsOffsetByFile(__int32 窗口序号,char* orgImageName,__int32 x,__int32 y,__int32 w,__int32 h,char* firstDeltaColor,char* deltaColor,doublesim,__int32 bALL=0,__int32 dirType=0);
 ```
 ### 参数
@@ -1159,7 +1163,7 @@ __int32 dirType - 排序类型/方向类型排序/方向类型
 无
 ```
 ### HD识图_多点偏移找色从文件 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _多点偏移找色示例
@@ -1186,13 +1190,13 @@ __int32 dirType - 排序类型/方向类型排序/方向类型
     .如果结束
 ```
 ### HD识图_多点偏移找色从文件 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_多点偏移找色从文件 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1205,7 +1209,7 @@ __int32 dirType - 排序类型/方向类型排序/方向类型
 多点偏移找色(从内存)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_FindColorsOffsetByMem(__int32 窗口序号,BYTE* data,__int32 dataSize,__int32 x,__int32 y,__int32 w,__int32 h,char* firstDeltaColor,char* deltaColor,doublesim,__int32 bALL=0,__int32 dirType=0);
 ```
 ### 参数
@@ -1232,7 +1236,7 @@ __int32 dirType - 排序类型/方向类型排序/方向类型
 图片内存缓冲区自己维护
 ```
 ### HD识图_多点偏移找色从内存 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _多点偏移找色示例
@@ -1259,13 +1263,13 @@ __int32 dirType - 排序类型/方向类型排序/方向类型
     .如果结束
 ```
 ### HD识图_多点偏移找色从内存 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_多点偏移找色从内存 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1278,7 +1282,7 @@ __int32 dirType - 排序类型/方向类型排序/方向类型
 在客户区范围内找图(从文件)(仅支持一个图片)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_FindPicByFile(__int32 窗口序号,char* orgImageName,__int32 x,__int32 y,__int32 w,__int32 h,char* 图片名字,char* deltaColor,doublesim,__int32 dirType=0);
 ```
 ### 参数
@@ -1308,7 +1312,7 @@ NN:返回值
 MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(0开始),左上角X,左上角Y,宽度,高度|
 ```
 ### HD识图_范围找图从文件 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _范围找图示例
@@ -1332,13 +1336,13 @@ MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(
     .如果结束
 ```
 ### HD识图_范围找图从文件 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_范围找图从文件 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1351,7 +1355,7 @@ MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(
 在客户区范围内找图(从内存)(仅支持一个图片)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_FindPicByMem(__int32 窗口序号,BYTE* data,__int32 dataSize,__int32 x,__int32 y,__int32 w,__int32 h,char* 图片名字,char* deltaColor,doublesim,__int32 dirType=0);
 ```
 ### 参数
@@ -1383,7 +1387,7 @@ NN:返回值
 MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(0开始),左上角X,左上角Y,宽度,高度|
 ```
 ### HD识图_范围找图从内存 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _范围找图示例
@@ -1407,13 +1411,13 @@ MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(
     .如果结束
 ```
 ### HD识图_范围找图从内存 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_范围找图从内存 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1426,7 +1430,7 @@ MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(
 在客户区范围内找图(从文件)(找到一个图片就返回)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_FindPicExByFile(__int32 窗口序号,char* orgImageName,__int32 x,__int32 y,__int32 w,__int32 h,char* 图片名字集合,char* deltaColor,doublesim,__int32 dirType=0);
 ```
 ### 参数
@@ -1457,7 +1461,7 @@ NN:返回值
 MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(0开始),左上角X,左上角Y,宽度,高度|
 ```
 ### HD识图_范围找图从文件Ex - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _范围找图EX示例
@@ -1485,13 +1489,13 @@ MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(
     .如果结束
 ```
 ### HD识图_范围找图从文件Ex - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_范围找图从文件Ex - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1504,7 +1508,7 @@ MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(
 在客户区范围内找图(从内存)(找到一个图片就返回)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_FindPicExByMem(__int32 窗口序号,BYTE* data,__int32 dataSize,__int32 x,__int32 y,__int32 w,__int32 h,char* 图片名字集合,char* deltaColor,doublesim,__int32 dirType=0);
 ```
 ### 参数
@@ -1537,7 +1541,7 @@ NN:返回值
 MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(0开始),左上角X,左上角Y,宽度,高度|
 ```
 ### HD识图_范围找图从内存Ex - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _范围找图EX示例
@@ -1565,13 +1569,13 @@ MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(
     .如果结束
 ```
 ### HD识图_范围找图从内存Ex - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_范围找图从内存Ex - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1584,7 +1588,7 @@ MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(
 在客户区范围内找图(从文件)(找全部图片信息坐标)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_FindPicExxByFile(__int32 窗口序号,char* orgImageName,__int32 x,__int32 y,__int32 w,__int32 h,char* 图片名字集合,char* deltaColor,doublesim,BOOL bAll=TRUE,__int32 dirType=0);
 ```
 ### 参数
@@ -1616,7 +1620,7 @@ NN:返回值
 MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(0开始),左上角X,左上角Y,宽度,高度|
 ```
 ### HCFP_FindPicExxByFile - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _范围找图示例
@@ -1640,13 +1644,13 @@ MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(
     .如果结束
 ```
 ### HCFP_FindPicExxByFile - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HCFP_FindPicExxByFile - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1659,7 +1663,7 @@ MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(
 在客户区范围内找图(从内存)(找全部图片信息坐标)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_FindPicExxByMem(__int32 窗口序号,BYTE* data,__int32 dataSize,__int32 x,__int32 y,__int32 w,__int32 h,char* 图片名字集合,char* deltaColor,doublesim,BOOL bAll=TRUE,__int32 dirType=0);
 ```
 ### 参数
@@ -1693,7 +1697,7 @@ NN:返回值
 MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(0开始),左上角X,左上角Y,宽度,高度|
 ```
 ### HCFP_FindPicExxByMem - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _范围找图示例
@@ -1717,13 +1721,13 @@ MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(
     .如果结束
 ```
 ### HCFP_FindPicExxByMem - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HCFP_FindPicExxByMem - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1736,7 +1740,7 @@ MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(
 在客户区范围内找图(子图从内存)(找到一个图片就返回)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_FindPicExFromMem(__int32 窗口序号,__int32 x,__int32 y,__int32 w,__int32 h,char* 子图内存地址集合字符串,char* deltaColor,doublesim,__int32 dirType=0);
 ```
 ### 参数
@@ -1768,7 +1772,7 @@ NN:返回值
 MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(0开始),左上角X,左上角Y,宽度,高度|
 ```
 ### HD识图_范围找图来源内存Ex - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _从内存找图Ex示例
@@ -1799,13 +1803,13 @@ MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(
     .如果结束
 ```
 ### HD识图_范围找图来源内存Ex - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_范围找图来源内存Ex - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1818,7 +1822,7 @@ MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(
 在客户区范围内找图(子图从内存)(找全部图片信息坐标)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_FindPicExxFromMem(__int32 窗口序号,__int32 x,__int32 y,__int32 w,__int32 h,char* 子图内存地址集合字符串,char* deltaColor,doublesim,BOOL bAll=TRUE,__int32 dirType=0);
 ```
 ### 参数
@@ -1851,7 +1855,7 @@ NN:返回值
 MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(0开始),左上角X,左上角Y,宽度,高度|
 ```
 ### HCFP_FindPicExxFromMem - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _从内存找图Ex示例
@@ -1882,13 +1886,13 @@ MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(
     .如果结束
 ```
 ### HCFP_FindPicExxFromMem - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HCFP_FindPicExxFromMem - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1901,7 +1905,7 @@ MM:index1,x1,y1,w1,h1|index2,x2,y2,w3,h3|index3,x3,y3,w3,h3|含义:图片索引(
 比较颜色(从文件)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_CmpColorsByFile(__int32 窗口序号,char* orgImageName,__int32 x,__int32 y,char* deltaColor);
 ```
 ### 参数
@@ -1923,7 +1927,7 @@ char* deltaColor - XXXXXX-YYYYYY格式
 无
 ```
 ### HD识图_比较颜色从文件 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _从文件比较颜色示例
@@ -1941,13 +1945,13 @@ char* deltaColor - XXXXXX-YYYYYY格式
     .如果结束
 ```
 ### HD识图_比较颜色从文件 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_比较颜色从文件 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -1960,7 +1964,7 @@ char* deltaColor - XXXXXX-YYYYYY格式
 比较颜色(从内存)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_CmpColorsByMem(__int32 窗口序号,BYTE* data,__int32 dataSize,__int32 x,__int32 y,char* deltaColor);
 ```
 ### 参数
@@ -1983,7 +1987,7 @@ char* deltaColor - XXXXXX-YYYYYY格式
 图片内存缓冲区自己维护
 ```
 ### HD识图_比较颜色从内存 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _从内存比较颜色示例
@@ -2010,13 +2014,13 @@ char* deltaColor - XXXXXX-YYYYYY格式
     .如果结束
 ```
 ### HD识图_比较颜色从内存 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_比较颜色从内存 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -2029,7 +2033,7 @@ char* deltaColor - XXXXXX-YYYYYY格式
 多点找色确定某个图像块,指定多个具体点,从文件
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_CmpColorExsByFile(__int32 窗口序号,char* orgImageName,char* deltaXYColor);
 ```
 ### 参数
@@ -2050,7 +2054,7 @@ json:\"{\"error\":0,\"ret\":[{\"bRet\":ret,\"info\":”X1,Y1“}]}\",
 无
 ```
 ### HD识图_比较颜色从文件Ex - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _比较颜色Ex示例
@@ -2074,13 +2078,13 @@ json:\"{\"error\":0,\"ret\":[{\"bRet\":ret,\"info\":”X1,Y1“}]}\",
     .如果结束
 ```
 ### HD识图_比较颜色从文件Ex - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_比较颜色从文件Ex - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -2093,7 +2097,7 @@ json:\"{\"error\":0,\"ret\":[{\"bRet\":ret,\"info\":”X1,Y1“}]}\",
 多点找色确定某个图像块,指定多个具体点,从内存
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_CmpColorExsByMem(__int32 窗口序号,BYTE* data,__int32 dataSize,char* deltaXYColor);
 ```
 ### 参数
@@ -2115,7 +2119,7 @@ json:\"{\"error\":0,\"ret\":[{\"bRet\":ret,\"info\":”X1,Y1“}]}\",
 无
 ```
 ### HD识图_比较颜色从内存Ex - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _比较颜色Ex示例
@@ -2139,13 +2143,13 @@ json:\"{\"error\":0,\"ret\":[{\"bRet\":ret,\"info\":”X1,Y1“}]}\",
     .如果结束
 ```
 ### HD识图_比较颜色从内存Ex - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_比较颜色从内存Ex - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -2158,7 +2162,7 @@ json:\"{\"error\":0,\"ret\":[{\"bRet\":ret,\"info\":”X1,Y1“}]}\",
 获取颜色(从文件)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_GetColorByFile(__int32 窗口序号,char* orgImageName,__int32 x,__int32 y);
 ```
 ### 参数
@@ -2181,7 +2185,7 @@ json:
 “{\"error\":0,\"ret\":[{\"bRet\":1,\"info\":\"44,29,5B\"}]}”A(0x00)rgbr红色:低8位g绿色:中8位b蓝色:高8位RGBFFFFFF
 ```
 ### HD识图_获取颜色从文件 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _获取颜色示例
@@ -2208,13 +2212,13 @@ json:
     .如果结束
 ```
 ### HD识图_获取颜色从文件 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_获取颜色从文件 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -2227,7 +2231,7 @@ json:
 获取颜色(从内存)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCFP_GetColorByMem(__int32 窗口序号,BYTE* data,__int32 dataSize,__int32 x,__int32 y);
 ```
 ### 参数
@@ -2252,7 +2256,7 @@ json:
 “{\"error\":0,\"ret\":[{\"bRet\":1,\"info\":\"44,29,5B\"}]}”A(0x00)rgbr红色:低8位g绿色:中8位b蓝色:高8位RGBFFFFFF
 ```
 ### HD识图_获取颜色从内存 - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _获取颜色示例
@@ -2279,13 +2283,13 @@ json:
     .如果结束
 ```
 ### HD识图_获取颜色从内存 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HD识图_获取颜色从内存 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")

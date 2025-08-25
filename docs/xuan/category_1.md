@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # 🛰️ 基础说明
 ## 📌 说明: HD简介
 ### 描述
@@ -54,12 +58,12 @@ https://www.bilibili.com/video/BV13c3vzfE2D/?spm_id_from=333.1387.homepage.video
 六.        以上内容，本人保留最终解释权。
 ```
 ### HD简介 - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 
 ```
 ### HD简介 - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 
 ```
@@ -328,12 +332,12 @@ https://www.bilibili.com/video/BV13c3vzfE2D/?spm_id_from=333.1387.homepage.video
 也可以可通过工具后台查看
 ```
 ### HD返回值表 - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 
 ```
 ### HD返回值表 - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 
 ```

@@ -1,3 +1,7 @@
+---
+sidebar_position: 5
+---
+
 # 🛰️ 登录验证(Login)
 ## 📌 函数: HD登录_登录
 ### 描述
@@ -5,7 +9,7 @@
 HD登录验证接口（强烈建议主线程中调用）
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCHD_Login(char* account,char* password,char* appName,char* appLparam,BOOL bAutoUpdate=FALSE,BOOL bShowMsgBox=FALSE);
 ```
 ### 参数
@@ -28,20 +32,20 @@ bool bShowMsgBox - 如果需要更新是否弹出消息框提醒
 2.如果自己写中控可以不用打开自动更新
 ```
 ### HD登录_登录 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD登录_登录 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD登录_登录 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -55,7 +59,7 @@ bool bShowMsgBox - 如果需要更新是否弹出消息框提醒
 最近登录时候的点数
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCHD_GetLastLoginFYI();
 ```
 ### 返回值
@@ -67,20 +71,20 @@ __int64 __stdcall HCHD_GetLastLoginFYI();
 无
 ```
 ### HD登录_获取最近登录点数 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD登录_获取最近登录点数 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD登录_获取最近登录点数 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -94,7 +98,7 @@ __int64 __stdcall HCHD_GetLastLoginFYI();
 获取最近登录时间戳
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCHD_GetExpiredTimeStamp();
 ```
 ### 返回值
@@ -106,20 +110,20 @@ __int64 __stdcall HCHD_GetExpiredTimeStamp();
 无
 ```
 ### HD登录_获取最近登录时间 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD登录_获取最近登录时间 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD登录_获取最近登录时间 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -133,7 +137,7 @@ __int64 __stdcall HCHD_GetExpiredTimeStamp();
 获取点数
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCHD_GetFYI();
 ```
 ### 返回值
@@ -145,20 +149,20 @@ __int64 __stdcall HCHD_GetFYI();
 无
 ```
 ### HD登录_获取点数 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD登录_获取点数 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD登录_获取点数 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -172,7 +176,7 @@ __int64 __stdcall HCHD_GetFYI();
 获取最大多少开
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCHD_GetOpenMaxNum();
 ```
 ### 返回值
@@ -184,20 +188,20 @@ __int64 __stdcall HCHD_GetOpenMaxNum();
 无
 ```
 ### HD登录_获取最大多开数 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD登录_获取最大多开数 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD登录_获取最大多开数 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例

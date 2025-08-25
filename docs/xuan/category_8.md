@@ -1,3 +1,7 @@
+---
+sidebar_position: 9
+---
+
 # 🛰️ 多线程模块[MT]
 ## 📌 函数: HD多线程_初始化流程回调
 ### 描述
@@ -5,7 +9,7 @@
 初始化多线程设置相关流程回调
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_InitProcess(__int64 hwnd,void* updateUICallBack,void* loginCallBack,void* firstCallBack,void* secondCallBack,void* endCallBack,void* restartPreCallBack);
 ```
 ### 参数
@@ -44,20 +48,20 @@ wparam:自定义参数1
 lparam:自定义参数2
 ```
 ### HD多线程_初始化流程回调 - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_初始化流程回调 - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_初始化流程回调 - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -71,7 +75,7 @@ lparam:自定义参数2
 初始化多线程设置相关流程回调可以绑定一个全局参数
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_InitProcessEx(__int64 hwnd,void* updateUICallBackEx,void* loginCallBack,void* firstCallBack,void* secondCallBack,void* endCallBack,void* restartPreCallBack,void* lparam);
 ```
 ### 参数
@@ -111,20 +115,20 @@ wparam:自定义参数1
 lparam:自定义参数2
 ```
 ### HD多线程_初始化流程回调Ex - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_初始化流程回调Ex - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_初始化流程回调Ex - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -138,7 +142,7 @@ lparam:自定义参数2
 初始化多线程结束/暂停/恢复状态的操作回调
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_InitOperate(void* endBindCallBack,void* pauseBindCallBack,void* recoverBindCallBack);
 ```
 ### 参数
@@ -179,20 +183,20 @@ wparam:自定义参数1
 lparam:自定义参数2
 ```
 ### HD多线程_初始化操作回调 - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_初始化操作回调 - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_初始化操作回调 - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -206,7 +210,7 @@ lparam:自定义参数2
 注册窗口消息
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_RegisterMessage(__int32 msg,void* msgCallBack);
 ```
 ### 参数
@@ -241,20 +245,20 @@ wparam:自定义参数1
 lparam:自定义参数2
 ```
 ### HD多线程_注册消息回调 - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_注册消息回调 - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_注册消息回调 - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -268,7 +272,7 @@ lparam:自定义参数2
 发送消息(同步)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_MsgSend(__int32 msg,void* wparam,void* lparam);
 ```
 ### 参数
@@ -303,20 +307,20 @@ wparam:自定义参数1
 lparam:自定义参数2
 ```
 ### HD多线程_同步发送消息 - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_同步发送消息 - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_同步发送消息 - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -330,7 +334,7 @@ lparam:自定义参数2
 发送消息(异步)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_MsgPost(__int32 msg,void* wparam,void* lparam);
 ```
 ### 参数
@@ -365,20 +369,20 @@ wparam:自定义参数1
 lparam:自定义参数2
 ```
 ### HD多线程_异步发送消息 - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_异步发送消息 - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_异步发送消息 - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -392,7 +396,7 @@ lparam:自定义参数2
 通过消息开启窗口操作
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_MsgStart(__int32 windowsIndex,BOOL bAsyn=FALSE);
 ```
 ### 参数
@@ -413,20 +417,20 @@ __int32 windowsIndex - 窗口序号bAsyn
 停止窗口:结束绑定回调->结束回调
 ```
 ### HD多线程_开启窗口Msg - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_开启窗口Msg - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_开启窗口Msg - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -440,7 +444,7 @@ __int32 windowsIndex - 窗口序号bAsyn
 通过消息停止窗口操作
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_MsgStop(__int32 windowsIndex,BOOL bAsyn=FALSE);
 ```
 ### 参数
@@ -461,20 +465,20 @@ __int32 windowsIndex - 窗口序号bAsyn
 停止窗口:结束绑定回调->结束回调
 ```
 ### HD多线程_停止窗口Msg - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_停止窗口Msg - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_停止窗口Msg - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -488,7 +492,7 @@ __int32 windowsIndex - 窗口序号bAsyn
 通过消息重启窗口操作
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_MsgReStart(__int32 windowsIndex,BOOL bAsyn=FALSE);
 ```
 ### 参数
@@ -509,20 +513,20 @@ __int32 windowsIndex - 窗口序号bAsyn
 停止窗口:结束绑定回调->结束回调
 ```
 ### HD多线程_重启窗口Msg - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_重启窗口Msg - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_重启窗口Msg - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -536,7 +540,7 @@ __int32 windowsIndex - 窗口序号bAsyn
 通过消息重启窗口操作(扩展版本)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_MsgReStartEx(__int32 windowsIndex,BOOL bUnload=TRUE,BOOL bAsyn=FALSE);
 ```
 ### 参数
@@ -559,20 +563,20 @@ bool bAsyn - 是否异步发送
 停止窗口:结束绑定回调->结束回调
 ```
 ### HD多线程_重启窗口MsgEx - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_重启窗口MsgEx - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_重启窗口MsgEx - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -586,7 +590,7 @@ bool bAsyn - 是否异步发送
 通过消息触发UI回调,并传递线程状态信息和日志操作信息给UI回调
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_MsgUpdateUI(__int32 windowsIndex,BOOL bAsyn=FALSE);
 ```
 ### 参数
@@ -602,20 +606,20 @@ __int32 windowsIndex - 窗口序号bAsyn
 1.HDMT_InitProcess/HCMT_InitOperate后才能调用
 ```
 ### HD多线程_更新UI - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_更新UI - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_更新UI - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -629,7 +633,7 @@ __int32 windowsIndex - 窗口序号bAsyn
 通过消息触发UI回调,并传递线程状态信息和日志操作信息给UI回调
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_MsgStepText(__int32 windowsIndex,char* text,BOOL bAsyn=FALSE);
 ```
 ### 参数
@@ -645,20 +649,20 @@ __int32 windowsIndex - 窗口序号text
 1.HDMT_InitProcess/HCMT_InitOperate后才能调用
 ```
 ### HD多线程_发送文本 - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_发送文本 - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_发送文本 - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -672,7 +676,7 @@ __int32 windowsIndex - 窗口序号text
 设置所有窗口结束
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_SetAllPause();
 ```
 ### 返回值
@@ -686,20 +690,20 @@ __int64 __stdcall HCMT_SetAllPause();
 3.标志会在HCMT_Sleep接口中检查并触发对应的暂停绑定回调
 ```
 ### HD多线程_所有窗口暂停 - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_所有窗口暂停 - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_所有窗口暂停 - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -713,7 +717,7 @@ __int64 __stdcall HCMT_SetAllPause();
 获取主副序号对应的线程的状态值
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_GetState(__int32 index);
 ```
 ### 参数
@@ -733,20 +737,20 @@ __int32 index - 主副序号注意
 typedefenumTHREADSTATE\n线程状态{THREADSTATE_NONE=-1,\n未启动THREADSTATE_STARTING=0,\n开启中THREADSTATE_LOGINING=1,\n正在登录THREADSTATE_RUNNING=2,\n正在运行THREADSTATE_PAUSE=3,\n暂停THREADSTATE_PAUSEING=4,\n正在暂停THREADSTATE_RECOVERING=5,\n正在恢复THREADSTATE_WILLSTOP=6,\n准备停止THREADSTATE_STOPPING=7\n正在停止}THREADSTATE;
 ```
 ### HD多线程_获取线程状态值 - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_获取线程状态值 - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_获取线程状态值 - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -760,7 +764,7 @@ typedefenumTHREADSTATE\n线程状态{THREADSTATE_NONE=-1,\n未启动THREADSTATE_
 获取状态整数值对应的字符串
 ```
 ### 原型
-```
+```cpp
 char* __stdcall HCMT_GetStateString(__int32 threadState);
 ```
 ### 参数
@@ -776,20 +780,20 @@ __int32 threadState - 状态值
 无
 ```
 ### HCMT_GetStateString - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HCMT_GetStateString - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HCMT_GetStateString - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -803,7 +807,7 @@ __int32 threadState - 状态值
 判断是否能开启新的(主副线程)传递的只能是主序号
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_IsCanStart(__int32 windowsIndex);
 ```
 ### 参数
@@ -819,20 +823,20 @@ __int32 windowsIndex - 主序号
 无
 ```
 ### HD多线程_是否能开启 - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_是否能开启 - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_是否能开启 - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -846,7 +850,7 @@ __int32 windowsIndex - 主序号
 直接开启窗口操作
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_Start(__int32 windowsIndex);
 ```
 ### 参数
@@ -867,20 +871,20 @@ __int32 windowsIndex - 窗口序号
 停止窗口:结束绑定回调->结束回调
 ```
 ### HD多线程_开启窗口 - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_开启窗口 - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_开启窗口 - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -894,7 +898,7 @@ __int32 windowsIndex - 窗口序号
 设置所有窗口恢复
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_SetAllRecover();
 ```
 ### 返回值
@@ -908,20 +912,20 @@ __int64 __stdcall HCMT_SetAllRecover();
 3.标志会在HCMT_Sleep接口中检查并触发对应的恢复绑定回调
 ```
 ### HD多线程_所有窗口恢复 - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_所有窗口恢复 - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_所有窗口恢复 - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -935,7 +939,7 @@ __int64 __stdcall HCMT_SetAllRecover();
 设置所有窗口停止
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_SetAllStop();
 ```
 ### 返回值
@@ -949,20 +953,20 @@ __int64 __stdcall HCMT_SetAllStop();
 3.标志会在HCMT_Sleep接口中检查并触发对应的停止绑定回调
 ```
 ### HD多线程_所有窗口停止 - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_所有窗口停止 - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_所有窗口停止 - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -976,7 +980,7 @@ __int64 __stdcall HCMT_SetAllStop();
 设置窗口暂停
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_SetPause(__int32 windowsIndex);
 ```
 ### 参数
@@ -994,20 +998,20 @@ __int32 windowsIndex - 窗口序号
 3.标志会在HCMT_Sleep接口中检查并触发对应的暂停绑定回调
 ```
 ### HD多线程_暂停窗口 - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_暂停窗口 - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_暂停窗口 - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -1021,7 +1025,7 @@ __int32 windowsIndex - 窗口序号
 设置主副序号对应的线程暂停
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_SetPauseEx(__int32 index);
 ```
 ### 参数
@@ -1039,20 +1043,20 @@ __int32 index - 主副序号注意
 3.标志会在HCMT_Sleep接口中检查并触发对应的暂停绑定回调
 ```
 ### HD多线程_暂停线程 - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_暂停线程 - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_暂停线程 - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -1066,7 +1070,7 @@ __int32 index - 主副序号注意
 设置窗口恢复
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_SetRecover(__int32 windowsIndex);
 ```
 ### 参数
@@ -1084,20 +1088,20 @@ __int32 windowsIndex - 窗口序号
 3.标志会在HCMT_Sleep接口中检查并触发对应的恢复绑定回调
 ```
 ### HD多线程_恢复窗口 - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_恢复窗口 - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_恢复窗口 - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -1111,7 +1115,7 @@ __int32 windowsIndex - 窗口序号
 设置主副序号对应的线程恢复
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_SetRecoverEx(__int32 index);
 ```
 ### 参数
@@ -1129,20 +1133,20 @@ __int32 index - 主副序号注意
 3.标志会在HCMT_Sleep接口中检查并触发对应的暂停绑定回调
 ```
 ### HD多线程_恢复线程 - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_恢复线程 - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_恢复线程 - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -1156,7 +1160,7 @@ __int32 index - 主副序号注意
 设置窗口停止
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_SetStop(__int32 windowsIndex);
 ```
 ### 参数
@@ -1174,20 +1178,20 @@ __int32 windowsIndex - 窗口序号
 3.标志会在HCMT_Sleep接口中检查并触发对应的结束绑定回调
 ```
 ### HD多线程_停止窗口 - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_停止窗口 - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_停止窗口 - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -1201,7 +1205,7 @@ __int32 windowsIndex - 窗口序号
 (第一第二)回调里面调用,检查当前线程是否结束
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_IsRunning();
 ```
 ### 返回值
@@ -1213,20 +1217,20 @@ __int64 __stdcall HCMT_IsRunning();
 无
 ```
 ### HD多线程_是否运行中 - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_是否运行中 - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_是否运行中 - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -1240,7 +1244,7 @@ __int64 __stdcall HCMT_IsRunning();
 判断主副序号对应的线程是否是已被暂停状态
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_IsPause(__int32 index);
 ```
 ### 参数
@@ -1260,20 +1264,20 @@ __int32 index - 主副序号注意
 3.标志会在HCMT_Sleep接口中检查并触发对应的暂停绑定回调
 ```
 ### HD多线程_是否暂停 - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_是否暂停 - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_是否暂停 - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -1287,7 +1291,7 @@ __int32 index - 主副序号注意
 判断主副序号对应的线程是否是已被结束状态
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_IsStop(__int32 index);
 ```
 ### 参数
@@ -1306,20 +1310,20 @@ __int32 index - 主副序号注意
 3.标志会在HCMT_Sleep接口中检查并触发对应的暂停绑定回调
 ```
 ### HD多线程_是否停止 - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_是否停止 - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_是否停止 - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -1333,7 +1337,7 @@ __int32 index - 主副序号注意
 设延迟函数,自带暂停/结束/恢复检查
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCMT_Sleep(int mis);
 ```
 ### 参数
@@ -1356,20 +1360,20 @@ int mis - 毫秒
 4.如果要内部检测状态机状态需要调用HCMT_StatusSleep
 ```
 ### HD多线程_延迟 - 基础示例
-```
+```xuan
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_延迟 - 进阶用法
-```
+```xuan
 // xuanlanguage 示例2
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD多线程_延迟 - 高级应用
-```
+```xuan
 // xuanlanguage 示例3 高级用法
 // 炫语言示例代码
 // 这里可以放置与说明内容相关的代码示例

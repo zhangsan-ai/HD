@@ -65,7 +65,9 @@ const config = {
     staticDirectories: ['public'],
     plugins: [
         // ...其他插件
-        ['./src/plugins/doc-search-index-plugin', {}]
+        ['./src/plugins/doc-search-index-plugin', {}],
+        // 添加自定义Prism语法高亮插件
+        ['./src/plugins/prism-custom-languages-plugin', {}]
     ],
 
     // 禁用默认的Algolia搜索（如果启用了的话）
@@ -76,6 +78,7 @@ const config = {
             /** @type {import('@docusaurus/preset-classic').Options} */
             ({
                 docs: {
+
                     sidebarPath: './sidebars.js',
                     // Please change this to your repo.
                     // Remove this to remove the "edit this page" links.
@@ -107,11 +110,19 @@ const config = {
     themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
+            prism: {
+                theme: prismThemes.github,
+                darkTheme: prismThemes.dracula,
+
+            },
+
+
             colorMode: {
                 defaultMode: 'dark',
                 disableSwitch: false,
                 respectPrefersColorScheme: false
             },
+
             // algolia: undefined,
             // Replace with your project's social card
             image: 'img/HD.ioc',
@@ -220,10 +231,7 @@ const config = {
                 // ],
                 copyright: `Copyright © ${new Date().getFullYear()} .`,
             },
-            prism: {
-                theme: prismThemes.github,
-                darkTheme: prismThemes.dracula,
-            },
+
             plugins: [
                 [
                     '@cmfcmf/docusaurus-search-local',

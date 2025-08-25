@@ -1,3 +1,7 @@
+---
+sidebar_position: 39
+---
+
 # 🛰️ 控制器模块
 ## 📌 函数: HCHD_GetHDController
 ### 描述
@@ -5,7 +9,7 @@
 获取控制器有且只有一个
 ```
 ### 原型
-```
+```cpp
 HDController* _stdcallHCHD_GetHDController();
 ```
 ### 返回值
@@ -17,7 +21,7 @@ HDController* _stdcallHCHD_GetHDController();
 拿到控制器对象可以获取或者操作其他组件对象
 ```
 ### HCHD_GetHDController - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 _获取开机时间
@@ -30,13 +34,13 @@ HDController* _stdcallHCHD_GetHDController();
     调试输出 ("系统已运行: " + 到文本 (开机小时) + " 小时")
 ```
 ### HCHD_GetHDController - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HCHD_GetHDController - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")

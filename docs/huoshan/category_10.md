@@ -1,3 +1,7 @@
+---
+sidebar_position: 11
+---
+
 # 🛰️ APIHOOK
 ## 📌 函数: HDHOOK.Send发包
 ### 描述
@@ -5,7 +9,7 @@
 调用SendAPI(目标进程中调用)X86X64
 ```
 ### 原型
-```
+```cpp
 __int64 HDHK_SendApi(__int32 窗口序号,__int32 socket,BYTE* buffer,__int32 bufferSize,__int32 flag,BOOL 是否主线程调用=FALSE);
 ```
 ### 参数
@@ -26,20 +30,20 @@ bool 是否主线程调用 - 需要开启才开启,一般默认就行
 无
 ```
 ### HDHOOK.Send发包 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HDHOOK.Send发包 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HDHOOK.Send发包 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
@@ -53,7 +57,7 @@ bool 是否主线程调用 - 需要开启才开启,一般默认就行
 调用SendtoAPI(目标进程中调用)X86X64
 ```
 ### 原型
-```
+```cpp
 __int64 HDHK_SendToApi(__int32 窗口序号,__int32 socket,BYTE* buffer,__int32 bufferSize,__int32 flag,__int32 port,__int32 ip,BOOL 是否主线程调用=FALSE);
 ```
 ### 参数
@@ -76,20 +80,20 @@ bool 是否主线程调用 - 需要开启才开启,一般默认就行
 无
 ```
 ### HDHOOK.SendTo发包 - 基础示例
-```
+```huoshan
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HDHOOK.SendTo发包 - 进阶用法
-```
+```huoshan
 // huoshanpc 示例2
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HDHOOK.SendTo发包 - 高级应用
-```
+```huoshan
 // huoshanpc 示例3 高级用法
 // 火山PC示例代码
 // 这里可以放置与说明内容相关的代码示例

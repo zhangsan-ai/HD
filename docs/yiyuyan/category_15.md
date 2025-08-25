@@ -1,3 +1,7 @@
+---
+sidebar_position: 16
+---
+
 # 🛰️ 驱动模块(N)
 ## 📌 函数: HCN_LoadDrv
 ### 描述
@@ -5,7 +9,7 @@
 加载N驱动
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCN_LoadDrv();
 ```
 ### 返回值
@@ -18,13 +22,13 @@ __int64 __stdcall HCN_LoadDrv();
 需要联网,可以卸载,驱动内置了进程,如需要自定义进程名联系管理员添加或者用HD驱动
 ```
 ### HCN_LoadDrv - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HCN_LoadDrv - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -37,10 +41,10 @@ __int64 __stdcall HCN_LoadDrv();
 注入32/64位DLL(需要先加载N驱动)
 ```
 ### 原型
-```
+```cpp
 HEARTDLL_API_HN__int64 __stdcall HCN_InjectDllWX86(wchar_t* DLL路径W);
 ```
-```
+```cpp
 HEARTDLL_API_HN__int64 __stdcall HCN_InjectDllAX86(char* DLL路径A);
 ```
 ### 参数
@@ -58,13 +62,13 @@ wchar_t* DLL路径W - Ascii字符串
 无
 ```
 ### HCN_InjectDll(W/A)X86 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HCN_InjectDll(W/A)X86 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -77,10 +81,10 @@ wchar_t* DLL路径W - Ascii字符串
 注入32/64位DLL(需要先加载N驱动)
 ```
 ### 原型
-```
+```cpp
 HEARTDLL_API_HN__int64 __stdcall HCN_InjectDllWX64(wchar_t* DLL路径W);
 ```
-```
+```cpp
 HEARTDLL_API_HN__int64 __stdcall HCN_InjectDllAX64(char* DLL路径A);
 ```
 ### 参数
@@ -98,13 +102,13 @@ wchar_t* DLL路径W - Ascii字符串
 无
 ```
 ### HCN_InjectDll(W/A)X64 - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HCN_InjectDll(W/A)X64 - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -117,10 +121,10 @@ wchar_t* DLL路径W - Ascii字符串
 安装32/64位HD插件(需要先加载N驱动)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCN_InstallPlugX86();
 ```
-```
+```cpp
 __int64 __stdcall HCN_InstallPlugX64();
 ```
 ### 返回值
@@ -133,13 +137,13 @@ __int64 __stdcall HCN_InstallPlugX64();
 无
 ```
 ### HCN_InstallPlug(86/64) - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HCN_InstallPlug(86/64) - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -152,7 +156,7 @@ __int64 __stdcall HCN_InstallPlugX64();
 卸载驱动同时清除了注入的DLL缓存
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCN_UnLoadDrv();
 ```
 ### 返回值
@@ -165,13 +169,13 @@ __int64 __stdcall HCN_UnLoadDrv();
 取消窗口关联,一定要卸载相关信息,随后所有循环会快速内退,从而线程安全退出！！！！
 ```
 ### HCN_UnLoadDrv - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HCN_UnLoadDrv - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")

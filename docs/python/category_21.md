@@ -1,3 +1,7 @@
+---
+sidebar_position: 22
+---
+
 # 🛰️ VNC(HDVNC)
 ## 📌 函数: HDVNC_连接虚拟机
 ### 描述
@@ -5,7 +9,7 @@
 连接虚拟机
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVnc_Connect(__int32 windowsIndex,__int32 port);
 ```
 ### 参数
@@ -25,20 +29,20 @@ __int32 port - 虚拟机开启VNC设置的端口
 2.未安装插件(HCVnc_Connect)的形式连接VNC:重连一直都可以不能port==0因为会检查PID未安装插件的PID为0卸载的时候内部调用(HCEnv_UnLoad)
 ```
 ### HDVNC_连接虚拟机 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_连接虚拟机 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_连接虚拟机 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -52,7 +56,7 @@ __int32 port - 虚拟机开启VNC设置的端口
 关闭连接虚拟机
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVnc_Close(__int32 windowsIndex);
 ```
 ### 参数
@@ -71,20 +75,20 @@ __int64 __stdcall HCVnc_Close(__int32 windowsIndex);
 2.未安装插件(HCVnc_Connect)的形式连接VNC:重连一直都可以不能port==0因为会检查PID未安装插件的PID为0卸载的时候内部调用(HCEnv_UnLoad)
 ```
 ### HDVNC_关闭连接 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_关闭连接 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_关闭连接 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -98,7 +102,7 @@ __int64 __stdcall HCVnc_Close(__int32 windowsIndex);
 VNC鼠标绝对移动(自带移动轨迹直线波动防检测)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVnc_MoveTo(__int32 windowsIndex,__int32 x,__int32 y);
 ```
 ### 参数
@@ -116,20 +120,20 @@ __int32 y - 虚拟机屏幕坐标Y
 无
 ```
 ### HDVNC_鼠标绝对移动 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_鼠标绝对移动 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_鼠标绝对移动 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -143,7 +147,7 @@ __int32 y - 虚拟机屏幕坐标Y
 VNC鼠标相对移动(自带移动轨迹直线波动防检测)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVnc_MoveToOffset(__int32 windowsIndex,__int32 x,__int32 y);
 ```
 ### 参数
@@ -161,20 +165,20 @@ __int32 y - 虚拟机屏幕相对坐标X
 无
 ```
 ### HDVNC_鼠标相对移动 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_鼠标相对移动 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_鼠标相对移动 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -188,7 +192,7 @@ __int32 y - 虚拟机屏幕相对坐标X
 VNC鼠标左键点击
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVnc_LeftClick(__int32 windowsIndex);
 ```
 ### 参数
@@ -204,20 +208,20 @@ __int64 __stdcall HCVnc_LeftClick(__int32 windowsIndex);
 无
 ```
 ### HDVNC_鼠标左键点击 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_鼠标左键点击 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_鼠标左键点击 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -231,7 +235,7 @@ __int64 __stdcall HCVnc_LeftClick(__int32 windowsIndex);
 VNC鼠标左键按下
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVnc_LeftDown(__int32 windowsIndex);
 ```
 ### 参数
@@ -247,20 +251,20 @@ __int64 __stdcall HCVnc_LeftDown(__int32 windowsIndex);
 无
 ```
 ### HDVNC_鼠标左键按下 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_鼠标左键按下 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_鼠标左键按下 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -274,7 +278,7 @@ __int64 __stdcall HCVnc_LeftDown(__int32 windowsIndex);
 VNC鼠标左键弹起
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVnc_LeftUp(__int32 windowsIndex);
 ```
 ### 参数
@@ -290,20 +294,20 @@ __int64 __stdcall HCVnc_LeftUp(__int32 windowsIndex);
 无
 ```
 ### HDVNC_鼠标左键弹起 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_鼠标左键弹起 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_鼠标左键弹起 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -317,7 +321,7 @@ __int64 __stdcall HCVnc_LeftUp(__int32 windowsIndex);
 VNC鼠标左键双击
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVnc_LeftDoubleClick(__int32 windowsIndex);
 ```
 ### 参数
@@ -333,20 +337,20 @@ __int64 __stdcall HCVnc_LeftDoubleClick(__int32 windowsIndex);
 无
 ```
 ### HDVNC_鼠标左键双击 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_鼠标左键双击 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_鼠标左键双击 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -360,7 +364,7 @@ __int64 __stdcall HCVnc_LeftDoubleClick(__int32 windowsIndex);
 VNC鼠标右键点击
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVnc_RightClick(__int32 windowsIndex);
 ```
 ### 参数
@@ -376,20 +380,20 @@ __int64 __stdcall HCVnc_RightClick(__int32 windowsIndex);
 无
 ```
 ### HDVNC_鼠标右键点击 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_鼠标右键点击 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_鼠标右键点击 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -403,7 +407,7 @@ __int64 __stdcall HCVnc_RightClick(__int32 windowsIndex);
 VNC鼠标右键按下
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVnc_RightDown(__int32 windowsIndex);
 ```
 ### 参数
@@ -419,20 +423,20 @@ __int64 __stdcall HCVnc_RightDown(__int32 windowsIndex);
 无
 ```
 ### HDVNC_鼠标右键按下 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_鼠标右键按下 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_鼠标右键按下 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -446,7 +450,7 @@ __int64 __stdcall HCVnc_RightDown(__int32 windowsIndex);
 VNC鼠标右键弹起
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVnc_RightUp(__int32 windowsIndex);
 ```
 ### 参数
@@ -462,20 +466,20 @@ __int64 __stdcall HCVnc_RightUp(__int32 windowsIndex);
 无
 ```
 ### HDVNC_鼠标右键弹起 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_鼠标右键弹起 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_鼠标右键弹起 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -489,7 +493,7 @@ __int64 __stdcall HCVnc_RightUp(__int32 windowsIndex);
 VNC鼠标滚轮滚下
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVnc_WheelDown(__int32 windowsIndex);
 ```
 ### 参数
@@ -505,20 +509,20 @@ __int64 __stdcall HCVnc_WheelDown(__int32 windowsIndex);
 无
 ```
 ### HDVNC_鼠标滚轮滚下 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_鼠标滚轮滚下 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_鼠标滚轮滚下 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -532,7 +536,7 @@ __int64 __stdcall HCVnc_WheelDown(__int32 windowsIndex);
 VNC鼠标滚轮滚上
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVnc_WheelUp(__int32 windowsIndex);
 ```
 ### 参数
@@ -548,20 +552,20 @@ __int64 __stdcall HCVnc_WheelUp(__int32 windowsIndex);
 无
 ```
 ### HDVNC_鼠标滚轮滚上 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_鼠标滚轮滚上 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_鼠标滚轮滚上 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -575,7 +579,7 @@ __int64 __stdcall HCVnc_WheelUp(__int32 windowsIndex);
 VNC键盘按键敲击
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVnc_KeyPress(__int32 windowsIndex,int keycode,BOOL isKeypad=false);
 ```
 ### 参数
@@ -593,20 +597,20 @@ bool isKeypad - 是否数字小键盘一般假
 无
 ```
 ### HCVnc_KeyPress - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HCVnc_KeyPress - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HCVnc_KeyPress - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -620,7 +624,7 @@ bool isKeypad - 是否数字小键盘一般假
 VNC键盘按键按下
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVnc_KeyDown(__int32 windowsIndex,int keycode);
 ```
 ### 参数
@@ -637,20 +641,20 @@ int keycode - VK键值
 无
 ```
 ### HDVNC_键盘按键按下 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_键盘按键按下 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_键盘按键按下 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -664,7 +668,7 @@ int keycode - VK键值
 VNC键盘按键弹起
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVnc_KeyUp(__int32 windowsIndex,int keycode);
 ```
 ### 参数
@@ -681,20 +685,20 @@ int keycode - VK键值
 无
 ```
 ### HDVNC_键盘按键弹起 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_键盘按键弹起 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_键盘按键弹起 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -708,7 +712,7 @@ int keycode - VK键值
 VNC键盘连续按键字符串(数字+字母)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVnc_KeyPressStr(__int32 windowsIndex,char* strText,BOOL isKeypad=false);
 ```
 ### 参数
@@ -726,20 +730,20 @@ bool isKeypad - 是否数字小键盘一般假
 无
 ```
 ### HCVnc_KeyPressStr - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HCVnc_KeyPressStr - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HCVnc_KeyPressStr - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -753,7 +757,7 @@ bool isKeypad - 是否数字小键盘一般假
 VNC键盘输入字符串(中文+数字+符号+字母)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVnc_SendString(__int32 windowsIndex,char* strText);
 ```
 ### 参数
@@ -770,20 +774,20 @@ char* strText - 字符串(ascii编码)如
 无
 ```
 ### HCVnc_SendString - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HCVnc_SendString - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HCVnc_SendString - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -797,7 +801,7 @@ char* strText - 字符串(ascii编码)如
 开启截图(内部会开启一根线程循环获取虚拟机画面)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVnc_OpenCapture(__int32 windowsIndex);
 ```
 ### 参数
@@ -813,20 +817,20 @@ __int64 __stdcall HCVnc_OpenCapture(__int32 windowsIndex);
 可以调用HCVnc_CloseCapture来结束截图线程
 ```
 ### HDVNC_开启截图 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_开启截图 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_开启截图 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -840,7 +844,7 @@ __int64 __stdcall HCVnc_OpenCapture(__int32 windowsIndex);
 关闭截图(结束开启截图内部产生的线程)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCVnc_CloseCapture(__int32 windowsIndex);
 ```
 ### 参数
@@ -856,20 +860,20 @@ __int64 __stdcall HCVnc_CloseCapture(__int32 windowsIndex);
 需要多次调用关闭,直到关闭成功,通常情况一次就能关闭成功
 ```
 ### HDVNC_关闭截图 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_关闭截图 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HDVNC_关闭截图 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例

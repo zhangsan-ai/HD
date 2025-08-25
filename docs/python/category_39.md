@@ -1,3 +1,7 @@
+---
+sidebar_position: 40
+---
+
 # 🛰️ 主板机模块[SC]
 ## 📌 函数: HD主板机_设置路径
 ### 描述
@@ -5,7 +9,7 @@
 设置HDScrcpy投屏软件根目录,并重启adb相当于重置一下adb环境
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSC_SetPath(char* rootPath);
 ```
 ### 参数
@@ -22,20 +26,20 @@ char* rootPath - 根目录(hdscrcpy.exeadb.exe所在目录)
 软件在群文件或者找管理索取
 ```
 ### HD主板机_设置路径 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD主板机_设置路径 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD主板机_设置路径 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -49,7 +53,7 @@ char* rootPath - 根目录(hdscrcpy.exeadb.exe所在目录)
 重置adb服务
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSC_ResetAdb(char* ipInfo);
 ```
 ### 参数
@@ -66,20 +70,20 @@ char* ipInfo - IP端口信息多个IP信息用\"|\"隔开IP和端口用\"
 无
 ```
 ### HD主板机_重置ADB服务 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD主板机_重置ADB服务 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD主板机_重置ADB服务 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -93,7 +97,7 @@ char* ipInfo - IP端口信息多个IP信息用\"|\"隔开IP和端口用\"
 查询当前所有可用的设备
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSC_QueryDevices();
 ```
 ### 返回值
@@ -111,20 +115,20 @@ __int64 __stdcall HCSC_QueryDevices();
 3.127.0.0.1:5009tcpipDevice(-e)
 ```
 ### HD主板机_查询设备 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD主板机_查询设备 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD主板机_查询设备 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
@@ -138,7 +142,7 @@ __int64 __stdcall HCSC_QueryDevices();
 连接设备并通讯窗口序号（需要先初始化中控和登录！！HCHD_LoginHCEnv_Init/HCEnv_InitEx）
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSC_ConnectDevices(__int32 winIndex,char* devicesName,char* cmdLparam,__int32 type,__int32 w,__int32 h,__int32 timeOut);
 ```
 ### 参数
@@ -160,20 +164,20 @@ __int32 winIndex - 窗口序号devicesName
 3.127.0.0.1:5009tcpipDevice(-e)
 ```
 ### HD主板机_连接设备 - 基础示例
-```
+```python
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD主板机_连接设备 - 进阶用法
-```
+```python
 # Python 示例2
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例
 代码内容
 ```
 ### HD主板机_连接设备 - 高级应用
-```
+```python
 # Python 示例3 高级用法
 # Python示例代码
 # 这里可以放置与说明内容相关的代码示例

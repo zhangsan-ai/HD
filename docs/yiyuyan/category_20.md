@@ -1,3 +1,7 @@
+---
+sidebar_position: 21
+---
+
 # 🛰️ YOLOV(HDYOLOV)
 ## 📌 函数: HCYOLO_AddModel
 ### 描述
@@ -5,7 +9,7 @@
 添加YOLOV(ncnn.bin和ncnn.param)模型文件(从内存中加载模型)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCYOLO_AddModel(__int32 ver,void* modeData,__int32 modeDataSize,void* modeLparam,__int32 modeLparamSize,__int32 size=640,BOOL bGpu=FALSE,char* password=NULL);
 ```
 ### 参数
@@ -29,13 +33,13 @@ ncnn模型bin“＝XXX.ncnn.bin”param“＝XXX.ncnn.param”从内存中加载
 需要调用HCHD_LoadDrv2传递参数4来安装YOLOV组件模块
 ```
 ### HCYOLO_AddModel - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HCYOLO_AddModel - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -48,7 +52,7 @@ ncnn模型bin“＝XXX.ncnn.bin”param“＝XXX.ncnn.param”从内存中加载
 添加YOLOV(ncnn.bin和ncnn.param)模型文件(从文件中加载模型)
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCYOLO_AddModelFile(__int32 ver,char* modeFileName,char* modeLparamName,__int32 size=640,BOOL bGpu=FALSE,char* password=NULL);
 ```
 ### 参数
@@ -70,7 +74,7 @@ ncnn模型bin“＝XXX.ncnn.bin”param“＝XXX.ncnn.param”从文件中加载
 需要调用HCHD_LoadDrv2传递参数4来安装YOLOV组件模块
 ```
 ### HCYOLO_AddModelFile - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 测试从内存加载YOLO模型, 逻辑型, 公开
@@ -117,13 +121,13 @@ ncnn模型bin“＝XXX.ncnn.bin”param“＝XXX.ncnn.param”从文件中加载
     返回 (结果)
 ```
 ### HCYOLO_AddModelFile - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HCYOLO_AddModelFile - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -136,7 +140,7 @@ ncnn模型bin“＝XXX.ncnn.bin”param“＝XXX.ncnn.param”从文件中加载
 添加YOLOV(ncnn.bin和ncnn.param)模型文件(从文件中加载模型),从后台截图缓存识别
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCYOLO_Identify(__int32 窗口序号,floatconf=0.7f,floatiou=0.4f,BOOL bDebug=FALSE);
 ```
 ### 参数
@@ -158,7 +162,7 @@ bool bDebug - 是否弹窗调试标注查看默认假
 需要调用HCHD_LoadDrv2传递参数4来安装YOLOV组件模块
 ```
 ### HCYOLO_Identify - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 测试YOLO内存图片识别, 逻辑型, 公开
@@ -199,13 +203,13 @@ bool bDebug - 是否弹窗调试标注查看默认假
     返回 (结果)
 ```
 ### HCYOLO_Identify - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HCYOLO_Identify - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")
@@ -218,7 +222,7 @@ bool bDebug - 是否弹窗调试标注查看默认假
 添加YOLOV(ncnn.bin和ncnn.param)模型文件(从文件中加载模型),从指定图片文件识别
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCYOLO_IdentifyByFile(__int32 窗口序号,char* image,floatconf=0.7f,floatiou=0.4f,BOOL bDebug=FALSE);
 ```
 ### 参数
@@ -241,7 +245,7 @@ bool bDebug - 是否弹窗调试标注查看默认假
 需要调用HCHD_LoadDrv2传递参数4来安装YOLOV组件模块
 ```
 ### HCYOLO_IdentifyByFile - 基础示例
-```
+```e-lang
 .版本 2
 
 .子程序 测试YOLO后台识别, 逻辑型, 公开
@@ -301,13 +305,13 @@ bool bDebug - 是否弹窗调试标注查看默认假
     .计次循环尾 ()
 ```
 ### HCYOLO_IdentifyByFile - 进阶用法
-```
+```e-lang
 .版本 2
 .子程序 示例2
     调试输出("示例2")
 ```
 ### HCYOLO_IdentifyByFile - 高级应用
-```
+```e-lang
 .版本 2
 .子程序 高级示例
     调试输出("高级示例")

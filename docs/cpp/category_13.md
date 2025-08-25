@@ -1,3 +1,7 @@
+---
+sidebar_position: 14
+---
+
 # 🛰️ ShellCode模块(SH)
 ## 📌 函数: HCSH_GetShellCode
 ### 描述
@@ -5,7 +9,7 @@
 汇编文本转换机器码
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSH_GetShellCode(__int32 模式,char* 汇编文本,BYTE* 机器码缓冲区,__int32 机器码缓冲区大小,__int64 返回机器码字节大小的地址,__int64 错误1变量的地址,__int64 错误2变量的地址);
 ```
 ### 参数
@@ -27,20 +31,20 @@ __int64 错误2 - 返回错误2(具体错误描述)注意是传递变量的地�
 无
 ```
 ### HCSH_GetShellCode - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSH_GetShellCode - 进阶用法
-```
+```cpp
 // 示例2：HCSH_GetShellCode 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSH_GetShellCode - 高级应用
-```
+```cpp
 // 示例3：HCSH_GetShellCode 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
@@ -54,7 +58,7 @@ __int64 错误2 - 返回错误2(具体错误描述)注意是传递变量的地�
 机器码写入到进程
 ```
 ### 原型
-```
+```cpp
 __int64 __stdcall HCSH_WriteShellCode(__int32 pid,BYTE* 机器码缓冲区,__int32 机器码缓冲区大小,__int64 返回变量的地址);
 ```
 ### 参数
@@ -74,20 +78,20 @@ __int32 机器码缓冲区大小 - 机器码缓冲区大小
 拿到了写入地址可以使用HD驱动创建远线程来执行
 ```
 ### HCSH_WriteShellCode - 基础示例
-```
+```cpp
 // C++示例代码
 // 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSH_WriteShellCode - 进阶用法
-```
+```cpp
 // 示例2：HCSH_WriteShellCode 调用
 // [示例2] C++示例代码
 // [示例2] 这里可以放置与说明内容相关的代码示例
 代码内容;
 ```
 ### HCSH_WriteShellCode - 高级应用
-```
+```cpp
 // 示例3：HCSH_WriteShellCode 高级用法
 // [高级] C++示例代码
 // [高级] 这里可以放置与说明内容相关的代码示例
