@@ -107,6 +107,11 @@ const config = {
     themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
+            colorMode: {
+                defaultMode: 'dark',
+                disableSwitch: false,
+                respectPrefersColorScheme: false
+            },
             // algolia: undefined,
             // Replace with your project's social card
             image: 'img/HD.ioc',
