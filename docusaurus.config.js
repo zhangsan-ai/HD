@@ -66,8 +66,6 @@ const config = {
     plugins: [
         // ...其他插件
         ['./src/plugins/doc-search-index-plugin', {}],
-        // 添加自定义Prism语法高亮插件
-        ['./src/plugins/prism-custom-languages-plugin', {}]
     ],
 
     // 禁用默认的Algolia搜索（如果启用了的话）
@@ -113,7 +111,7 @@ const config = {
             prism: {
                 theme: prismThemes.github,
                 darkTheme: prismThemes.dracula,
-
+                additionalLanguages: ['csharp', 'xuan', 'yiyuyan', 'huoshan', 'e-lang'],
             },
 
 

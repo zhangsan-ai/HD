@@ -28,3 +28,93 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* --------------- Unified Code Block Styles --------------- */
+
+/* --- General Container Style --- */
+pre[class*="language-"] {
+  border-radius: 8px;
+  padding: 1.2rem;
+  overflow-x: auto;
+  font-family: "Consolas", "Microsoft YaHei", "微软雅黑", monospace;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem; /* Add some bottom margin for spacing */
+  border: 1px solid #ddd; /* Unified light border for ALL themes */
+}
+
+/* --- Light Theme --- */
+:root pre[class*="language-"] {
+  background-color: #f8f8f8;
+}
+:root code[class*="language-"] {
+  color: #333;
+}
+
+/* --- Dark Theme --- */
+[data-theme='dark'] pre[class*="language-"] {
+  background-color: #1e1e1e;
+}
+[data-theme='dark'] code[class*="language-"] {
+  color: #e0e0e0;
+}
+
+/* --- Unified Token Color Scheme --- */
+/* Based on user-provided styles */
+
+/* Comment */
+.token.comment {
+  color: #6a9955;
+  font-style: italic;
+}
+
+/* Program Structure (Blue) */
+.token.structure {
+  color: #569cd6;
+  font-weight: bold;
+}
+
+/* Variable Declaration (Purple) */
+.token.variable {
+  color: #c586c0;
+  font-weight: 600;
+}
+
+/* Control Flow (Red) */
+.token.control {
+  color: #cd3131;
+  font-weight: bold;
+}
+
+/* Data Types (Teal) */
+.token.type {
+  color: #4ec9b0;
+}
+
+/* Built-in commands & Strings (Orange) */
+.token.builtin,
+.token.string {
+  color: #ce9178;
+}
+
+/* Numbers (Light Green) */
+.token.number {
+  color: #b5cea8;
+}
+
+/* Functions (Light Yellow) */
+.token.function {
+  color: #dcdcaa;
+  font-weight: 600;
+}
+
+/* Operators & Punctuation (Light Grey) */
+.token.operator,
+.token.punctuation {
+  color: #d4d4d4;
+}
+
+/* Special Symbols (Light Blue) */
+.token.symbol {
+  color: #9cdcfe;
+}
