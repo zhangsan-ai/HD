@@ -1,120 +1,119 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+/* --- Font Imports --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap');
 
-/* You can override the default Infima variables here. */
+/* --- Infima Variable Overrides for a Modern UI --- */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* --- Typography --- */
+  --ifm-font-family-base: 'Inter', 'Microsoft YaHei', sans-serif;
+  --ifm-font-family-monospace: 'JetBrains Mono', 'Consolas', monospace;
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.65;
+
+  /* --- Colors (Refined Palette) --- */
+  --ifm-color-primary: #4e74ff; /* A more modern, friendly blue */
+  --ifm-color-primary-dark: #3a5fe0;
+  --ifm-color-primary-darker: #3152c8;
+  --ifm-color-primary-darkest: #2540a0;
+  --ifm-color-primary-light: #6288ff;
+  --ifm-color-primary-lighter: #7193ff;
+  --ifm-color-primary-lightest: #8aa8ff;
+
+  /* --- Spacing & Shadows for Depth --- */
+  --ifm-global-radius: 8px; /* Consistent border radius */
+  --ifm-global-spacing: 1rem;
+  --ifm-global-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
+  --ifm-global-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.12);
+  --ifm-global-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.06), 0 4px 6px rgba(0, 0, 0, 0.12);
+
+  --ifm-code-font-size: 92%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.05);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  /* --- Dark Theme Colors --- */
+  --ifm-color-primary: #6389ff; /* A slightly brighter blue for dark mode */
+  --ifm-color-primary-dark: #4a70f0;
+  --ifm-color-primary-darker: #3f66e0;
+  --ifm-color-primary-darkest: #2c50c0;
+  --ifm-color-primary-light: #7c9eff;
+  --ifm-color-primary-lighter: #8aaaff;
+  --ifm-color-primary-lightest: #a5c0ff;
+
+  --ifm-background-color: #1a1a1a; /* A slightly softer black */
+  --ifm-background-surface-color: #262626;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.2);
+}
+
+/* --- Global Element Enhancements --- */
+
+/* Smooth transitions for all interactive elements */
+*,
+*::before,
+*::after {
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* --- Navbar & Links --- */
+.navbar__link--active {
+  background-color: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-primary-darkest) !important;
+  border-radius: 4px;
+}
+[data-theme='dark'] .navbar__link--active {
+  background-color: rgba(var(--ifm-color-primary-rgb), 0.15);
+  color: var(--ifm-color-primary-light) !important;
+}
+
+/* --- Cards & Buttons (Lift on Hover) --- */
+.card, .button {
+  box-shadow: var(--ifm-global-shadow-sm);
+}
+.card:hover, .button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--ifm-global-shadow-md);
 }
 
 /* --------------- Unified Code Block Styles --------------- */
 
-/* --- General Container Style --- */
 pre[class*="language-"] {
-  border-radius: 8px;
+  border-radius: var(--ifm-global-radius);
   padding: 1.2rem;
   overflow-x: auto;
-  font-family: "Consolas", "Microsoft YaHei", "微软雅黑", monospace;
-  font-size: 0.95rem;
   line-height: 1.6;
-  margin-bottom: 1.5rem; /* Add some bottom margin for spacing */
-  border: 1px solid #ddd; /* Unified light border for ALL themes */
+  margin-bottom: 1.5rem;
+  box-shadow: var(--ifm-global-shadow-sm);
+  border: 1px solid transparent; /* Start with a transparent border */
 }
 
-/* --- Light Theme --- */
+/* --- Light Theme Code Block --- */
 :root pre[class*="language-"] {
-  background-color: #f8f8f8;
+  background-color: #fcfcfc;
+  border-color: #f0f0f0;
 }
 :root code[class*="language-"] {
-  color: #333;
+  color: #24292e;
 }
 
-/* --- Dark Theme --- */
+/* --- Dark Theme Code Block --- */
 [data-theme='dark'] pre[class*="language-"] {
-  background-color: #1e1e1e;
+  background-color: #262626;
+  border-color: #333;
 }
 [data-theme='dark'] code[class*="language-"] {
   color: #e0e0e0;
 }
 
 /* --- Unified Token Color Scheme --- */
-/* Based on user-provided styles */
+.token.comment, .token.prolog, .token.doctype, .token.cdata { color: #6a9955; font-style: italic; }
+.token.punctuation { color: #d4d4d4; }
+.token.property, .token.tag, .token.boolean, .token.number, .token.constant, .token.symbol, .token.deleted { color: #b5cea8; }
+.token.selector, .token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted { color: #ce9178; }
+.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string { color: #d4d4d4; }
+.token.atrule, .token.attr-value, .token.keyword { color: #569cd6; }
+.token.function, .token.class-name { color: #dcdcaa; }
+.token.regex, .token.important, .token.variable { color: #c586c0; }
 
-/* Comment */
-.token.comment {
-  color: #6a9955;
-  font-style: italic;
-}
-
-/* Program Structure (Blue) */
-.token.structure {
-  color: #569cd6;
-  font-weight: bold;
-}
-
-/* Variable Declaration (Purple) */
-.token.variable {
-  color: #c586c0;
-  font-weight: 600;
-}
-
-/* Control Flow (Red) */
-.token.control {
-  color: #cd3131;
-  font-weight: bold;
-}
-
-/* Data Types (Teal) */
-.token.type {
-  color: #4ec9b0;
-}
-
-/* Built-in commands & Strings (Orange) */
-.token.builtin,
-.token.string {
-  color: #ce9178;
-}
-
-/* Numbers (Light Green) */
-.token.number {
-  color: #b5cea8;
-}
-
-/* Functions (Light Yellow) */
-.token.function {
-  color: #dcdcaa;
-  font-weight: 600;
-}
-
-/* Operators & Punctuation (Light Grey) */
-.token.operator,
-.token.punctuation {
-  color: #d4d4d4;
-}
-
-/* Special Symbols (Light Blue) */
-.token.symbol {
-  color: #9cdcfe;
-}
+/* Custom language specific aliases */
+.token.structure { color: #569cd6; font-weight: bold; }
+.token.control { color: #cd3131; font-weight: bold; }
+.token.type { color: #4ec9b0; }
