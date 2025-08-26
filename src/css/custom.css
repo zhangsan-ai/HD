@@ -117,3 +117,29 @@ pre[class*="language-"] {
 .token.structure { color: #569cd6; font-weight: bold; }
 .token.control { color: #cd3131; font-weight: bold; }
 .token.type { color: #4ec9b0; }
+
+/* --------------- Xuan Language Specific Theme (Tech) --------------- */
+.language-xuan .token.comment { color: #6ee7b7; font-style: normal; }
+.language-xuan .token.structure { color: #38bdf8; text-shadow: 0 0 2px rgba(56, 189, 248, 0.3); }
+.language-xuan .token.variable { color: #a78bfa; }
+.language-xuan .token.control { color: #f87171; }
+.language-xuan .token.type { color: #22d3ee; font-weight: 500; }
+.language-xuan .token.builtin { color: #fbbf24; font-weight: normal; }
+.language-xuan .token.string { color: #f472b6; }
+.language-xuan .token.number { color: #4ade80; font-weight: normal; }
+.language-xuan .token.operator { color: #94a3b8; }
+.language-xuan .token.function { color: #93c5fd; font-weight: bold; }
+.language-xuan .token.symbol { color: #94a3b8; font-style: italic; }
+
+/* --------------- Huoshan Language Specific Theme (Natural) --------------- */
+.language-huoshan .token.comment { color: #65a30d; font-style: italic; }
+.language-huoshan .token.structure { color: #f59e0b; font-weight: bold; text-decoration: underline dotted; }
+.language-huoshan .token.variable { color: #dc2626; font-weight: 600; }
+.language-huoshan .token.control { color: #ea580c; font-weight: bold; }
+.language-huoshan .token.type { color: #166534; font-weight: normal; }
+.language-huoshan .token.builtin { color: #7e22ce; font-weight: bold; }
+.language-huoshan .token.string { color: #b91c1c; }
+.language-huoshan .token.number { color: #0891b2; font-weight: bold; }
+.language-huoshan .token.operator { color: #6b7280; font-weight: 500; }
+.language-huoshan .token.function { color: #ca8a04; font-weight: 600; }
+.language-huoshan .token.symbol { color: #92400e; font-style: normal; }

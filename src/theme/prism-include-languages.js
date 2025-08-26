@@ -76,25 +76,25 @@ export default function prismIncludeLanguages(PrismObject) {
 
   // Huoshan Language Definition (Based on user-provided CSS)
   PrismObject.languages.huoshan = {
-    'comment': { pattern: /\/\/.*$/, greedy: true },
+    'comment': { pattern: /'.*$/, greedy: true },
     'string': { pattern: /"([^"\\]|\\.)*"/, greedy: true },
     'function': { pattern: /(?<=函数 |子程序 )[_a-zA-Z\u4e00-\u9fa5][_a-zA-Z0-9\u4e00-\u9fa5]*/, lookbehind: true },
     'structure': {
-        pattern: /\b(?:程序集|类|数据类型|枚举|常量|宏|资源|函数|子程序|方法|事件|模块|接口|继承|实现|版本|支持库|导入|导出)\b/,
+        pattern: /\b(?:程序集|类|数据类型|函数|子程序|结束函数)\b/,
         alias: 'keyword'
     },
     'variable': {
-        pattern: /\b(?:变量|局部变量|全局变量|静态变量|参数|数组|成员|公开|私有|保护|共享|静态|为)\b/,
+        pattern: /\b(?:变量|局部变量|全局变量|参数|数组|为)\b/,
         alias: 'keyword'
     },
     'control': {
-        pattern: /\b(?:如果|如果真|否则|否则如果|判断|判断开始|判断结束|循环|计次循环|变量循环|循环判断|跳出循环|继续循环|返回|结束|销毁|关闭|暂停|延时|结束计次循环|结束变量循环)\b/,
+        pattern: /\b(?:如果|如果真|否则|计次循环|循环判断|跳出循环)\b/,
         alias: 'keyword'
     },
-    'type': /\b(?:整数型|小数型|文本型|字节型|字节集|逻辑型|日期时间型|子程序指针|布尔型|字符型|浮点型|无符号整数型|指针型|对象型|变体型|自定义型)\b/,
-    'builtin': /\b(?:输出|输出行|信息框|输入框|调试输出|到文本|到整数|到小数|到字节集|取随机数|取系统时间|取当前目录|复制文件|删除文件|读入文件|写出文件|打开文件|关闭文件|读一行|写一行|取数组成员数|重定义数组|加入成员|删除成员|插入成员|取文本长度|取子文本|替换子文本|寻找文本|分割文本|连接文本)\b/,
+    'type': /\b(?:整数型|小数型|文本型|逻辑型|日期时间型|对象型)\b/,
+    'builtin': /\b(?:输出行|信息框|调试输出|取数组成员数|读入文件)\b/,
     'number': /\b(?:0x[\da-f]+|0b[01]+|-?\d+(?:\.\d+)?)\b/i,
-    'operator': /[+\-*\/×=<>]=?|并且|或者|非|模|整除/,
+    'operator': /[+\-*\/×=<>]=?|并且|或者|非/,
     'symbol': /[.\[\]]/,
     'punctuation': /[(){},;:]/
   };
